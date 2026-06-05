@@ -23,26 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "This page features some of my projects that can be publicly shared. The links point to YouTube videos of my presentation on these projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "nav-publications",
           title: "Publications",
           description: "Publications from the AMPERE Laboratory and Prof. Gadiyar&#39;s prior work. For a current and comprehensive list, visit our Google Scholar page.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
-          },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "This is a brief CV highlighting my education and work experience. For a detailed CV, please e-mail me.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
           },
         },{id: "nav-news",
           title: "News",
@@ -64,13 +50,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
-          },
-        },{id: "nav-teaching",
-          title: "Teaching",
-          description: "Prof. Gadiyar is passionate about teaching and mentoring. This page lists courses taught at the University of Notre Dame and prior institutions.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
           },
         },{id: "news-nishanth-has-successfully-defended-his-ph-d-the-degree-will-be-conferred-at-uw-madison-s-may-2023-commencement-nishanth-will-be-continuing-as-a-post-doctoral-research-associate-with-prof-severson-at-wempec",
           title: 'Nishanth has successfully defended his Ph.D. The degree will be conferred at UW-Madison’s...',
