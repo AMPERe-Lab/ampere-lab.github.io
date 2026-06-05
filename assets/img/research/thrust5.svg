@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 310">
+  <rect width="520" height="310" rx="12" fill="#F0F4F8"/>
+
+  <!-- ── Title ── -->
+  <text x="260" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#0C2340">Electrification Applications</text>
+
+  <!-- ══════════════════════════════════════════
+       Panel 1 — Electric Vehicles  (x: 18–178)
+  ══════════════════════════════════════════ -->
+  <rect x="18" y="48" width="158" height="220" rx="10" fill="#DBEAFE" stroke="#185FA5" stroke-width="2"/>
+
+  <!-- Car body -->
+  <rect x="38" y="148" width="118" height="48" rx="8" fill="#185FA5"/>
+  <!-- Car roof -->
+  <path d="M65,148 Q80,110 114,108 Q140,108 152,148 Z" fill="#0C2340"/>
+  <!-- Windshield -->
+  <path d="M78,148 Q86,122 114,120 Q136,120 143,148 Z" fill="#93C5FD" opacity="0.7"/>
+  <!-- Wheels -->
+  <circle cx="68"  cy="196" r="20" fill="#0C2340" stroke="#E8EFF8" stroke-width="3"/>
+  <circle cx="68"  cy="196" r="9"  fill="#CBD5E1"/>
+  <circle cx="130" cy="196" r="20" fill="#0C2340" stroke="#E8EFF8" stroke-width="3"/>
+  <circle cx="130" cy="196" r="9"  fill="#CBD5E1"/>
+  <!-- Lightning bolt on car -->
+  <polygon points="99,126 92,140 98,140 89,158 106,142 99,142" fill="#C99700"/>
+
+  <!-- EV label -->
+  <text x="97" y="238" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#0C2340">Electric Vehicles</text>
+  <text x="97" y="254" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#334155">High-torque traction drives</text>
+  <text x="97" y="267" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#334155">Off-highway electrification</text>
+
+  <!-- ══════════════════════════════════════════
+       Panel 2 — Aviation  (x: 183–343)
+  ══════════════════════════════════════════ -->
+  <rect x="183" y="48" width="158" height="220" rx="10" fill="#FEF9EC" stroke="#C99700" stroke-width="2"/>
+
+  <!-- Airplane body -->
+  <ellipse cx="262" cy="155" rx="65" ry="20" fill="#C99700"/>
+  <!-- Nose -->
+  <path d="M327,155 Q345,155 352,158 Q345,162 327,160 Z" fill="#A07800"/>
+  <!-- Tail fin -->
+  <path d="M197,155 Q197,150 210,130 Q214,148 210,155 Z" fill="#A07800"/>
+  <!-- Horizontal stabilizers -->
+  <path d="M197,155 Q200,168 215,172 Q208,160 210,155 Z" fill="#A07800"/>
+  <!-- Main wings -->
+  <path d="M240,148 Q260,100 298,88 Q290,120 280,148 Z" fill="#E5B800"/>
+  <path d="M240,162 Q260,210 298,222 Q290,190 280,162 Z" fill="#E5B800"/>
+  <!-- Engine pods -->
+  <ellipse cx="278" cy="104" rx="14" ry="7" fill="#0C2340" opacity="0.8"/>
+  <ellipse cx="278" cy="206" rx="14" ry="7" fill="#0C2340" opacity="0.8"/>
+  <!-- Lightning bolts on engines -->
+  <polygon points="277,100 274,107 277,107 273,114 280,107 277,107" fill="#C99700"/>
+  <polygon points="277,202 274,209 277,209 273,216 280,209 277,209" fill="#C99700"/>
+
+  <!-- Aviation label -->
+  <text x="262" y="238" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#0C2340">Aviation</text>
+  <text x="262" y="254" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#334155">Hybrid-electric propulsion</text>
+  <text x="262" y="267" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#334155">Ultra-high-speed generators</text>
+
+  <!-- ══════════════════════════════════════════
+       Panel 3 — Industrial / Space  (x: 348–508)
+  ══════════════════════════════════════════ -->
+  <rect x="348" y="48" width="158" height="220" rx="10" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+
+  <!-- Industrial motor (cylinder) -->
+  <rect x="388" y="105" width="80" height="90" rx="6" fill="#059669" opacity="0.85"/>
+  <ellipse cx="428" cy="105" rx="40" ry="11" fill="#34D399" stroke="#065F46" stroke-width="1.5"/>
+  <ellipse cx="428" cy="195" rx="40" ry="11" fill="#047857" stroke="#065F46" stroke-width="1.5"/>
+  <!-- Shaft -->
+  <rect x="468" y="142" width="28" height="10" rx="3" fill="#065F46"/>
+  <!-- Gear on shaft -->
+  <circle cx="504" cy="147" r="12" fill="none" stroke="#065F46" stroke-width="3"/>
+  <circle cx="504" cy="147" r="5"  fill="#065F46"/>
+  <!-- Gear teeth (8 teeth) -->
+  <line x1="504" y1="133" x2="504" y2="128" stroke="#065F46" stroke-width="3"/>
+  <line x1="514" y1="137" x2="518" y2="133" stroke="#065F46" stroke-width="3"/>
+  <line x1="518" y1="147" x2="523" y2="147" stroke="#065F46" stroke-width="3"/>
+  <line x1="514" y1="157" x2="518" y2="161" stroke="#065F46" stroke-width="3"/>
+  <line x1="504" y1="161" x2="504" y2="166" stroke="#065F46" stroke-width="3"/>
+  <line x1="494" y1="157" x2="490" y2="161" stroke="#065F46" stroke-width="3"/>
+  <line x1="494" y1="137" x2="490" y2="133" stroke="#065F46" stroke-width="3"/>
+  <!-- Lightning bolt -->
+  <polygon points="425,125 418,143 424,143 415,168 432,148 425,148" fill="#C99700"/>
+
+  <!-- Industrial label -->
+  <text x="427" y="238" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#0C2340">Industrial &amp; Space</text>
+  <text x="427" y="254" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#334155">High-reliability drives</text>
+  <text x="427" y="267" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#334155">Space power conversion</text>
+</svg>

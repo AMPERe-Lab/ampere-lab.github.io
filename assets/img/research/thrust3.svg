@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 310">
+  <rect width="520" height="310" rx="12" fill="#F0F4F8"/>
+
+  <!-- ── Title ── -->
+  <text x="260" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#0C2340">Coupled Multi-Physics Design Loop</text>
+
+  <!-- ══════════════════════════════════════════
+       Four physics domain hexagons
+       Positions: TL(130,105) TR(360,105) BL(130,210) BR(360,210)
+  ══════════════════════════════════════════ -->
+
+  <!-- Helper: hexagon centered at (cx,cy) w=100 h=56 -->
+  <!-- Electromagnetic (TL) -->
+  <polygon points="80,105 105,62 175,62 200,105 175,148 105,148"
+           fill="#DBEAFE" stroke="#185FA5" stroke-width="2.5"/>
+  <text x="140" y="98"  text-anchor="middle" font-family="Arial,sans-serif" font-size="20">⚡</text>
+  <text x="140" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#185FA5">Electro-</text>
+  <text x="140" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#185FA5">magnetic</text>
+
+  <!-- Thermal (TR) -->
+  <polygon points="300,105 325,62 395,62 420,105 395,148 325,148"
+           fill="#FEE2E2" stroke="#DC2626" stroke-width="2.5"/>
+  <text x="360" y="98"  text-anchor="middle" font-family="Arial,sans-serif" font-size="20">🌡</text>
+  <text x="360" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#DC2626">Thermal</text>
+  <text x="360" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#DC2626"> </text>
+
+  <!-- Structural (BL) -->
+  <polygon points="80,215 105,172 175,172 200,215 175,258 105,258"
+           fill="#D1FAE5" stroke="#059669" stroke-width="2.5"/>
+  <text x="140" y="208" text-anchor="middle" font-family="Arial,sans-serif" font-size="20">🔩</text>
+  <text x="140" y="228" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#059669">Structural</text>
+  <text x="140" y="242" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#059669">/ Acoustic</text>
+
+  <!-- Fluid / Rotordynamic (BR) -->
+  <polygon points="300,215 325,172 395,172 420,215 395,258 325,258"
+           fill="#EDE9FE" stroke="#7C3AED" stroke-width="2.5"/>
+  <text x="360" y="208" text-anchor="middle" font-family="Arial,sans-serif" font-size="20">⚙️</text>
+  <text x="360" y="228" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#7C3AED">Rotordynamic</text>
+  <text x="360" y="242" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#7C3AED">/ Mechanical</text>
+
+  <!-- ══════════════════════════════════════════
+       Coupling arrows between domains
+  ══════════════════════════════════════════ -->
+  <defs>
+    <marker id="ah" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#64748B"/>
+    </marker>
+  </defs>
+  <!-- TL → TR (horizontal top) -->
+  <line x1="200" y1="100" x2="300" y2="100" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+  <line x1="300" y1="110" x2="200" y2="110" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+  <!-- BL → BR (horizontal bottom) -->
+  <line x1="200" y1="210" x2="300" y2="210" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+  <line x1="300" y1="220" x2="200" y2="220" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+  <!-- TL → BL (vertical left) -->
+  <line x1="100" y1="148" x2="100" y2="172" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+  <line x1="110" y1="172" x2="110" y2="148" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+  <!-- TR → BR (vertical right) -->
+  <line x1="390" y1="148" x2="390" y2="172" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+  <line x1="400" y1="172" x2="400" y2="148" stroke="#64748B" stroke-width="1.5" marker-end="url(#ah)"/>
+
+  <!-- ══════════════════════════════════════════
+       Central optimizer box
+  ══════════════════════════════════════════ -->
+  <rect x="216" y="145" width="88" height="30" rx="6" fill="#0C2340"/>
+  <text x="260" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#C99700">FEA Solver</text>
+  <text x="260" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.85)">+ AI / ML</text>
+
+  <!-- Diagonal coupling arrows to center -->
+  <line x1="196" y1="140" x2="218" y2="153" stroke="#C99700" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#ah)"/>
+  <line x1="300" y1="140" x2="301" y2="148" stroke="#C99700" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#ah)"/>
+  <line x1="196" y1="178" x2="218" y2="168" stroke="#C99700" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#ah)"/>
+  <line x1="300" y1="178" x2="301" y2="171" stroke="#C99700" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#ah)"/>
+
+  <!-- ══════════════════════════════════════════
+       Output label (right)
+  ══════════════════════════════════════════ -->
+  <line x1="304" y1="160" x2="430" y2="160" stroke="#C99700" stroke-width="2" stroke-dasharray="4,3"/>
+  <defs>
+    <marker id="ahG" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#C99700"/>
+    </marker>
+  </defs>
+  <line x1="304" y1="160" x2="430" y2="160" stroke="#C99700" stroke-width="2" marker-end="url(#ahG)"/>
+  <rect x="430" y="140" width="78" height="40" rx="6" fill="#C99700"/>
+  <text x="469" y="156" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#0C2340">Optimal</text>
+  <text x="469" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#0C2340">Design</text>
+
+  <!-- Topology optimization note -->
+  <text x="260" y="292" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#64748B">Topology optimization · High-throughput computing · Surrogate modeling</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 310">
+  <rect width="520" height="310" rx="12" fill="#F0F4F8"/>
+
+  <!-- ── Motor cross-section (center: 148, 155) ── -->
+  <!-- Stator back iron -->
+  <circle cx="148" cy="155" r="118" fill="#CBD5E1" stroke="#0C2340" stroke-width="3"/>
+  <!-- Stator bore -->
+  <circle cx="148" cy="155" r="90" fill="#F0F4F8" stroke="#0C2340" stroke-width="1.5"/>
+
+  <!-- Coil cross-sections: 8 positions at r=105, alternating phase colors -->
+  <!-- 0°  --> <circle cx="253" cy="155" r="10" fill="#185FA5" stroke="white" stroke-width="1.5"/>
+  <!-- 45° --> <circle cx="222" cy="229" r="10" fill="#C99700" stroke="white" stroke-width="1.5"/>
+  <!-- 90° --> <circle cx="148" cy="260" r="10" fill="#185FA5" stroke="white" stroke-width="1.5"/>
+  <!-- 135°--> <circle cx="74"  cy="229" r="10" fill="#C99700" stroke="white" stroke-width="1.5"/>
+  <!-- 180°--> <circle cx="43"  cy="155" r="10" fill="#185FA5" stroke="white" stroke-width="1.5"/>
+  <!-- 225°--> <circle cx="74"  cy="81"  r="10" fill="#C99700" stroke="white" stroke-width="1.5"/>
+  <!-- 270°--> <circle cx="148" cy="50"  r="10" fill="#185FA5" stroke="white" stroke-width="1.5"/>
+  <!-- 315°--> <circle cx="222" cy="81"  r="10" fill="#C99700" stroke="white" stroke-width="1.5"/>
+
+  <!-- Airgap (dashed) -->
+  <circle cx="148" cy="155" r="80" fill="none" stroke="#94A3B8" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- Rotor -->
+  <circle cx="148" cy="155" r="71" fill="#DBEAFE" stroke="#185FA5" stroke-width="2"/>
+  <!-- Rotor flux barriers -->
+  <ellipse cx="148" cy="155" rx="45" ry="22" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+  <ellipse cx="148" cy="155" rx="22" ry="45" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+  <!-- Shaft -->
+  <circle cx="148" cy="155" r="20" fill="#0C2340"/>
+
+  <!-- Legend -->
+  <circle cx="55"  cy="285" r="6" fill="#185FA5"/>
+  <text x="66"  y="289" font-family="Arial,sans-serif" font-size="11" fill="#334155">Phase A</text>
+  <circle cx="118" cy="285" r="6" fill="#C99700"/>
+  <text x="129" y="289" font-family="Arial,sans-serif" font-size="11" fill="#334155">Phase B</text>
+  <rect x="55" y="6" width="108" height="22" rx="11" fill="#C99700"/>
+  <text x="109" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#0C2340">Rare-Earth Free ✓</text>
+
+  <!-- ── Divider ── -->
+  <line x1="278" y1="18" x2="278" y2="292" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <!-- ── Harmonic wave display (right panel) ── -->
+  <text x="398" y="36" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#0C2340">Spatial Harmonic Fields</text>
+
+  <!-- H1 -->
+  <rect x="292" y="52" width="10" height="10" rx="2" fill="#185FA5"/>
+  <text x="308" y="62" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#185FA5">ν = 1  (Torque / Levitation)</text>
+  <path d="M292,88 Q330,62 368,88 Q406,114 444,88 Q476,68 508,88"
+        fill="none" stroke="#185FA5" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- H3 -->
+  <rect x="292" y="118" width="10" height="10" rx="2" fill="#C99700"/>
+  <text x="308" y="128" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#C99700">ν = 3  (Secondary Function)</text>
+  <path d="M292,152 Q309,130 325,152 Q342,174 358,152 Q375,130 392,152 Q408,174 425,152 Q441,130 458,152 Q474,174 491,152 Q504,134 508,152"
+        fill="none" stroke="#C99700" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- H5 -->
+  <rect x="292" y="182" width="10" height="10" rx="2" fill="#64748B"/>
+  <text x="308" y="192" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#64748B">ν = 5  (Optimization D.O.F.)</text>
+  <path d="M292,216 Q303,200 314,216 Q325,232 336,216 Q347,200 358,216 Q369,232 380,216 Q391,200 402,216 Q413,232 424,216 Q435,200 446,216 Q457,232 468,216 Q479,200 490,216 Q501,232 508,216"
+        fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Callout box -->
+  <rect x="290" y="246" width="218" height="46" rx="8" fill="#0C2340"/>
+  <text x="399" y="267" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#C99700">Independent Control</text>
+  <text x="399" y="283" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.82)">of each harmonic field</text>
+</svg>

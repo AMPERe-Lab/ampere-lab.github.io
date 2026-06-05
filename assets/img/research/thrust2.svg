@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 310">
+  <rect width="520" height="310" rx="12" fill="#F0F4F8"/>
+
+  <!-- ── Title ── -->
+  <text x="260" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#0C2340">Integrated Machine–Drive Co-Design</text>
+
+  <!-- ══════════════════════════════════════════
+       MACHINE block (left)  cx≈115
+  ══════════════════════════════════════════ -->
+  <!-- Cylinder body -->
+  <rect x="55" y="80" width="120" height="130" rx="6" fill="#DBEAFE" stroke="#185FA5" stroke-width="2"/>
+  <!-- Top ellipse cap -->
+  <ellipse cx="115" cy="80" rx="60" ry="16" fill="#E8EFF8" stroke="#185FA5" stroke-width="2"/>
+  <!-- Bottom ellipse cap -->
+  <ellipse cx="115" cy="210" rx="60" ry="16" fill="#CBD5E1" stroke="#185FA5" stroke-width="2"/>
+  <!-- Shaft extension right -->
+  <rect x="175" y="138" width="30" height="14" rx="3" fill="#0C2340"/>
+  <!-- Shaft extension left -->
+  <rect x="55" y="138" width="0" height="14" rx="3" fill="#0C2340"/>
+  <!-- Winding pattern hint (3 lines across cylinder) -->
+  <line x1="75"  y1="120" x2="155" y2="120" stroke="#185FA5" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.6"/>
+  <line x1="75"  y1="145" x2="155" y2="145" stroke="#185FA5" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.6"/>
+  <line x1="75"  y1="170" x2="155" y2="170" stroke="#185FA5" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.6"/>
+  <!-- Label -->
+  <text x="115" y="244" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#0C2340">Electric Machine</text>
+  <text x="115" y="259" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#64748B">Optimized Electromagnetics</text>
+
+  <!-- ══════════════════════════════════════════
+       CO-DESIGN arrow (center)
+  ══════════════════════════════════════════ -->
+  <!-- Arrow right -->
+  <path d="M210,140 L300,140" stroke="#C99700" stroke-width="3" marker-end="url(#arrowR)"/>
+  <!-- Arrow left -->
+  <path d="M300,152 L210,152" stroke="#C99700" stroke-width="3" marker-end="url(#arrowL)"/>
+  <defs>
+    <marker id="arrowR" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#C99700"/>
+    </marker>
+    <marker id="arrowL" markerWidth="8" markerHeight="8" refX="2" refY="3" orient="auto">
+      <path d="M8,0 L8,6 L0,3 z" fill="#C99700"/>
+    </marker>
+  </defs>
+  <rect x="213" y="116" width="84" height="22" rx="6" fill="#C99700"/>
+  <text x="255" y="131" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#0C2340">Co-Design</text>
+
+  <!-- ══════════════════════════════════════════
+       CONVERTER block (right)  cx≈400
+  ══════════════════════════════════════════ -->
+  <rect x="310" y="75" width="185" height="140" rx="8" fill="#FEF9EC" stroke="#C99700" stroke-width="2"/>
+  <!-- PCB-style grid hint -->
+  <rect x="318" y="83" width="169" height="124" rx="4" fill="#FFFBF0" stroke="#E5D080" stroke-width="1"/>
+  <!-- H-bridge transistor symbols (4 switches) -->
+  <!-- Top-left switch -->
+  <rect x="334" y="97" width="28" height="38" rx="4" fill="#C99700" opacity="0.85"/>
+  <text x="348" y="121" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="white">S₁</text>
+  <!-- Top-right switch -->
+  <rect x="435" y="97" width="28" height="38" rx="4" fill="#C99700" opacity="0.85"/>
+  <text x="449" y="121" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="white">S₂</text>
+  <!-- Bottom-left switch -->
+  <rect x="334" y="155" width="28" height="38" rx="4" fill="#185FA5" opacity="0.85"/>
+  <text x="348" y="179" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="white">S₃</text>
+  <!-- Bottom-right switch -->
+  <rect x="435" y="155" width="28" height="38" rx="4" fill="#185FA5" opacity="0.85"/>
+  <text x="449" y="179" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="white">S₄</text>
+  <!-- Bus bars -->
+  <line x1="334" y1="106" x2="435" y2="106" stroke="#0C2340" stroke-width="2"/>
+  <line x1="362" y1="106" x2="362" y2="155" stroke="#0C2340" stroke-width="1.5"/>
+  <line x1="449" y1="106" x2="449" y2="155" stroke="#0C2340" stroke-width="1.5"/>
+  <line x1="334" y1="193" x2="463" y2="193" stroke="#0C2340" stroke-width="2"/>
+  <!-- Capacitor symbol -->
+  <line x1="388" y1="90" x2="388" y2="100" stroke="#334155" stroke-width="2"/>
+  <line x1="381" y1="100" x2="395" y2="100" stroke="#334155" stroke-width="2.5"/>
+  <line x1="381" y1="104" x2="395" y2="104" stroke="#334155" stroke-width="2.5"/>
+  <line x1="388" y1="104" x2="388" y2="112" stroke="#334155" stroke-width="2"/>
+  <!-- Capacitor label -->
+  <text x="400" y="103" font-family="Arial,sans-serif" font-size="9" fill="#64748B">DC Bus</text>
+  <!-- Label -->
+  <text x="402" y="244" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#0C2340">Power Electronics</text>
+  <text x="402" y="259" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#64748B">Custom Converter Design</text>
+
+  <!-- ══════════════════════════════════════════
+       Power density highlight (bottom)
+  ══════════════════════════════════════════ -->
+  <text x="260" y="285" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#64748B">Goal:</text>
+  <rect x="290" y="272" width="190" height="24" rx="6" fill="#0C2340"/>
+  <text x="385" y="288" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#C99700">Orders-of-magnitude improvement in power density</text>
+</svg>
