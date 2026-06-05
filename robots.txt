@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://ngadiyar93.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://ampere-lab.github.io/sitemap.xml

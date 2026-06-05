@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "About",
+    id: "nav-home",
+    title: "Home",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
+        },{id: "nav-people",
+          title: "People",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/people/";
+          },
         },{id: "nav-projects",
           title: "Projects",
           description: "This page features some of my projects that can be publicly shared. The links point to YouTube videos of my presentation on these projects.",
@@ -25,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "This page lists most of my publications. For a current and comprehensive list, please visit my Google Scholar page.",
+          description: "Publications from the AMPERE Laboratory and Prof. Gadiyar&#39;s prior work. For a current and comprehensive list, visit our Google Scholar page.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -37,12 +44,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-teaching",
-          title: "Teaching",
-          description: "I am passionate about teaching and mentoring. This page lists the courses that I have taught / co-taught / assisted in teaching. I have also mentored several graduate and undergraduate students.",
+        },{id: "nav-news",
+          title: "News",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/teaching/";
+            window.location.href = "/news/";
+          },
+        },{id: "nav-join-us",
+          title: "Join Us",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/join/";
           },
         },{id: "nav-repositories",
           title: "Repositories",
@@ -50,6 +64,13 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
+          },
+        },{id: "nav-teaching",
+          title: "Teaching",
+          description: "Prof. Gadiyar is passionate about teaching and mentoring. This page lists courses taught at the University of Notre Dame and prior institutions.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
           },
         },{id: "news-nishanth-has-successfully-defended-his-ph-d-the-degree-will-be-conferred-at-uw-madison-s-may-2023-commencement-nishanth-will-be-continuing-as-a-post-doctoral-research-associate-with-prof-severson-at-wempec",
           title: 'Nishanth has successfully defended his Ph.D. The degree will be conferred at UW-Madison’s...',
@@ -140,7 +161,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%6E%69%73%68%61%6E%74%68@%69%65%65%65.%6F%72%67", "_blank");
+          window.open("mailto:%6E%67%61%64%69%79%61%72@%6E%64.%65%64%75", "_blank");
         },
       },{
         id: 'social-github',
