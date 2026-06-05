@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 title: Teaching
 description: Prof. Gadiyar is passionate about teaching and mentoring. This page lists courses taught at the University of Notre Dame and prior institutions.
-nav: true
+nav: false
 nav_order: 7
 ---
 
