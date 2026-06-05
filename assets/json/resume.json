@@ -1,0 +1,87 @@
+{
+  "basics": {
+    "name": "Nishanth (FNU Nishanth)",
+    "label": "Scientist",
+    "image": "",
+    "email": "nishanth [at] ieee [dot] org",
+    "url": "https://nishanth.work",
+    "summary": "Sustainable Electro-mechanical Syatems Researcher",
+    "location": {
+        "city": "Knoxville",
+      "countryCode": "US",
+      "region": "Tennessee"
+    },
+    "profiles": [
+      {
+        "network": "Google Scholar",
+        "username": "FNU Nishanth",
+        "url": "https://scholar.google.com/citations?user=CPd0z5gAAAAJ&hl=en"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Oak Ridge National Laboratory",
+	  "location": "Oak Ridge, TN, USA",
+      "position": "Distinguished Staff Fellow | Electric Machinery Design Researcher",
+      "url": "https://www.ornl.gov/staff-profile/fnu-nishanth",
+      "startDate": "2024-10-21",
+      "summary": "Conceptualize, propose, and lead research projects to develop rare-earth free sustainable electro-mechanical systems.",
+      "highlights": ["Awarded $700k in LDRD funding as Alvin M. Weinberg Fellow"]
+    }
+	
+	    {
+      "name": "General Electric Company (GE Research)",
+	  "location": "Niskayuna, NY, USA",
+      "position": "Research Engineer - Electric Machines",
+      "url": "https://www.geaerospace.com/company/research",
+      "startDate": "2023-08-21",
+	   "endDate": "2024-08-22",
+      "summary": "Conceptualize, propose, and lead research projects to develop electro-mechanical systems for aircraft electrification, lunar and spaceboard power; mentor junior staff and interns.",
+      "highlights": ["eFLITES - ARPA-E project, Lunar Power (NASA contract)"]
+    }
+	
+		    {
+      "name": "University of Wisconsin-Madison",
+	  "location": "Madison, WI, USA",
+      "position": "Research Associate (Post-doc)",
+      "url": "https://wempec.wisc.edu/",
+      "startDate": "2023-02-18",
+	   "endDate": "2023-08-10",
+      "summary": "Projects on off-highway vehicle electrification, multi-material additive manufacturing for rare-earth-free machines, and multi-harmonic electric machines; graduate student mentoring.",
+      "highlights": ["Development of the first multi-material solid SynR rotor"]
+    }
+	
+			    {
+      "name": "University of Wisconsin-Madison",
+	  "location": "Madison, WI, USA",
+      "position": "Graduate Assistant",
+      "url": "https://wempec.wisc.edu/",
+      "startDate": "2018-09-01",
+	   "endDate": "2023-02-18",
+      "summary": "Projects on off-highway vehicle electrification, additive manufacturing for rare-earth-free machines, and multi-harmonic electric machines; teaching ECE courses; graduate student mentoring.",
+      "highlights": ["Wisconsin Power Engineering Award in 2022"]
+    }
+	
+			    {
+      "name": "Mitsubishi Electric Research Laboratory",
+	  "location": "Cambridge, MA, USA",
+      "position": "Researcher",
+      "url": "https://merl.com/",
+      "startDate": "2023-06-01",
+	   "endDate": "2024-08-28",
+      "summary": "Developed techniques for the topology optimization of Electric Machines",
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Wisconsin-Madison",
+      "location": "Madison, USA",
+      "url": "https://www.wisc.edu/",
+      "area": "Electrical and Computer Engineering",
+      "studyType": "PhD",
+      "startDate": "2018-09-01",
+      "endDate": "2023-02-18",
+    }
+  ]
+}

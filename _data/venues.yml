@@ -1,0 +1,19 @@
+"IEEE-TIA":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=28
+  color: "#e47737"
+
+"IEEE-TEC":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=60
+  color: "#a0bc9f"
+
+"IEEE-ECCE":
+  url: https://www.ieee-ecce.org/
+  color: "#33c07d"
+
+  "IEEE-ITEC":
+  url: https://www.ieee-ecce.org/
+  color: "#009f36"
+
+  "IEEE-IEMDC":
+  url: https://www.ieee-ecce.org/
+  color: "#fbc247"
