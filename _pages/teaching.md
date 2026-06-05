@@ -2,38 +2,40 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: I am passionate about teaching and mentoring. This page lists the courses that I have taught / co-taught / assisted in teaching. I have also mentored several graduate and undergraduate students.
+description: Prof. Gadiyar is passionate about teaching and mentoring. This page lists courses taught at the University of Notre Dame and prior institutions.
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
-## At the GE Research center
-  - **Electric Machines A-course for Edison Engineers**
-    - An intermediate level course that teaches the fundamental principles behind rotating electric machines to Edison Engineers.
-    - Edison Engineers are early-career employees at GE Research that join with a Master's degree in a STEM field (not all are Electrical Engineers). 
-    - Responsibilities: preparing course materials, teaching the course, creating assessments, and grading.  
+## At the University of Notre Dame
 
+*Courses to be listed upon joining — Fall 2025.*
 
-## At the University of Wisconsin-Madison
-  - **ECE 713: Electromagnetic Design of AC Machines** (Videos from Prof. Severson available [here](https://www.youtube.com/watch?v=ooBoTrONwCE&list=PLOsHXWYsyqDUraHJP_uUDSjMLPFoJtz4q))
-    - A advanced graduate level WEMEPC course that teaches the electromagnetic design of rotating machines from first principles.
-    - Responsibilities: Mentoring students in an active learning class; Preparing in-class exercises, exams, homeworks and projects; Teaching class sessions on FEA analysis; Grading; Conducting office hours to clarify student queries. 
+---
 
-  - **ECE 412: Power Electronic Circuits** (Videos from Prof. Severson available [here](https://www.youtube.com/watch?v=ovhbvj1-Tw0&list=PLOsHXWYsyqDV_Ig93h55ZLheLviofCyw4))
-    - A graduate level WEMEPC Course
-    - Responsibilities: Mentoring students in an active learning class; Creating problem sets and preparing solutions to in-class exercises, exams, and homeworks; Grading exams; Conducting office hours to clarify student queries. 
+## Prior Teaching Experience
 
-  - **ECE 353: Introduction to Microprocessor Systems**
-    - An undergraduate laboratory
-    - Responsibilities: Mentoring students in the lab - programming the TI Tiva C series MCU using Kiel; Grading; Proctoring exams; Conducting office hours to clarify student queries. 
+### At the GE Research Center
+- **Electric Machines A-Course for Edison Engineers**
+  - An intermediate-level course teaching the fundamental principles behind rotating electric machines to Edison Engineers (early-career GE Research employees with Master's degrees in STEM fields).
+  - Responsibilities: preparing course materials, teaching the course, creating assessments, and grading.
 
-  - **ECE 210: Introductory Experience in ECE**
-    - Responsibilities: Teaching and mentoring freshmen in a basic electrical engineering lab. Skills taught include circuit connections, soldering, programming an MCU and interfacing with peripherals such as an LCD touch screen, joystick etc. 
+### At the University of Wisconsin-Madison
+- **ECE 713: Electromagnetic Design of AC Machines** ([course videos](https://www.youtube.com/watch?v=ooBoTrONwCE&list=PLOsHXWYsyqDUraHJP_uUDSjMLPFoJtz4q))
+  - An advanced graduate-level WEMPEC course on the electromagnetic design of rotating machines from first principles.
+  - Responsibilities: mentoring students in active learning sessions; preparing exercises, exams, homeworks, and projects; teaching FEA analysis sessions; grading; office hours.
 
+- **ECE 412: Power Electronic Circuits** ([course videos](https://www.youtube.com/watch?v=ovhbvj1-Tw0&list=PLOsHXWYsyqDV_Ig93h55ZLheLviofCyw4))
+  - A graduate-level WEMPEC course on power electronic circuits.
+  - Responsibilities: mentoring students; creating problem sets; grading exams; office hours.
 
-## At the Indian Institute of Technology-Madras
-  - **Data Structures and Algorithms**
-    - Responsibilities: Preparing solution sets to exams; Conducting office hours to clarify student queries; Grading.
+- **ECE 353: Introduction to Microprocessor Systems**
+  - An undergraduate laboratory course.
+  - Responsibilities: mentoring students in lab programming (TI Tiva C MCU using Keil); grading; proctoring; office hours.
 
-  - **Electric Machines Laboratory**
-    - Responsibilities: Supervising two groups (2-3 students in each group) in the electric machines laboratory; Viva-voce exams and grading for each experiement.
+- **ECE 210: Introductory Experience in ECE**
+  - Responsibilities: teaching and mentoring freshmen in a basic electrical engineering lab covering circuit connections, soldering, MCU programming, and peripheral interfacing.
+
+### At the Indian Institute of Technology Madras
+- **Data Structures and Algorithms** — Preparing solution sets, office hours, grading.
+- **Electric Machines Laboratory** — Supervising student groups in the machines lab; viva-voce exams and grading.
