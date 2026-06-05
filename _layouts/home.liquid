@@ -7,30 +7,44 @@ layout: default
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
 <style>
+  /* ── Break out of Bootstrap .container and al-folio max_width ── */
+  .container:has(.hp-wrap) {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Inner width guard: content stays readable on ultra-wide screens */
+  .hp-inner {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .hp-wrap { font-family: 'DM Sans', var(--font-body, sans-serif); }
 
   /* Hero */
   .hp-hero {
-    padding: 3.5rem 2rem 3rem;
+    padding: 4rem 3rem 3.5rem;
     border-bottom: 1px solid var(--color-border-tertiary);
   }
-  .hp-hero-inner { max-width: 720px; }
+  .hp-hero-inner { max-width: 820px; }
   .hp-eyebrow {
-    font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
-    color: var(--nd-gold, #C99700); margin-bottom: 1rem;
+    font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--nd-gold, #C99700); margin-bottom: 1.1rem;
   }
   .hp-hero h1 {
-    font-family: 'DM Serif Display', serif; font-size: 38px; line-height: 1.13;
-    color: var(--color-text-primary); margin-bottom: 1rem;
+    font-family: 'DM Serif Display', serif; font-size: 52px; line-height: 1.1;
+    color: var(--color-text-primary); margin-bottom: 1.25rem;
   }
   .hp-hero h1 em { color: #185FA5; font-style: italic; }
   .hp-hero-desc {
-    font-size: 16px; line-height: 1.75; color: var(--color-text-secondary);
-    max-width: 580px; margin-bottom: 2rem;
+    font-size: 18px; line-height: 1.8; color: var(--color-text-secondary);
+    max-width: 660px; margin-bottom: 2.25rem;
   }
-  .hp-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .hp-pills { display: flex; flex-wrap: wrap; gap: 10px; }
   .hp-pill {
-    font-size: 12px; padding: 5px 13px;
+    font-size: 13px; padding: 6px 15px;
     border: 0.5px solid var(--color-border-secondary);
     border-radius: 20px; color: var(--color-text-secondary);
     background: var(--color-background-secondary);
@@ -38,23 +52,23 @@ layout: default
 
   /* Generic section */
   .hp-section {
-    padding: 2.75rem 2rem;
+    padding: 3.25rem 3rem;
     border-bottom: 1px solid var(--color-border-tertiary);
   }
   .hp-section-label {
-    font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
-    color: var(--nd-gold, #C99700); margin-bottom: 0.6rem;
+    font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--nd-gold, #C99700); margin-bottom: 0.7rem;
   }
   .hp-section-title {
-    font-family: 'DM Serif Display', serif; font-size: 24px;
-    color: var(--color-text-primary); margin-bottom: 1.5rem;
+    font-family: 'DM Serif Display', serif; font-size: 30px;
+    color: var(--color-text-primary); margin-bottom: 1.75rem;
   }
 
   /* Research cards */
   .hp-research-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.1rem;
   }
   .hp-card {
     background: var(--color-background-primary);
@@ -68,9 +82,9 @@ layout: default
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 0.75rem;
   }
-  .hp-card-icon i { font-size: 20px; color: #185FA5; }
-  .hp-card h3 { font-size: 14px; font-weight: 500; margin-bottom: 0.35rem; color: var(--color-text-primary); }
-  .hp-card p  { font-size: 13px; line-height: 1.6; color: var(--color-text-secondary); }
+  .hp-card-icon i { font-size: 22px; color: #185FA5; }
+  .hp-card h3 { font-size: 16px; font-weight: 500; margin-bottom: 0.4rem; color: var(--color-text-primary); }
+  .hp-card p  { font-size: 15px; line-height: 1.65; color: var(--color-text-secondary); }
 
   /* News list */
   .hp-news-list { display: flex; flex-direction: column; }
@@ -81,13 +95,13 @@ layout: default
   }
   .hp-news-item:last-child { border-bottom: none; }
   .hp-news-date {
-    font-size: 12px; color: var(--color-text-tertiary);
-    min-width: 76px; padding-top: 2px; flex-shrink: 0;
+    font-size: 13px; color: var(--color-text-tertiary);
+    min-width: 82px; padding-top: 2px; flex-shrink: 0;
   }
-  .hp-news-body { font-size: 14px; line-height: 1.65; color: var(--color-text-secondary); }
+  .hp-news-body { font-size: 15px; line-height: 1.7; color: var(--color-text-secondary); }
   .hp-news-body strong { color: var(--color-text-primary); font-weight: 500; }
   .hp-news-more {
-    margin-top: 1rem; font-size: 13px;
+    margin-top: 1.1rem; font-size: 14px;
     color: #185FA5; text-decoration: none;
   }
   .hp-news-more:hover { text-decoration: underline; }
@@ -101,13 +115,13 @@ layout: default
     padding: 1.1rem 1.25rem;
   }
   .hp-pub-venue {
-    font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
-    color: #185FA5; margin-bottom: 0.35rem;
+    font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+    color: #185FA5; margin-bottom: 0.4rem;
   }
-  .hp-pub-title { font-size: 14px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.25rem; line-height: 1.45; }
-  .hp-pub-authors { font-size: 13px; color: var(--color-text-secondary); font-style: italic; }
+  .hp-pub-title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.3rem; line-height: 1.5; }
+  .hp-pub-authors { font-size: 14px; color: var(--color-text-secondary); font-style: italic; }
   .hp-pub-more {
-    margin-top: 1rem; font-size: 13px;
+    margin-top: 1.1rem; font-size: 14px;
     color: #185FA5; text-decoration: none;
   }
   .hp-pub-more:hover { text-decoration: underline; }
@@ -134,8 +148,8 @@ layout: default
     border: 1px solid var(--color-border-tertiary);
   }
   .hp-team-card.pi .hp-avatar { background: #E8EFF8; border-color: #185FA5; }
-  .hp-team-card h3 { font-size: 14px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.2rem; }
-  .hp-team-card p  { font-size: 12px; color: var(--color-text-secondary); }
+  .hp-team-card h3 { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.25rem; }
+  .hp-team-card p  { font-size: 13px; color: var(--color-text-secondary); }
   .hp-team-card.open {
     border-style: dashed; opacity: 0.6;
   }
@@ -149,12 +163,12 @@ layout: default
     gap: 1.5rem; flex-wrap: wrap;
   }
   .hp-join-box h3 {
-    font-family: 'DM Serif Display', serif; font-size: 22px;
-    color: #fff; margin-bottom: 0.4rem;
+    font-family: 'DM Serif Display', serif; font-size: 26px;
+    color: #fff; margin-bottom: 0.5rem;
   }
-  .hp-join-box p { font-size: 14px; color: rgba(255,255,255,0.72); max-width: 500px; }
+  .hp-join-box p { font-size: 15px; color: rgba(255,255,255,0.72); max-width: 560px; }
   .hp-join-btn {
-    font-size: 13px; font-weight: 600; padding: 10px 22px;
+    font-size: 14px; font-weight: 600; padding: 12px 24px;
     background: #C99700; color: #0C2340;
     border-radius: var(--border-radius-md, 6px);
     text-decoration: none; white-space: nowrap; flex-shrink: 0;
@@ -166,117 +180,129 @@ layout: default
 
   <!-- ── Hero ──────────────────────────────────────────── -->
   <section class="hp-hero">
-    <div class="hp-hero-inner">
-      <div class="hp-eyebrow">Electrical Engineering &middot; University of Notre Dame</div>
-      <h1>Advanced <em>Electric Machines</em><br>&amp; Power Electronics Research</h1>
-      <p class="hp-hero-desc">
-        We design, analyze, and control high-performance electric machines and power electronic drives —
-        advancing sustainable energy conversion for electric vehicles, aviation, and industrial systems.
-      </p>
-      <div class="hp-pills">
-        <span class="hp-pill">Electric Machines</span>
-        <span class="hp-pill">Power Electronics</span>
-        <span class="hp-pill">Physics-Based Control</span>
-        <span class="hp-pill">Multi-Harmonic Drives</span>
-        <span class="hp-pill">Additive Manufacturing</span>
-        <span class="hp-pill">AI-Assisted Design</span>
+    <div class="hp-inner">
+      <div class="hp-hero-inner">
+        <div class="hp-eyebrow">Electrical Engineering &middot; University of Notre Dame</div>
+        <h1>Advanced <em>Electric Machines</em><br>&amp; Power Electronics Research</h1>
+        <p class="hp-hero-desc">
+          We design, analyze, and control high-performance electric machines and power electronic drives —
+          advancing sustainable energy conversion for electric vehicles, aviation, and industrial systems.
+        </p>
+        <div class="hp-pills">
+          <span class="hp-pill">Electric Machines</span>
+          <span class="hp-pill">Power Electronics</span>
+          <span class="hp-pill">Physics-Based Control</span>
+          <span class="hp-pill">Multi-Harmonic Drives</span>
+          <span class="hp-pill">Additive Manufacturing</span>
+          <span class="hp-pill">AI-Assisted Design</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ── Research ──────────────────────────────────────── -->
   <section class="hp-section">
-    <div class="hp-section-label">Research Focus</div>
-    <div class="hp-section-title">What we work on</div>
-    <div class="hp-research-grid">
-      <div class="hp-card">
-        <div class="hp-card-icon"><i class="ti ti-rotate-clockwise" aria-hidden="true"></i></div>
-        <h3>Novel Machine Topologies</h3>
-        <p>Multi-harmonic and bearingless machines for high power density and rare-earth-free operation.</p>
+    <div class="hp-inner">
+      <div class="hp-section-label">Research Focus</div>
+      <div class="hp-section-title">What we work on</div>
+      <div class="hp-research-grid">
+        <div class="hp-card">
+          <div class="hp-card-icon"><i class="ti ti-rotate-clockwise" aria-hidden="true"></i></div>
+          <h3>Novel Machine Topologies</h3>
+          <p>Multi-harmonic and bearingless machines for high power density and rare-earth-free operation.</p>
+        </div>
+        <div class="hp-card">
+          <div class="hp-card-icon"><i class="ti ti-circuit-capacitor" aria-hidden="true"></i></div>
+          <h3>Power Electronic Drives</h3>
+          <p>Converter design co-optimized with machine electromagnetics for maximum system efficiency.</p>
+        </div>
+        <div class="hp-card">
+          <div class="hp-card-icon"><i class="ti ti-chart-line" aria-hidden="true"></i></div>
+          <h3>Physics-Based Control</h3>
+          <p>Model-driven control strategies that exploit machine physics for robust, high-bandwidth performance.</p>
+        </div>
+        <div class="hp-card">
+          <div class="hp-card-icon"><i class="ti ti-layers-subtract" aria-hidden="true"></i></div>
+          <h3>Additive Manufacturing</h3>
+          <p>3D-printed stators and multi-material rotors enabling geometries beyond lamination stacking.</p>
+        </div>
       </div>
-      <div class="hp-card">
-        <div class="hp-card-icon"><i class="ti ti-circuit-capacitor" aria-hidden="true"></i></div>
-        <h3>Power Electronic Drives</h3>
-        <p>Converter design co-optimized with machine electromagnetics for maximum system efficiency.</p>
-      </div>
-      <div class="hp-card">
-        <div class="hp-card-icon"><i class="ti ti-chart-line" aria-hidden="true"></i></div>
-        <h3>Physics-Based Control</h3>
-        <p>Model-driven control strategies that exploit machine physics for robust, high-bandwidth performance.</p>
-      </div>
-      <div class="hp-card">
-        <div class="hp-card-icon"><i class="ti ti-layers-subtract" aria-hidden="true"></i></div>
-        <h3>Additive Manufacturing</h3>
-        <p>3D-printed stators and multi-material rotors enabling geometries beyond lamination stacking.</p>
-      </div>
+      <p style="margin-top:1.25rem;"><a href="{{ '/research/' | relative_url }}" style="font-size:14px;color:#185FA5;text-decoration:none;">See all research areas →</a></p>
     </div>
-    <p style="margin-top:1.25rem;"><a href="{{ '/research/' | relative_url }}" style="font-size:13px;color:#185FA5;text-decoration:none;">See all research areas →</a></p>
   </section>
 
   <!-- ── News ──────────────────────────────────────────── -->
   {% if site.announcements.enabled %}
   <section class="hp-section">
-    <div class="hp-section-label">Latest News</div>
-    <div class="hp-section-title">Lab updates</div>
-    <div class="hp-news-list">
-      {% assign news_items = site.news | reverse %}
-      {% for item in news_items limit: 5 %}
-      <div class="hp-news-item">
-        <span class="hp-news-date">{{ item.date | date: "%b %Y" }}</span>
-        <div class="hp-news-body">
-          {% if item.inline %}
-            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-          {% else %}
-            <a href="{{ item.url | relative_url }}" style="color:inherit;text-decoration:none;font-weight:500;">{{ item.title }}</a>
-          {% endif %}
+    <div class="hp-inner">
+      <div class="hp-section-label">Latest News</div>
+      <div class="hp-section-title">Lab updates</div>
+      <div class="hp-news-list">
+        {% assign news_items = site.news | reverse %}
+        {% for item in news_items limit: 5 %}
+        <div class="hp-news-item">
+          <span class="hp-news-date">{{ item.date | date: "%b %Y" }}</span>
+          <div class="hp-news-body">
+            {% if item.inline %}
+              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {% else %}
+              <a href="{{ item.url | relative_url }}" style="color:inherit;text-decoration:none;font-weight:500;">{{ item.title }}</a>
+            {% endif %}
+          </div>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
+      <a class="hp-news-more" href="{{ '/news/' | relative_url }}">All news →</a>
     </div>
-    <a class="hp-news-more" href="{{ '/news/' | relative_url }}">All news →</a>
   </section>
   {% endif %}
 
   <!-- ── Selected Publications ─────────────────────────── -->
   <section class="hp-section">
-    <div class="hp-section-label">Selected Publications</div>
-    <div class="hp-section-title">Recent work</div>
-    {% include selected_papers.liquid %}
-    <a class="hp-pub-more" href="{{ '/publications/' | relative_url }}">All publications →</a>
+    <div class="hp-inner">
+      <div class="hp-section-label">Selected Publications</div>
+      <div class="hp-section-title">Recent work</div>
+      {% include selected_papers.liquid %}
+      <a class="hp-pub-more" href="{{ '/publications/' | relative_url }}">All publications →</a>
+    </div>
   </section>
 
   <!-- ── People ────────────────────────────────────────── -->
   <section class="hp-section">
-    <div class="hp-section-label">People</div>
-    <div class="hp-section-title">The team</div>
-    <div class="hp-team-grid">
-      <div class="hp-team-card pi">
-        <div class="hp-avatar">NG</div>
-        <h3>Nishanth Gadiyar</h3>
-        <p>Principal Investigator</p>
+    <div class="hp-inner">
+      <div class="hp-section-label">People</div>
+      <div class="hp-section-title">The team</div>
+      <div class="hp-team-grid">
+        <div class="hp-team-card pi">
+          <div class="hp-avatar">NG</div>
+          <h3>Nishanth Gadiyar</h3>
+          <p>Principal Investigator</p>
+        </div>
+        <div class="hp-team-card open">
+          <div class="hp-avatar" style="opacity:0.5;"><i class="ti ti-user-plus" style="font-size:22px;"></i></div>
+          <h3>PhD Student</h3>
+          <p>Recruiting Fall 2026</p>
+        </div>
+        <div class="hp-team-card open">
+          <div class="hp-avatar" style="opacity:0.5;"><i class="ti ti-user-plus" style="font-size:22px;"></i></div>
+          <h3>PhD Student</h3>
+          <p>Recruiting Fall 2026</p>
+        </div>
       </div>
-      <div class="hp-team-card open">
-        <div class="hp-avatar" style="opacity:0.5;"><i class="ti ti-user-plus" style="font-size:22px;"></i></div>
-        <h3>PhD Student</h3>
-        <p>Recruiting Fall 2026</p>
-      </div>
-      <div class="hp-team-card open">
-        <div class="hp-avatar" style="opacity:0.5;"><i class="ti ti-user-plus" style="font-size:22px;"></i></div>
-        <h3>PhD Student</h3>
-        <p>Recruiting Fall 2026</p>
-      </div>
+      <p style="margin-top:1.25rem;"><a href="{{ '/people/' | relative_url }}" style="font-size:14px;color:#185FA5;text-decoration:none;">Meet the full team →</a></p>
     </div>
-    <p style="margin-top:1.25rem;"><a href="{{ '/people/' | relative_url }}" style="font-size:13px;color:#185FA5;text-decoration:none;">Meet the full team →</a></p>
   </section>
 
   <!-- ── Join CTA ──────────────────────────────────────── -->
   <section class="hp-section" style="border-bottom:none;">
-    <div class="hp-join-box">
-      <div>
-        <h3>Join our lab</h3>
-        <p>We are recruiting PhD students and postdocs with backgrounds in electric machines, power electronics, or controls. Motivated undergrads at Notre Dame are also welcome.</p>
+    <div class="hp-inner">
+      <div class="hp-join-box">
+        <div>
+          <h3>Join our lab</h3>
+          <p>We are recruiting PhD students and postdocs with backgrounds in electric machines, power electronics, or controls. Motivated undergrads at Notre Dame are also welcome.</p>
+        </div>
+        <a class="hp-join-btn" href="{{ '/join/' | relative_url }}">Get in touch ↗</a>
       </div>
-      <a class="hp-join-btn" href="{{ '/join/' | relative_url }}">Get in touch ↗</a>
     </div>
   </section>
 
