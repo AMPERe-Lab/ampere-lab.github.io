@@ -99,7 +99,7 @@ nav_order: 2
 <!-- ── Thrust 1 ─────────────────────────────────────── -->
 <div class="rp-thrust">
   <div class="rp-graphic">
-    <img src="{{ '/assets/img/research/thrust1.svg' | relative_url }}"
+    <img src="{{ '/assets/img/research/Thrust1.png' | relative_url }}"
          alt="Multi-harmonic electric machine showing spatial harmonic field control">
   </div>
   <div class="rp-content">
@@ -120,7 +120,7 @@ nav_order: 2
 <!-- ── Thrust 2 ─────────────────────────────────────── -->
 <div class="rp-thrust reverse">
   <div class="rp-graphic">
-    <img src="{{ '/assets/img/research/thrust2.svg' | relative_url }}"
+    <img src="{{ '/assets/img/research/Thrust2.png' | relative_url }}"
          alt="Integrated machine and power electronics co-design diagram">
   </div>
   <div class="rp-content">
@@ -141,7 +141,7 @@ nav_order: 2
 <!-- ── Thrust 3 ─────────────────────────────────────── -->
 <div class="rp-thrust">
   <div class="rp-graphic">
-    <img src="{{ '/assets/img/research/thrust3.svg' | relative_url }}"
+    <img src="{{ '/assets/img/research/Thrust3.png' | relative_url }}"
          alt="Multi-physics modeling loop connecting electromagnetic, thermal, structural, and rotordynamic domains">
   </div>
   <div class="rp-content">
@@ -162,7 +162,7 @@ nav_order: 2
 <!-- ── Thrust 4 ─────────────────────────────────────── -->
 <div class="rp-thrust reverse">
   <div class="rp-graphic">
-    <img src="{{ '/assets/img/research/thrust4.svg' | relative_url }}"
+    <img src="{{ '/assets/img/research/Thrust4.png' | relative_url }}"
          alt="Model-predictive control block diagram for electric machines">
   </div>
   <div class="rp-content">
@@ -183,7 +183,7 @@ nav_order: 2
 <!-- ── Thrust 5 ─────────────────────────────────────── -->
 <div class="rp-thrust">
   <div class="rp-graphic">
-    <img src="{{ '/assets/img/research/thrust5.svg' | relative_url }}"
+    <img src="{{ '/assets/img/research/Thrust5.png' | relative_url }}"
          alt="Electrification applications: electric vehicles, aviation, and industrial systems">
   </div>
   <div class="rp-content">
