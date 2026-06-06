@@ -1,126 +1,134 @@
 ---
-layout: default
+# Self-contained layout — does NOT extend default.
+# Uses a fluid container so content reaches the same 1280px width as the home page.
 ---
-{% if page._styles %}
-  <style type="text/css">
-    {{ page._styles }}
-  </style>
-{% endif %}
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include head.liquid %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+      /* ── Page shell: matches home page 1280px inner width ── */
+      .ap-wrap {
+        font-family: 'DM Sans', var(--font-body, sans-serif);
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3rem 3rem 4rem;
+      }
+      @media (max-width: 768px) {
+        .ap-wrap { padding: 2rem 1.25rem 3rem; }
+      }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+      /* ── Page title ── */
+      .ap-wrap .post-title,
+      .ap-wrap h1 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 48px;
+        line-height: 1.15;
+        color: var(--color-text-primary);
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+      }
+      .ap-wrap .post-description {
+        font-size: 20px;
+        line-height: 1.7;
+        color: var(--color-text-secondary);
+        margin-bottom: 2.5rem;
+      }
 
-<style>
-  /* ── Break out of Bootstrap .container / al-folio max_width ── */
-  .container:has(.ap-wrap) {
-    max-width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
+      /* ── Section headings ── */
+      .ap-wrap h2 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 35px;
+        font-weight: 400;
+        color: var(--color-text-primary);
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      .ap-wrap h3 {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--color-text-primary);
+        margin-top: 1.75rem;
+        margin-bottom: 0.75rem;
+      }
+      .ap-wrap h4 {
+        font-size: 21px;
+        font-weight: 600;
+        color: var(--color-text-primary);
+        margin-bottom: 0.4rem;
+      }
 
-  /* ── Page shell ── */
-  .ap-wrap {
-    font-family: 'DM Sans', var(--font-body, sans-serif);
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3rem 3rem 4rem;
-  }
-  @media (max-width: 768px) {
-    .ap-wrap { padding: 2rem 1.25rem 3rem; }
-  }
+      /* ── Body text ── */
+      .ap-wrap p,
+      .ap-wrap li {
+        font-size: 20px;
+        line-height: 1.75;
+        color: var(--color-text-secondary);
+      }
+      .ap-wrap strong { color: var(--color-text-primary); font-weight: 600; }
+      .ap-wrap a { color: #185FA5; }
 
-  /* ── Page title ── */
-  .ap-wrap .post-title,
-  .ap-wrap h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 48px;
-    line-height: 1.15;
-    color: var(--color-text-primary);
-    margin-bottom: 0.5rem;
-    font-weight: 400;
-  }
-  .ap-wrap .post-description {
-    font-size: 20px;
-    line-height: 1.7;
-    color: var(--color-text-secondary);
-    margin-bottom: 2.5rem;
-  }
+      /* ── Divider ── */
+      .ap-wrap hr {
+        border: none;
+        border-top: 1px solid var(--color-border-tertiary);
+        margin: 2.5rem 0;
+      }
 
-  /* ── Section headings ── */
-  .ap-wrap h2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 35px;
-    font-weight: 400;
-    color: var(--color-text-primary);
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  .ap-wrap h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--color-text-primary);
-    margin-top: 1.75rem;
-    margin-bottom: 0.75rem;
-  }
-  .ap-wrap h4 {
-    font-size: 21px;
-    font-weight: 600;
-    color: var(--color-text-primary);
-    margin-bottom: 0.4rem;
-  }
-
-  /* ── Body text ── */
-  .ap-wrap p,
-  .ap-wrap li {
-    font-size: 20px;
-    line-height: 1.75;
-    color: var(--color-text-secondary);
-  }
-  .ap-wrap strong { color: var(--color-text-primary); font-weight: 600; }
-  .ap-wrap a { color: #185FA5; }
-
-  /* ── Divider ── */
-  .ap-wrap hr {
-    border: none;
-    border-top: 1px solid var(--color-border-tertiary);
-    margin: 2.5rem 0;
-  }
-
-  /* ── Publications bib entries ── */
-  .ap-wrap .publications .abbr { font-size: 13px; }
-  .ap-wrap .publications .title { font-size: 20px; font-weight: 500; }
-  .ap-wrap .publications .author { font-size: 19px; }
-  .ap-wrap .publications .periodical { font-size: 19px; }
-  .ap-wrap .publications .year { font-size: 18px; }
-  .ap-wrap .publications p { font-size: 19px; }
-  .ap-wrap .publications .btn { font-size: 14px; }
-  .ap-wrap #bib-search-input { font-size: 18px; }
-</style>
-
-<div class="ap-wrap">
-  <div class="post-header">
-    {% if page.title %}
-    <h1 class="post-title">{{ page.title }}</h1>
+      /* ── Publications bib entries ── */
+      .ap-wrap .publications .abbr { font-size: 13px; }
+      .ap-wrap .publications .title { font-size: 20px; font-weight: 500; }
+      .ap-wrap .publications .author { font-size: 19px; }
+      .ap-wrap .publications .periodical { font-size: 19px; }
+      .ap-wrap .publications .year { font-size: 18px; }
+      .ap-wrap .publications p { font-size: 19px; }
+      .ap-wrap .publications .btn { font-size: 14px; }
+      .ap-wrap #bib-search-input { font-size: 18px; }
+    </style>
+    {% if page._styles %}
+    <style type="text/css">{{ page._styles }}</style>
     {% endif %}
-    {% if page.description and page.description != "" %}
-    <p class="post-description">{{ page.description }}</p>
-    {% endif %}
-  </div>
+  </head>
 
-  <article>
-    {{ content }}
-  </article>
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    {% include header.liquid %}
 
-  {% if page.related_publications %}
-    <h2>References</h2>
-    <div class="publications">
-      {% bibliography --cited_in_order %}
+    <!-- Full-width fluid container — no max_width restriction -->
+    <div class="container-fluid mt-5 p-0" role="main">
+      <div class="ap-wrap">
+
+        <div class="post-header">
+          {% if page.title %}
+          <h1 class="post-title">{{ page.title }}</h1>
+          {% endif %}
+          {% if page.description and page.description != "" %}
+          <p class="post-description">{{ page.description }}</p>
+          {% endif %}
+        </div>
+
+        <article>
+          {{ content }}
+        </article>
+
+        {% if page.related_publications %}
+          <h2>References</h2>
+          <div class="publications">
+            {% bibliography --cited_in_order %}
+          </div>
+        {% endif %}
+
+        {% if site.giscus and page.giscus_comments %}
+          {% include giscus.liquid %}
+        {% endif %}
+
+      </div>
     </div>
-  {% endif %}
 
-  {% if site.giscus and page.giscus_comments %}
-    {% include giscus.liquid %}
-  {% endif %}
-</div>
+    {% include footer.liquid %}
+    {% include scripts.liquid %}
+  </body>
+</html>
