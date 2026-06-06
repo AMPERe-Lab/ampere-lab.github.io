@@ -13,9 +13,9 @@ We are always looking to recruit motivated and passionate members to join our te
 
 ---
 
-## PhD Students
+## Graduate Students
 
-We have **openings for multiple graduate (MS / PhD) students** starting **Fall 2026** and later.
+We have **openings for multiple graduate students (MS / PhD)** starting **Fall 2026** and later.
 
 **We are looking for students with:**
 - A completed B.S. or M.S. in Electrical Engineering, Mechanical Engineering, or a closely related field.
