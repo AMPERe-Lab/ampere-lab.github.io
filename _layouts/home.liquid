@@ -29,14 +29,9 @@ layout: default
     border-bottom: 1px solid var(--color-border-tertiary);
   }
   .hp-hero-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: start;
-  }
-  @media (max-width: 768px) {
-    .hp-hero-layout { grid-template-columns: 1fr; }
-    .hp-hero-image { display: none; }
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
   }
   .hp-hero-image img {
     width: 100%;
