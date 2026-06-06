@@ -90,10 +90,10 @@ nav_order: 2
 
 <div class="rp-vision">
   <p>
-    As the world accelerates toward an electrified and sustainable future, the demand for next-generation electro-mechanical systems has never been greater. These systems must be energy-efficient, compact, reliable, and free from critical rare-earth materials.
+    The electrification of transportation, aerospace, and industry demands electric machines and energy conversion systems that are more powerful, more efficient, and more sustainable than anything that exists today. Meeting this challenge requires rethinking the machine, the drive, and the control — together, from first principles.
   </p>
   <p>
-    At AMPERE, we address these challenges through a <strong>holistic, multi-physics approach</strong> — working at the intersection of electric machines, power electronics, and physics-based control. Our five research thrusts are tightly interconnected, enabling us to achieve improvements by orders of magnitude over the state of the art.
+    At AMPERE, our research spans <strong>five tightly interconnected thrusts</strong> — from unconventional machine architectures and advanced materials to integrated power electronics, AI-accelerated design, and physics-informed autonomy — all aimed at achieving step-change improvements over the state of the art.
   </p>
 </div>
 
@@ -101,19 +101,19 @@ nav_order: 2
 <div class="rp-thrust">
   <div class="rp-graphic">
     <img src="{{ '/assets/img/research/Thrust1.png' | relative_url }}"
-         alt="Multi-harmonic electric machine showing spatial harmonic field control">
+         alt="Advanced electric machine design showing multi-harmonic, axial flux, transverse flux, and magnetically geared topologies">
   </div>
   <div class="rp-content">
     <span class="rp-number">Research Thrust 01</span>
-    <div class="rp-title">Rare-Earth-Free Multi-Harmonic Electric Machines</div>
+    <div class="rp-title">Advanced Electric Machine Design</div>
     <p class="rp-desc">
-      We exploit spatial harmonics as additional degrees of freedom in machine design, enabling high torque density and multifunctional operation without rare-earth permanent magnets. By independently controlling multiple harmonic field components in the airgap, we unlock capabilities that conventional single-harmonic machines cannot achieve.
+      We develop unconventional electromagnetic machine topologies that transcend the limitations of traditional radial-flux machines. By exploiting multiple spatial harmonics for torque, force, and levitation — and by exploring axial-flux, transverse-flux, and magnetically geared architectures — we achieve higher performance with fewer or no rare-earth materials.
     </p>
     <ul class="rp-highlights">
-      <li>Multi-harmonic winding design for independent torque and levitation control</li>
-      <li>Brushless electrically-excited machines using harmonic injection</li>
-      <li>AI/ML-guided topology discovery for rare-earth-free rotors</li>
-      <li>High-throughput FEA for multi-objective performance optimization</li>
+      <li>Multi-harmonic machines with independent torque, force, and levitation control</li>
+      <li>Axial-flux machines for high torque density and short axial length</li>
+      <li>Magnetically geared machines combining gears and electromagnetics</li>
+      <li>Rare-earth-free and reduced-rare-earth machine designs</li>
     </ul>
   </div>
 </div>
@@ -122,19 +122,19 @@ nav_order: 2
 <div class="rp-thrust reverse">
   <div class="rp-graphic">
     <img src="{{ '/assets/img/research/Thrust2.png' | relative_url }}"
-         alt="Integrated machine and power electronics co-design diagram">
+         alt="Advanced materials, topology optimization, and additive manufacturing for electric machines">
   </div>
   <div class="rp-content">
     <span class="rp-number">Research Thrust 02</span>
-    <div class="rp-title">High-Power-Density Machine and Drive Systems</div>
+    <div class="rp-title">Materials, Manufacturing, and Topology Optimization</div>
     <p class="rp-desc">
-      We co-design electric machines and their power electronic drives as tightly integrated systems, rather than optimizing each in isolation. This systems-level approach unlocks dramatic improvements in power density, efficiency, and reliability that are impossible when machine and converter are designed separately.
+      We advance the materials and manufacturing techniques that make next-generation electrified systems possible. From AI-guided topology optimization and soft magnetic composites to additive manufacturing and multi-material structures, we push the boundaries of what can be built — enabling complex 3D flux paths, lightweight structures, and sustainable production.
     </p>
     <ul class="rp-highlights">
-      <li>Machine–converter co-optimization for maximum power-per-volume</li>
-      <li>Custom converter topologies tailored to machine characteristics</li>
-      <li>Additive manufactured stators and multi-material rotors</li>
-      <li>Thermal co-design for compact, high-performance packaging</li>
+      <li>AI-guided topology optimization for machine geometry and material layout</li>
+      <li>Advanced magnetic materials: high-silicon steel and soft magnetic composites</li>
+      <li>Additive manufactured stators with complex geometries</li>
+      <li>Multi-material rotor structures for higher power density</li>
     </ul>
   </div>
 </div>
@@ -143,19 +143,19 @@ nav_order: 2
 <div class="rp-thrust">
   <div class="rp-graphic">
     <img src="{{ '/assets/img/research/Thrust3.png' | relative_url }}"
-         alt="Multi-physics modeling loop connecting electromagnetic, thermal, structural, and rotordynamic domains">
+         alt="Power electronics and integrated energy conversion system combining machine, converter, and thermal management">
   </div>
   <div class="rp-content">
     <span class="rp-number">Research Thrust 03</span>
-    <div class="rp-title">Multi-Physics Modeling and Optimization</div>
+    <div class="rp-title">Power Electronics and Integrated Energy Conversion</div>
     <p class="rp-desc">
-      Accurate prediction of machine behavior requires tightly coupled electromagnetic, thermal, structural, and rotordynamic models. We develop and apply advanced multi-physics frameworks that expose critical cross-domain interactions — then drive them with AI/ML-assisted optimizers to navigate large design spaces efficiently.
+      We design electric machines, power electronics, and mechanical loads as a single integrated energy conversion system rather than separate components. This approach — including novel hydraulic integration concepts — eliminates redundant components, increases power density, reduces thermal management requirements, and improves overall system reliability and cost.
     </p>
     <ul class="rp-highlights">
-      <li>Coupled FEA across EM, thermal, structural, and acoustic domains</li>
-      <li>Topology optimization for machine geometry and material layout</li>
-      <li>Surrogate modeling and neural networks for fast design space exploration</li>
-      <li>Open-source tools (eMach framework) for the broader community</li>
+      <li>Machine–converter co-design for maximum system power density</li>
+      <li>Hydraulic integration to eliminate redundant mechanical components</li>
+      <li>Thermal co-design for compact, high-performance packaging</li>
+      <li>Reduced rare-earth material requirements through systems-level optimization</li>
     </ul>
   </div>
 </div>
@@ -164,19 +164,19 @@ nav_order: 2
 <div class="rp-thrust reverse">
   <div class="rp-graphic">
     <img src="{{ '/assets/img/research/Thrust4.png' | relative_url }}"
-         alt="Model-predictive control block diagram for electric machines">
+         alt="Multi-physics modeling and AI-accelerated design framework for electric machines">
   </div>
   <div class="rp-content">
     <span class="rp-number">Research Thrust 04</span>
-    <div class="rp-title">Physics-Based and Model-Predictive Control</div>
+    <div class="rp-title">Multi-Physics Modeling and AI-Accelerated Design</div>
     <p class="rp-desc">
-      We develop control strategies that are grounded in physical models of the machine and drive system. By embedding electromagnetic and thermal knowledge directly into the controller, we achieve high-bandwidth performance, fault tolerance, and wide operating range — without relying on expensive sensors or offline calibration.
+      Designing next-generation machines requires accurate, coupled models spanning electromagnetic, thermal, structural, and fluid domains — and the ability to search vast design spaces rapidly. We combine high-fidelity multi-physics simulation with AI/ML surrogate models, optimization algorithms, and closed-loop design frameworks to reach optimal designs faster and with greater confidence.
     </p>
     <ul class="rp-highlights">
-      <li>Model-predictive control (MPC) with real-time physics prediction</li>
-      <li>Sensorless and observer-based state estimation</li>
-      <li>Harmonic current injection for multi-function machine control</li>
-      <li>Fault-tolerant operation under winding and converter faults</li>
+      <li>Coupled FEA across electromagnetic, thermal, structural, and fluid domains</li>
+      <li>Surrogate modeling and neural networks for rapid design space exploration</li>
+      <li>AI/ML-accelerated optimization (SA/BO) with uncertainty quantification</li>
+      <li>Closed-loop design framework from problem definition to validated prototype</li>
     </ul>
   </div>
 </div>
@@ -185,19 +185,19 @@ nav_order: 2
 <div class="rp-thrust">
   <div class="rp-graphic">
     <img src="{{ '/assets/img/research/Thrust5.png' | relative_url }}"
-         alt="Electrification applications: electric vehicles, aviation, and industrial systems">
+         alt="Physics-informed control, diagnostics, and autonomy for electrical machines and energy systems">
   </div>
   <div class="rp-content">
     <span class="rp-number">Research Thrust 05</span>
-    <div class="rp-title">Electrification of Transportation, Aerospace, and Industry</div>
+    <div class="rp-title">Physics-Informed Control, Diagnostics, and Autonomy</div>
     <p class="rp-desc">
-      We apply our machine and drive research to real-world electrification challenges across transportation, aviation, and industrial systems. These applications drive demanding requirements — high power density, extreme reliability, wide temperature range — that push the boundaries of what is possible and motivate fundamental advances across our other research thrusts.
+      We close the loop between physics, data, and intelligence to create resilient, self-aware electric drive systems. By embedding physical models directly into state estimators, controllers, and diagnostic algorithms — and by fusing multi-modal sensor data — we enable autonomous adaptation, early fault detection, and reliable operation across the full life of the machine.
     </p>
     <ul class="rp-highlights">
-      <li>High-torque traction drives for electric and off-highway vehicles</li>
-      <li>Hybrid-electric aircraft propulsion and ultra-high-speed turbo-generators</li>
-      <li>High-reliability drives for freight and industrial automation</li>
-      <li>Space power conversion systems for NASA missions</li>
+      <li>Physics-informed state estimation and observer design</li>
+      <li>Diagnostics and prognostics for early fault detection and prediction</li>
+      <li>Autonomy and adaptation for self-tuning, reconfiguration, and fault tolerance</li>
+      <li>Multi-modal sensing: voltage, current, vibration, temperature, magnetic flux</li>
     </ul>
   </div>
 </div>
