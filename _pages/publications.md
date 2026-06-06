@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: ampere-page
 permalink: /publications/
 title: Publications
 description: Publications from the AMPERE Laboratory and Prof. Gadiyar's prior work. For a current and comprehensive list, visit our Google Scholar page.

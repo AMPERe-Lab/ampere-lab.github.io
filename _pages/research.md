@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: ampere-page
 permalink: /research/
 title: Research
 nav: true
@@ -8,9 +8,9 @@ nav_order: 2
 
 <style>
   .rp-vision {
-    max-width: 780px;
+    max-width: 900px;
     margin: 0 auto 3rem;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.8;
     color: var(--color-text-secondary);
   }
@@ -43,7 +43,7 @@ nav_order: 2
 
   .rp-number {
     display: inline-block;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -51,14 +51,15 @@ nav_order: 2
     margin-bottom: 0.5rem;
   }
   .rp-title {
-    font-size: 22px;
-    font-weight: 700;
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    font-weight: 400;
     color: var(--color-text-primary);
     margin-bottom: 1rem;
     line-height: 1.25;
   }
   .rp-desc {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.75;
     color: var(--color-text-secondary);
     margin-bottom: 1.25rem;
@@ -72,7 +73,7 @@ nav_order: 2
     gap: 0.5rem;
   }
   .rp-highlights li {
-    font-size: 14px;
+    font-size: 19px;
     line-height: 1.6;
     color: var(--color-text-secondary);
     padding-left: 1.1rem;

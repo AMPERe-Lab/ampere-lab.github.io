@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: ampere-page
 permalink: /join/
 title: Join Us
 description:
