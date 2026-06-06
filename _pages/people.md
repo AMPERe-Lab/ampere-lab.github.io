@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 ---
 
-## Principal Investigator
+## Group Leader
 
 <div class="row mt-3">
   <div class="col-sm-3 text-center">
@@ -25,8 +25,8 @@ nav_order: 3
       [Nishanth's personal webpage](https://ngadiyar93.github.io)
     </p>
     <p>
-      Dr. Gadiyar received his Ph.D. in Electrical Engineering from the University of Wisconsin-Madison in 2023. Prior to joining Notre Dame, he was an R&D Staff Member and held the Alvin M. Weinberg [Distinguished Staff Fellowship]() at the Oak Ridge National Laboratory (2024-2026), and worked in the industry at the GE Aerospace Research Center (2023-2024), and the Mitsubishi Electric Research Laboratories (2021).
-      He is a Senior Member of the IEEE and serves as an Associate Editor of the IEEE Transactions on Industry Applications, and the IEEE Transactions on Transportation Electrification. For more about me, please visit my personal webpage.
+      Dr. Gadiyar received his Ph.D. in Electrical Engineering from the University of Wisconsin-Madison in 2023. Prior to joining Notre Dame, he was an R&D Staff Member and held the Alvin M. Weinberg [Distinguished Staff Fellowship](https://www.ornl.gov/careers/distinguished-fellowships) at the Oak Ridge National Laboratory (2024-2026), and worked in the industry at the GE Aerospace Research Center (2023-2024), and the Mitsubishi Electric Research Laboratories (2021).
+      He is a Senior Member of the IEEE and since 2025, serves as an Associate Editor of the IEEE Transactions on Industry Applications, and the IEEE Transactions on Transportation Electrification.
     </p>
   </div>
 </div>
