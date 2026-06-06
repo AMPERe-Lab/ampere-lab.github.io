@@ -8,8 +8,7 @@ nav_order: 2
 
 <style>
   .rp-vision {
-    max-width: 900px;
-    margin: 0 auto 3rem;
+    margin: 0 0 3rem;
     font-size: 20px;
     line-height: 1.8;
     color: var(--color-text-secondary);
