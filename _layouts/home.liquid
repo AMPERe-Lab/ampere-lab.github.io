@@ -32,7 +32,7 @@ layout: default
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    align-items: center;
+    align-items: start;
   }
   @media (max-width: 768px) {
     .hp-hero-layout { grid-template-columns: 1fr; }
@@ -40,8 +40,8 @@ layout: default
   }
   .hp-hero-image img {
     width: 100%;
-    max-height: 380px;
-    object-fit: cover;
+    height: auto;
+    display: block;
     border-radius: var(--border-radius-lg, 8px);
     border: 0.5px solid var(--color-border-tertiary);
   }
