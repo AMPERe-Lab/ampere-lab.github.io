@@ -143,7 +143,7 @@ nav_order: 2
     <img class="rp-slide active" src="/assets/img/research-slideshow/1.jpg" alt="">
     <img class="rp-slide" src="/assets/img/research-slideshow/2.jpg" alt="">
     <img class="rp-slide" src="/assets/img/research-slideshow/3.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/4.png" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/4.jpg" alt="">
     <img class="rp-slide" src="/assets/img/research-slideshow/5.jpg" alt="">
     <img class="rp-slide" src="/assets/img/research-slideshow/6.jpg" alt="">
     <img class="rp-slide" src="/assets/img/research-slideshow/7.jpg" alt="">
