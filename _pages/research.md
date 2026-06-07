@@ -178,6 +178,90 @@ nav_order: 2
   </div>
 </div>
 
+<!-- ── Research photo slideshow ── -->
+<div class="rp-block" style="border-top: none; padding-top: 0;">
+  <div class="rp-slideshow" id="rp-slideshow">
+    <img class="rp-slide active" src="/assets/img/research-slideshow/1.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/2.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/3.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/4.png" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/5.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/6.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/7.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/8.png" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/9.png" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/11.png" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/12.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/13.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/14.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/15.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/16.jpg" alt="">
+
+    <div class="rp-slideshow-dots">
+      <span class="rp-dot active"></span><span class="rp-dot"></span><span class="rp-dot"></span>
+      <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
+      <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
+      <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
+      <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .rp-slideshow {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #0C2340;
+  }
+  .rp-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  .rp-slide.active { opacity: 1; }
+  .rp-slideshow-dots {
+    position: absolute;
+    bottom: 16px;
+    left: 0; right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    z-index: 2;
+  }
+  .rp-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: rgba(255,255,255,0.4);
+    transition: background 0.25s ease, transform 0.25s ease;
+  }
+  .rp-dot.active {
+    background: #C99700;
+    transform: scale(1.3);
+  }
+</style>
+
+<script>
+  (function () {
+    var slides = document.querySelectorAll('#rp-slideshow .rp-slide');
+    var dots = document.querySelectorAll('#rp-slideshow .rp-dot');
+    var current = 0;
+    if (!slides.length) return;
+    setInterval(function () {
+      slides[current].classList.remove('active');
+      if (dots[current]) dots[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+      if (dots[current]) dots[current].classList.add('active');
+    }, 4000);
+  })();
+</script>
+
 <!-- ── How We Work / process ── -->
 <div class="rp-block">
   <div class="rp-process-box">
