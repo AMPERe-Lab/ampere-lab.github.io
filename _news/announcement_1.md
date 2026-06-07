@@ -1,12 +1,11 @@
 ---
 layout: post
-title: New LDRD funding (~US$ 700k) to develop sustainable multi-harmonic electric machines.
-date: 2025-01-05
+title: Gadiyar elected General co-Chair for IEMDC 2029
+date: 2026-03-25
 inline: false
 related_posts: false
 ---
 
-Nishanth will receive Laboratory Directed Research and Development (LDRD) funding from ORNL under the Weinberg initiative for three years. 
-This project will investigate the potential of multi-harmonic technology (controlling multiple spatial harmonic magnetic fields) to enhance the performance of rare-earth free electric machines.
-
-This project applies the [multi-harmonic winding analysis and design theory](https://ieeexplore.ieee.org/abstract/document/10313586) developed in Nishanth's Ph.D. research.
+Dr. Nishanth Gadiyar has been elected as the General co-Chair for the 2029 IEEE International Electric Machines and Drives Conference (IEMDC). 
+First organized in 1997, IEMDC is IEEE's premier conference on Electric Machines and Drives and is co-sponsored by 4 IEEE technical societies -- Power and Energy Society (PES), Industry Applications Society (IAS), Power Electronics Society (PELS), and Industrial Electronics Society (IES).
+Nishanth brought the team together and led the development of a proposal to host IEMDC 2029 in Knoxville, TN, which was elected in a technical committee vote over 3 other competing proposals.
