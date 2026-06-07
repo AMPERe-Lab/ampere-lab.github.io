@@ -50,30 +50,29 @@ nav_order: 6
   }
 </style>
 
-## Open Positions
-
-We are always looking to recruit motivated and passionate members to join our team. We work on exciting problems at the intersection of electric machine design, power electronics, and physics-based control — with real hardware demonstrations and strong connections to industry and national labs.
+We are always looking to recruit motivated and passionate members to join our team. 
+Prospective students, postdoctoral researchers, and visiting scholars please review the instructions below and fill this [form](www.google.com).
 
 <div class="ju-tile-grid">
 
   <a class="ju-tile" href="/join/graduate-students/">
     <div class="ju-tile-icon"><i class="ti ti-school"></i></div>
     <h3>Graduate Students</h3>
-    <p>MS / PhD openings starting Fall 2026 — full funding, hands-on hardware research.</p>
+    <p>MS / PhD openings starting Fall 2026</p>
     <span class="ju-tile-link">Learn more →</span>
   </a>
 
   <a class="ju-tile" href="/join/undergraduate-students/">
     <div class="ju-tile-icon"><i class="ti ti-backpack"></i></div>
     <h3>Undergrad Students</h3>
-    <p>Research opportunities for Notre Dame and visiting REU undergraduates.</p>
+    <p>Research opportunities for Notre Dame and visiting undergraduates.</p>
     <span class="ju-tile-link">Learn more →</span>
   </a>
 
   <a class="ju-tile" href="/join/postdocs/">
     <div class="ju-tile-icon"><i class="ti ti-flask"></i></div>
     <h3>Post-doc Researchers</h3>
-    <p>Multiple funded postdoctoral positions and fellowship hosting opportunities.</p>
+    <p>Postdoctoral positions and fellowship hosting opportunities.</p>
     <span class="ju-tile-link">Learn more →</span>
   </a>
 
