@@ -64,9 +64,9 @@ layout: default
 
   /* ── Hero diagram ── */
   .hp-hero-graphic { display: flex; align-items: center; justify-content: center; }
-  .hp-hero-graphic svg { width: 100%; max-width: 460px; height: auto; }
+  .hp-hero-graphic svg { width: 100%; max-width: 560px; height: auto; }
   .hp-diagram-node-label {
-    font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600;
+    font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 600;
   }
 
   /* ── Mission ── */
@@ -288,29 +288,29 @@ layout: default
 
             <!-- technique nodes (hexagonal ring) -->
             <!-- AI-Assisted Design (top) -->
-            <ellipse cx="240" cy="58" rx="76" ry="20" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+            <ellipse cx="240" cy="58" rx="84" ry="22" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
             <text x="240" y="63" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">AI-Assisted Design</text>
 
             <!-- Advanced Manufacturing (upper right) -->
-            <ellipse cx="380" cy="160" rx="66" ry="26" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+            <ellipse cx="380" cy="160" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
             <text x="380" y="156" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Advanced</text>
-            <text x="380" y="169" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Manufacturing</text>
+            <text x="380" y="171" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Manufacturing</text>
 
             <!-- Integration (lower right) -->
-            <ellipse cx="380" cy="338" rx="58" ry="20" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+            <ellipse cx="380" cy="338" rx="64" ry="22" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
             <text x="380" y="343" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Integration</text>
 
             <!-- Advanced Control (bottom) -->
-            <ellipse cx="240" cy="424" rx="76" ry="20" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+            <ellipse cx="240" cy="424" rx="84" ry="22" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
             <text x="240" y="429" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Advanced Control</text>
 
             <!-- Topology Optimization (lower left) -->
-            <ellipse cx="100" cy="338" rx="66" ry="26" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+            <ellipse cx="100" cy="338" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
             <text x="100" y="334" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Topology</text>
-            <text x="100" y="347" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Optimization</text>
+            <text x="100" y="349" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Optimization</text>
 
             <!-- Multi-physics (upper left) -->
-            <ellipse cx="100" cy="160" rx="62" ry="20" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+            <ellipse cx="100" cy="160" rx="70" ry="22" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
             <text x="100" y="165" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Multi-Physics</text>
 
             <!-- ══ central Venn intersection: Electric Machines / Power Electronics / Control ══ -->
@@ -324,14 +324,14 @@ layout: default
             <circle cx="240" cy="248" r="34" fill="url(#hpCoreGlow)" opacity="0.95"/>
             <circle cx="240" cy="248" r="9" fill="#FFE9A8"/>
 
-            <!-- domain labels -->
-            <text x="178" y="190" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Electric</text>
-            <text x="178" y="202" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Machines</text>
+            <!-- domain labels — nudged inward, away from circle edges -->
+            <text x="190" y="206" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Electric</text>
+            <text x="190" y="221" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Machines</text>
 
-            <text x="304" y="190" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Power</text>
-            <text x="304" y="202" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Electronics</text>
+            <text x="290" y="206" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Power</text>
+            <text x="290" y="221" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Electronics</text>
 
-            <text x="240" y="334" text-anchor="middle" fill="#ffffff" class="hp-diagram-node-label">Control</text>
+            <text x="240" y="318" text-anchor="middle" fill="#ffffff" class="hp-diagram-node-label">Control</text>
 
             <!-- watermark -->
             <text x="240" y="476" text-anchor="middle" fill="rgba(255,255,255,0.15)" letter-spacing="4" style="font-family:'DM Serif Display', serif; font-size:14px;">AMPERE LAB</text>
