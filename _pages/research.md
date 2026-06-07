@@ -48,17 +48,13 @@ nav_order: 2
     padding: 1.5rem 1.35rem;
     display: flex; flex-direction: column;
   }
-  .rp-theme-num {
-    font-size: 13px; font-weight: 700; letter-spacing: 1.5px;
-    color: #C99700; margin-bottom: 0.9rem;
-  }
   .rp-theme-icon {
-    width: 48px; height: 48px; border-radius: 10px;
+    width: 96px; height: 96px; border-radius: 16px;
     background: #0C2340;
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 1.1rem;
   }
-  .rp-theme-icon i { font-size: 26px; color: #C99700; }
+  .rp-theme-icon i { font-size: 52px; color: #C99700; }
   .rp-theme-card h3 {
     font-size: 21px; font-weight: 600; line-height: 1.3;
     color: var(--color-text-primary); margin-bottom: 0.6rem;
@@ -150,35 +146,30 @@ nav_order: 2
   <div class="rp-theme-grid">
 
     <div class="rp-theme-card">
-      <span class="rp-theme-num">01</span>
       <div class="rp-theme-icon"><i class="ti ti-bulb"></i></div>
       <h3>Invent New Machines</h3>
       <p>Developing unconventional electric machine topologies for higher performance and lower critical material dependence.</p>
     </div>
 
     <div class="rp-theme-card">
-      <span class="rp-theme-num">02</span>
       <div class="rp-theme-icon"><i class="ti ti-brain"></i></div>
       <h3>AI-Accelerated Design</h3>
       <p>Using physics-informed machine learning and optimization to accelerate discovery and improve system performance.</p>
     </div>
 
     <div class="rp-theme-card">
-      <span class="rp-theme-num">03</span>
       <div class="rp-theme-icon"><i class="ti ti-tool"></i></div>
       <h3>Build the Impossible</h3>
       <p>Leveraging advanced manufacturing and novel materials to realize next-generation electro-mechanical systems.</p>
     </div>
 
     <div class="rp-theme-card">
-      <span class="rp-theme-num">04</span>
       <div class="rp-theme-icon"><i class="ti ti-device-desktop-analytics"></i></div>
       <h3>Integrated Electro-Mechanical Systems</h3>
       <p>Co-designing machines, power electronics, thermal systems, and mechanical loads as a unified whole.</p>
     </div>
 
     <div class="rp-theme-card">
-      <span class="rp-theme-num">05</span>
       <div class="rp-theme-icon"><i class="ti ti-target-arrow"></i></div>
       <h3>Intelligent Operation</h3>
       <p>Creating systems that sense, adapt, diagnose, and optimize themselves autonomously in real time.</p>
