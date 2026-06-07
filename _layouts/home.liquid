@@ -421,65 +421,12 @@ layout: default
   {% endif %}
 
   <!-- ── Selected Publications ─────────────────────────── -->
-  <section class="hp-section">
+  <section class="hp-section" style="border-bottom:none;">
     <div class="hp-inner">
       <div class="hp-section-label">Selected Publications</div>
       <div class="hp-section-title">Recent work</div>
       {% include selected_papers.liquid %}
       <a class="hp-pub-more" href="{{ '/publications/' | relative_url }}">All publications →</a>
-    </div>
-  </section>
-
-  <!-- ── People ────────────────────────────────────────── -->
-  <section class="hp-section">
-    <div class="hp-inner">
-      <div class="hp-section-label">People</div>
-      <div class="hp-section-title">The team</div>
-      <div class="hp-team-grid">
-
-        <div class="hp-team-card pi">
-          <img class="hp-team-photo"
-               src="{{ '/assets/img/prof_pic.png' | relative_url }}"
-               alt="Prof. Nishanth Gadiyar">
-          <div class="hp-team-info">
-            <h3>Nishanth Gadiyar</h3>
-            <p>Principal Investigator</p>
-          </div>
-        </div>
-
-        <div class="hp-team-card open">
-          <div class="hp-team-initials"><i class="ti ti-user-plus" style="font-size:32px;"></i></div>
-          <div class="hp-team-info">
-            <h3>PhD Student</h3>
-            <p>Recruiting Fall 2026</p>
-          </div>
-        </div>
-
-        <div class="hp-team-card open">
-          <div class="hp-team-initials"><i class="ti ti-user-plus" style="font-size:32px;"></i></div>
-          <div class="hp-team-info">
-            <h3>PhD Student</h3>
-            <p>Recruiting Fall 2026</p>
-          </div>
-        </div>
-
-      </div>
-      <p style="margin-top:1.25rem;">
-        <a href="{{ '/people/' | relative_url }}" style="font-size:14px;color:#185FA5;text-decoration:none;">Meet the full team →</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- ── Join CTA ──────────────────────────────────────── -->
-  <section class="hp-section" style="border-bottom:none;">
-    <div class="hp-inner">
-      <div class="hp-join-box">
-        <div>
-          <h3>Join our lab</h3>
-          <p>We are always on the lookout for motivated undergrads with a passion to build things, graduate students and postdocs with backgrounds in electric machines, power electronics, or controls.</p>
-        </div>
-        <a class="hp-join-btn" href="{{ '/join/' | relative_url }}">Get in touch ↗</a>
-      </div>
     </div>
   </section>
 
