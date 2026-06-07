@@ -262,7 +262,7 @@ nav_order: 2
   <div class="rp-process-box">
     <div class="rp-label">How We Work</div>
     <div class="rp-heading">From Concept to Hardware</div>
-    <p class="rp-subhead">We develop technology from first principles through to tested, validated prototypes — the full stack.</p>
+    <p class="rp-subhead">We develop technology from first principles through to tested, validated prototypes.</p>
 
     <div class="rp-process-row">
       <div class="rp-process-step">
@@ -298,7 +298,7 @@ nav_order: 2
   <div class="rp-app-grid">
     <div class="rp-app-card"><i class="ti ti-heartbeat"></i><h3>Artificial Heart</h3><p>Medical</p></div>
     <div class="rp-app-card"><i class="ti ti-cpu"></i><h3>Chip Fabrication</h3><p>Semiconductor</p></div>
-    <div class="rp-app-card"><i class="ti ti-drone"></i><h3>UAVs &amp; Drones</h3><p>Aerospace</p></div>
+    <div class="rp-app-card"><i class="ti ti-drone"></i><h3>UAVs &amp; Drones</h3><p>Air mobility</p></div>
     <div class="rp-app-card"><i class="ti ti-robot"></i><h3>Robotics</h3><p>Automation</p></div>
     <div class="rp-app-card"><i class="ti ti-car"></i><h3>Electric Vehicles</h3><p>Transport</p></div>
     <div class="rp-app-card"><i class="ti ti-air-conditioning"></i><h3>HVAC Systems</h3><p>Buildings</p></div>
