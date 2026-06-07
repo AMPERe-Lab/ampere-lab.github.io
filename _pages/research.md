@@ -67,15 +67,6 @@ nav_order: 2
     font-size: 17px; line-height: 1.65; color: var(--color-text-secondary);
     margin-bottom: 1.1rem; flex-grow: 1;
   }
-  .rp-theme-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-  .rp-theme-tag {
-    font-size: 13px; padding: 4px 11px;
-    background: var(--color-background-secondary);
-    border: 0.5px solid var(--color-border-secondary);
-    border-radius: 14px;
-    color: var(--color-text-secondary);
-  }
-
   /* ── How We Work / process ── */
   .rp-process-box {
     background: #0C2340;
@@ -110,14 +101,6 @@ nav_order: 2
   }
   .rp-process-step p {
     font-size: 15.5px; line-height: 1.6; color: rgba(255,255,255,0.65); margin: 0;
-  }
-  .rp-process-arrow {
-    display: none;
-    position: absolute; top: 26px; right: -1.05rem;
-    font-size: 20px; color: rgba(255,255,255,0.35);
-  }
-  @media (min-width: 901px) {
-    .rp-process-step:not(:last-child) .rp-process-arrow { display: block; }
   }
 
   /* ── Applications spectrum ── */
@@ -171,13 +154,6 @@ nav_order: 2
       <div class="rp-theme-icon"><i class="ti ti-bulb"></i></div>
       <h3>Invent New Machines</h3>
       <p>Developing unconventional electric machine topologies for higher performance and lower critical material dependence.</p>
-      <div class="rp-theme-tags">
-        <span class="rp-theme-tag">Multi-harmonic</span>
-        <span class="rp-theme-tag">Axial flux</span>
-        <span class="rp-theme-tag">Transverse flux</span>
-        <span class="rp-theme-tag">Magnetically geared</span>
-        <span class="rp-theme-tag">Rare-earth-lean</span>
-      </div>
     </div>
 
     <div class="rp-theme-card">
@@ -185,13 +161,6 @@ nav_order: 2
       <div class="rp-theme-icon"><i class="ti ti-brain"></i></div>
       <h3>AI-Accelerated Design</h3>
       <p>Using physics-informed machine learning and optimization to accelerate discovery and improve system performance.</p>
-      <div class="rp-theme-tags">
-        <span class="rp-theme-tag">Topology opt.</span>
-        <span class="rp-theme-tag">Surrogate models</span>
-        <span class="rp-theme-tag">Generative design</span>
-        <span class="rp-theme-tag">Multi-objective</span>
-        <span class="rp-theme-tag">Physics-informed AI</span>
-      </div>
     </div>
 
     <div class="rp-theme-card">
@@ -199,12 +168,6 @@ nav_order: 2
       <div class="rp-theme-icon"><i class="ti ti-tool"></i></div>
       <h3>Build the Impossible</h3>
       <p>Leveraging advanced manufacturing and novel materials to realize next-generation electro-mechanical systems.</p>
-      <div class="rp-theme-tags">
-        <span class="rp-theme-tag">Additive manufacturing</span>
-        <span class="rp-theme-tag">Novel magnetic materials</span>
-        <span class="rp-theme-tag">Embedded cooling</span>
-        <span class="rp-theme-tag">Advanced fabrication</span>
-      </div>
     </div>
 
     <div class="rp-theme-card">
@@ -212,13 +175,6 @@ nav_order: 2
       <div class="rp-theme-icon"><i class="ti ti-device-desktop-analytics"></i></div>
       <h3>Integrated Electro-Mechanical Systems</h3>
       <p>Co-designing machines, power electronics, thermal systems, and mechanical loads as a unified whole.</p>
-      <div class="rp-theme-tags">
-        <span class="rp-theme-tag">Integrated drives</span>
-        <span class="rp-theme-tag">Electro-hydraulic</span>
-        <span class="rp-theme-tag">Aerospace electrification</span>
-        <span class="rp-theme-tag">Vehicle electrification</span>
-        <span class="rp-theme-tag">Energy conversion</span>
-      </div>
     </div>
 
     <div class="rp-theme-card">
@@ -226,13 +182,6 @@ nav_order: 2
       <div class="rp-theme-icon"><i class="ti ti-target-arrow"></i></div>
       <h3>Intelligent Operation</h3>
       <p>Creating systems that sense, adapt, diagnose, and optimize themselves autonomously in real time.</p>
-      <div class="rp-theme-tags">
-        <span class="rp-theme-tag">Diagnostics</span>
-        <span class="rp-theme-tag">Digital twins</span>
-        <span class="rp-theme-tag">Control systems</span>
-        <span class="rp-theme-tag">Health monitoring</span>
-        <span class="rp-theme-tag">Autonomous operation</span>
-      </div>
     </div>
 
   </div>
@@ -250,19 +199,16 @@ nav_order: 2
         <div class="rp-process-icon"><i class="ti ti-stack-2"></i></div>
         <h4>Design &amp; Optimize</h4>
         <p>FEA, analytical models, AI-assisted topology and parameter optimization</p>
-        <span class="rp-process-arrow">→</span>
       </div>
       <div class="rp-process-step">
         <div class="rp-process-icon"><i class="ti ti-tool"></i></div>
         <h4>Build</h4>
         <p>Additive manufacturing, winding, assembly, novel materials fabrication</p>
-        <span class="rp-process-arrow">→</span>
       </div>
       <div class="rp-process-step">
         <div class="rp-process-icon"><i class="ti ti-activity"></i></div>
         <h4>Test &amp; Validate</h4>
         <p>Dynamometer testing, thermal characterization, HIL, high-speed data acquisition</p>
-        <span class="rp-process-arrow">→</span>
       </div>
       <div class="rp-process-step">
         <div class="rp-process-icon"><i class="ti ti-circle-check"></i></div>
@@ -289,6 +235,6 @@ nav_order: 2
     <div class="rp-app-card"><i class="ti ti-tractor"></i><h3>Off-Highway</h3><p>Industrial</p></div>
     <div class="rp-app-card"><i class="ti ti-anchor"></i><h3>Marine Systems</h3><p>Maritime</p></div>
     <div class="rp-app-card"><i class="ti ti-wind"></i><h3>Wind Energy</h3><p>Renewables</p></div>
-    <div class="rp-app-card"><i class="ti ti-rocket"></i><h3>Aerospace</h3><p>Aviation</p></div>
+    <div class="rp-app-card"><i class="ti ti-rocket"></i><h3>Aerospace</h3><p>Aviation &amp; Space</p></div>
   </div>
 </div>
