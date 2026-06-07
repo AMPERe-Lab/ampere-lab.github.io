@@ -52,7 +52,7 @@ nav_order: 6
 
 We are always looking to recruit motivated and passionate members to join our team.<br>If you are interested to join us, please click on the appropriate sections below to review application instructions specific to each position. 
 
-<p>Prospective candidates interested to join / work with the AMPERE Lab must fill this [form.](https://forms.gle/hhWePcefS7kY8JMF8)). We appreciate the opportunity to learn about you and your interests through the form, and you can expect a response in 1-2 weeks if there is a fit.</p>
+<p>Prospective candidates interested to join / work with the AMPERE Lab must fill this <a href="https://forms.gle/hhWePcefS7kY8JMF8" target="_blank">Google form</a>. We appreciate the opportunity to learn about you and your interests through the form, and you can expect a response in 1-2 weeks if there is a fit.</p>
 
 <p>Industry partners interested to work with AMPERE Lab please e-mail Dr. Gadiyar at ngadiyar[at]nd[dot]edu.</p>
 
