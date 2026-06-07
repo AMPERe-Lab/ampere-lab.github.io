@@ -69,6 +69,53 @@ layout: default
     font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600;
   }
 
+  /* ── Mission ── */
+  .hp-mission-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  @media (max-width: 900px) {
+    .hp-mission-layout { grid-template-columns: 1fr; }
+  }
+  .hp-mission-quote {
+    font-family: 'DM Serif Display', serif; font-size: 27px; font-style: italic; line-height: 1.4;
+    color: var(--color-text-primary); margin: 0 0 1.5rem; padding-left: 1.25rem;
+    border-left: 3px solid #C99700;
+  }
+  .hp-mission-text p {
+    font-size: 18px; line-height: 1.8; color: var(--color-text-secondary);
+    margin-bottom: 1.1rem;
+  }
+  .hp-metric-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  @media (max-width: 460px) {
+    .hp-metric-grid { grid-template-columns: 1fr; }
+  }
+  .hp-metric-card {
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-left: 3px solid #C99700;
+    border-radius: var(--border-radius-lg, 8px);
+    padding: 1.25rem 1.35rem;
+  }
+  .hp-metric-card.full { grid-column: span 2; }
+  @media (max-width: 460px) {
+    .hp-metric-card.full { grid-column: span 1; }
+  }
+  .hp-metric-icon { font-size: 22px; margin-bottom: 0.6rem; display: inline-block; }
+  .hp-metric-card h3 {
+    font-size: 18px; font-weight: 600; line-height: 1.3;
+    color: var(--color-text-primary); margin-bottom: 0.3rem;
+  }
+  .hp-metric-card p {
+    font-size: 15px; line-height: 1.55; color: var(--color-text-tertiary); margin: 0;
+  }
+
   /* ── Generic section ── */
   .hp-section {
     padding: 3.25rem 3rem;
@@ -287,6 +334,59 @@ layout: default
             <!-- watermark -->
             <text x="240" y="476" text-anchor="middle" fill="rgba(255,255,255,0.15)" letter-spacing="4" style="font-family:'DM Serif Display', serif; font-size:14px;">AMPERE LAB</text>
           </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Mission ───────────────────────────────────────── -->
+  <section class="hp-section">
+    <div class="hp-inner">
+      <div class="hp-section-label">Our Mission</div>
+      <div class="hp-section-title">Building Better Electro-Mechanical Systems</div>
+      <p style="font-size:19px; line-height:1.8; color:var(--color-text-secondary); max-width:800px; margin-bottom:2.25rem;">
+        We operate at the intersection of electric machines, power electronics, and control — with a passion for integrated, unconventional designs that push the performance envelope.
+      </p>
+
+      <div class="hp-mission-layout">
+        <div class="hp-mission-text">
+          <blockquote class="hp-mission-quote">
+            "We create electro-mechanical systems that are more efficient, more affordable, more intelligent, and less dependent on critical materials."
+          </blockquote>
+          <p>
+            AMPERE Lab combines rigorous analytical methods with hands-on hardware development. From winding theory and electromagnetic analysis to 3D-printed prototypes and dynamometer testing, we pursue research that leads to real, deployable technology.
+          </p>
+          <p>
+            We welcome collaboration with industry partners and are actively building a world-class team.
+          </p>
+        </div>
+
+        <div class="hp-metric-grid">
+          <div class="hp-metric-card">
+            <i class="ti ti-bolt hp-metric-icon" style="color:#C99700;"></i>
+            <h3>Higher Power Density</h3>
+            <p>More power in smaller, lighter packages</p>
+          </div>
+          <div class="hp-metric-card">
+            <i class="ti ti-flame hp-metric-icon" style="color:#d9622b;"></i>
+            <h3>Lower Losses</h3>
+            <p>Minimizing thermal and electrical losses</p>
+          </div>
+          <div class="hp-metric-card">
+            <i class="ti ti-tool hp-metric-icon" style="color:#185FA5;"></i>
+            <h3>Greater Reliability</h3>
+            <p>Systems that last and self-diagnose</p>
+          </div>
+          <div class="hp-metric-card">
+            <i class="ti ti-coin hp-metric-icon" style="color:#C99700;"></i>
+            <h3>Affordability</h3>
+            <p>Designs manufacturable at scale</p>
+          </div>
+          <div class="hp-metric-card full">
+            <i class="ti ti-world hp-metric-icon" style="color:#1f9d6b;"></i>
+            <h3>Reduced Critical Material Dependence</h3>
+            <p>Less reliance on rare-earth elements and scarce supply chains</p>
+          </div>
         </div>
       </div>
     </div>
