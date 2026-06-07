@@ -137,6 +137,35 @@ nav_order: 2
   </p>
 </div>
 
+<!-- ── Research photo slideshow ── -->
+<div class="rp-block" style="border-top: none; padding-top: 0;">
+  <div class="rp-slideshow" id="rp-slideshow">
+    <img class="rp-slide active" src="/assets/img/research-slideshow/1.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/2.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/3.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/4.png" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/5.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/6.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/7.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/8.png" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/9.png" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/11.png" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/12.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/13.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/14.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/15.jpg" alt="">
+    <img class="rp-slide" src="/assets/img/research-slideshow/16.jpg" alt="">
+
+    <div class="rp-slideshow-dots">
+      <span class="rp-dot active"></span><span class="rp-dot"></span><span class="rp-dot"></span>
+      <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
+      <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
+      <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
+      <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
+    </div>
+  </div>
+</div>
+
 <!-- ── Five Research Themes ── -->
 <div class="rp-block">
   <div class="rp-label">Research</div>
@@ -175,35 +204,6 @@ nav_order: 2
       <p>Creating systems that sense, adapt, diagnose, and optimize themselves autonomously in real time.</p>
     </div>
 
-  </div>
-</div>
-
-<!-- ── Research photo slideshow ── -->
-<div class="rp-block" style="border-top: none; padding-top: 0;">
-  <div class="rp-slideshow" id="rp-slideshow">
-    <img class="rp-slide active" src="/assets/img/research-slideshow/1.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/2.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/3.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/4.png" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/5.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/6.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/7.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/8.png" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/9.png" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/11.png" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/12.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/13.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/14.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/15.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/16.jpg" alt="">
-
-    <div class="rp-slideshow-dots">
-      <span class="rp-dot active"></span><span class="rp-dot"></span><span class="rp-dot"></span>
-      <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
-      <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
-      <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
-      <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
-    </div>
   </div>
 </div>
 
