@@ -21,9 +21,8 @@ We have **openings for multiple graduate students (MS / PhD)** starting **Fall 2
 - Access to state-of-the-art laboratory and computing resources at Notre Dame.
 - Mentorship and close collaboration with the PI.
 - Opportunities to collaborate with cross-disciplinary partners from academia, industry, and national labs.
-- A strong publication track record and preparation for academic or industry careers.
+- A strong preparation for academic or industry careers.
 
 **To apply:**
-- Please fill this google form to indicate your interest in joining our group.
-
-- You must apply formally through the [Notre Dame EE PhD program]([https://engineering.nd.edu/graduate-programs/graduate-admissions/](https://ee.nd.edu/graduate/)). Feel free to mention Dr. Gadiyar in your application if you like to join us.
+- The EE graduate admissions at Notre Dame is offered by a committee. Review the instructions and formally apply to the [Notre Dame EE Graduate program](https://ee.nd.edu/graduate/). Please mention Dr. Gadiyar's name in your application.
+- Please fill this [Google form](https://forms.gle/hhWePcefS7kY8JMF8) to indicate your interest in joining our lab.
