@@ -132,9 +132,6 @@ nav_order: 2
   <p>
     The electrification of transportation, aerospace, and industry demands electric machines and energy conversion systems that are more powerful, more efficient, and more sustainable than anything that exists today. Meeting this challenge requires rethinking the machine, the drive, and the control — together, from first principles.
   </p>
-  <p>
-    AMPERE Lab invents next-generation electro-mechanical systems through machine innovation, AI-assisted design, advanced manufacturing, and integrated system optimization — pursuing systems that are more efficient, more affordable, more intelligent, and less dependent on critical materials.
-  </p>
 </div>
 
 <!-- ── Research photo slideshow ── -->
@@ -166,12 +163,10 @@ nav_order: 2
   </div>
 </div>
 
-<!-- ── Five Research Themes ── -->
+<!-- ── Research Themes ── -->
 <div class="rp-block">
   <div class="rp-label">Research</div>
-  <div class="rp-heading">Five Research Themes</div>
-  <p class="rp-subhead">From fundamental machine theory to intelligent operational systems, our work spans the full electro-mechanical technology stack.</p>
-
+  <div class="rp-heading">Research Themes</div>
   <div class="rp-theme-grid">
 
     <div class="rp-theme-card">
