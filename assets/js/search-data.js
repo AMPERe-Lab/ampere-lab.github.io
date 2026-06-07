@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Publications from the AMPERE Laboratory and Prof. Gadiyar&#39;s prior work. For a current and comprehensive list, visit our Google Scholar page.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
