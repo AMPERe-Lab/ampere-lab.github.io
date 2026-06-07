@@ -101,7 +101,7 @@ nav_order: 3
   .pp-leader-links a:hover { border-color: #C99700; color: #C99700; }
   .pp-leader-links a i { font-size: 16px; }
   .pp-leader-card p {
-    font-size: 15px; line-height: 1.65; color: var(--color-text-secondary); margin: 0;
+    font-size: 17px; line-height: 1.7; color: var(--color-text-secondary); margin: 0;
   }
 </style>
 
@@ -113,10 +113,6 @@ nav_order: 3
     <h3>Nishanth Gadiyar</h3>
     <p class="pp-leader-role">Assistant Professor &middot; Department of Electrical Engineering &middot; University of Notre Dame</p>
     <div class="pp-leader-links">
-      <a href="mailto:ngadiyar@nd.edu"><i class="ti ti-mail"></i> Email</a>
-      <a href="https://scholar.google.com/citations?user=CPd0z5gAAAAJ" target="_blank"><i class="ti ti-school"></i> Google Scholar</a>
-      <a href="https://www.linkedin.com/in/nishanth-21193" target="_blank"><i class="ti ti-brand-linkedin"></i> LinkedIn</a>
-      <a href="https://orcid.org/0000-0003-4826-7524" target="_blank"><i class="ti ti-id"></i> ORCID</a>
       <a href="https://ngadiyar93.github.io" target="_blank"><i class="ti ti-world"></i> Personal Website</a>
     </div>
     <p>
@@ -124,6 +120,31 @@ nav_order: 3
       He is a Senior Member of the IEEE and since 2025, serves as an Associate Editor of the IEEE Transactions on Industry Applications, and the IEEE Transactions on Transportation Electrification.
     </p>
   </div>
+</div>
+
+---
+
+## Postdoctoral Researchers
+
+<div class="pp-tile-grid">
+  <a class="pp-tile" href="/join/postdocs/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>Postdoctoral position open</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+  <a class="pp-tile" href="/join/postdocs/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>Postdoctoral position open</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+  <a class="pp-tile" href="/join/postdocs/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>Postdoctoral position open</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
 </div>
 
 ---
@@ -158,38 +179,8 @@ nav_order: 3
 </div>
 
 ---
-## Postdoctoral Researchers
 
-<div class="pp-tile-grid">
-  <a class="pp-tile" href="/join/postdocs/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>Postdoctoral position open</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-  <a class="pp-tile" href="/join/postdocs/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>Postdoctoral position open</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-  <a class="pp-tile" href="/join/postdocs/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>Postdoctoral position open</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-</div>
-
----
-
-## Visiting Scholars
-
-We are always open to hosting visiting scholars for short-term and long-term research visits and collaboration. Please reach out to Prof. Gadiyar directly, or see the [Join Us](/join/visiting-scholars/) page.
-
----
-
-## Undergraduate Researchers
+## Undergraduate Students
 
 <div class="pp-tile-grid">
   <a class="pp-tile" href="/join/undergraduate-students/">
@@ -211,12 +202,6 @@ We are always open to hosting visiting scholars for short-term and long-term res
     <span class="pp-tile-link">See opportunities →</span>
   </a>
 </div>
-
----
-
-## Alumni
-
-*None yet*
 
 <!--
   ── Adding a real member ──
