@@ -25,39 +25,48 @@ layout: default
 
   /* ── Hero ── */
   .hp-hero {
-    padding: 4rem 3rem 3.5rem;
-    border-bottom: 1px solid var(--color-border-tertiary);
+    background: #0C2340;
+    padding: 5rem 3rem;
+    border-bottom: none;
   }
   .hp-hero-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 3rem;
+    align-items: center;
   }
-  .hp-hero-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: var(--border-radius-lg, 8px);
-    border: 0.5px solid var(--color-border-tertiary);
+  @media (max-width: 900px) {
+    .hp-hero-layout { grid-template-columns: 1fr; }
   }
   .hp-eyebrow {
-    font-size: 17px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
-    color: var(--nd-gold, #C99700); margin-bottom: 1.1rem;
+    font-size: 14px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase;
+    color: #C99700; margin-bottom: 1.4rem; line-height: 1.6;
   }
   .hp-hero h1 {
-    font-family: 'DM Serif Display', serif; font-size: 57px; line-height: 1.1;
-    color: var(--color-text-primary); margin-bottom: 1.25rem;
+    font-family: 'DM Serif Display', serif; font-size: 50px; font-weight: 400; line-height: 1.18;
+    color: #fff; margin-bottom: 1.5rem;
   }
+  .hp-hero h1 em { color: #C99700; font-style: italic; }
   .hp-hero-desc {
-    font-size: 23px; line-height: 1.8; color: var(--color-text-secondary);
-    margin-bottom: 2.25rem;
+    font-size: 19px; line-height: 1.8; color: rgba(255,255,255,0.7);
+    margin-bottom: 2.5rem; max-width: 520px;
   }
-  .hp-pills { display: flex; flex-wrap: wrap; gap: 10px; }
-  .hp-pill {
-    font-size: 18px; padding: 6px 15px;
-    border: 0.5px solid var(--color-border-secondary);
-    border-radius: 20px; color: var(--color-text-secondary);
-    background: var(--color-background-secondary);
+  .hp-hero-ctas { display: flex; flex-wrap: wrap; gap: 0.9rem; }
+  .hp-hero-btn {
+    font-size: 15px; font-weight: 600; padding: 14px 28px;
+    border-radius: 6px; text-decoration: none; display: inline-block;
+    transition: all 0.15s ease;
+  }
+  .hp-hero-btn.primary { background: #C99700; color: #0C2340; }
+  .hp-hero-btn.primary:hover { background: #e0ac0a; }
+  .hp-hero-btn.outline { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.32); }
+  .hp-hero-btn.outline:hover { border-color: rgba(255,255,255,0.7); }
+
+  /* ── Hero diagram ── */
+  .hp-hero-graphic { display: flex; align-items: center; justify-content: center; }
+  .hp-hero-graphic svg { width: 100%; max-width: 460px; height: auto; }
+  .hp-diagram-node-label {
+    font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600;
   }
 
   /* ── Generic section ── */
@@ -197,19 +206,75 @@ layout: default
     <div class="hp-inner">
       <div class="hp-hero-layout">
         <div class="hp-hero-text">
-          <div class="hp-eyebrow">Electrical Engineering &middot; University of Notre Dame</div>
-          <h1>AMPERE Lab</h1>
+          <div class="hp-eyebrow">Advanced Electric Machines &amp; Power<br>Electronics Research</div>
+          <h1>Inventing the Next Generation of <em>Electro-Mechanical Systems</em></h1>
           <p class="hp-hero-desc">
-            Welcome to the Advanced Electric Machines and Power Electronics Research (AMPERE) Laboratory at the University of Notre Dame.
-            We design, analyze, and control high-performance electro-mechanical systems —
-            advancing sustainable energy conversion for energy generation, electric vehicles, aerospace, actuators, and industrial systems.
-
-          We operate at the intersection of the traditional areas of electric machines, power electronics, and control, with a soft spot for highly integrated, cool, and "weird" designs that push the performance envelope.
+            From artificial hearts to aerospace systems, AMPERE Lab develops high-performance electro-mechanical technologies through machine innovation, AI-assisted design, advanced manufacturing, and system integration.
           </p>
+          <div class="hp-hero-ctas">
+            <a class="hp-hero-btn primary" href="{{ '/research/' | relative_url }}">Explore Research</a>
+            <a class="hp-hero-btn outline" href="{{ '/publications/' | relative_url }}">Publications</a>
+            <a class="hp-hero-btn outline" href="{{ '/join/' | relative_url }}">Join the Lab</a>
+          </div>
         </div>
-        <div class="hp-hero-image">
-          <img src="{{ '/assets/img/HomepageImage.png' | relative_url }}"
-               alt="3D-printed additively manufactured electric machine stator">
+        <div class="hp-hero-graphic">
+          <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- outer dashed orbit -->
+            <circle cx="240" cy="240" r="190" stroke="rgba(255,255,255,0.14)" stroke-width="1" stroke-dasharray="3 6"/>
+            <!-- middle dashed orbit -->
+            <circle cx="240" cy="240" r="132" stroke="rgba(201,151,0,0.35)" stroke-width="1" stroke-dasharray="2 5"/>
+            <!-- radiating ticks -->
+            <g stroke="rgba(255,255,255,0.18)" stroke-width="1.5">
+              <line x1="240" y1="58"  x2="240" y2="74"/>
+              <line x1="240" y1="406" x2="240" y2="422"/>
+              <line x1="58"  y1="240" x2="74"  y2="240"/>
+              <line x1="406" y1="240" x2="422" y2="240"/>
+              <line x1="104" y1="104" x2="116" y2="116"/>
+              <line x1="364" y1="364" x2="376" y2="376"/>
+              <line x1="376" y1="104" x2="364" y2="116"/>
+              <line x1="116" y1="364" x2="104" y2="376"/>
+            </g>
+            <!-- connecting lines from center to nodes -->
+            <line x1="240" y1="240" x2="240" y2="112" stroke="#C99700" stroke-width="1" stroke-dasharray="2 4" opacity="0.6"/>
+            <line x1="240" y1="240" x2="240" y2="368" stroke="#C99700" stroke-width="1" stroke-dasharray="2 4" opacity="0.6"/>
+            <line x1="240" y1="240" x2="118" y2="240" stroke="#185FA5" stroke-width="1" opacity="0.55"/>
+            <line x1="240" y1="240" x2="362" y2="240" stroke="#185FA5" stroke-width="1" opacity="0.55"/>
+
+            <!-- center glow -->
+            <defs>
+              <radialGradient id="hpCoreGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#FFE9A8"/>
+                <stop offset="45%" stop-color="#C99700"/>
+                <stop offset="100%" stop-color="#0C2340" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="240" cy="240" r="46" fill="url(#hpCoreGlow)" opacity="0.9"/>
+            <circle cx="240" cy="240" r="13" fill="#FFE9A8"/>
+            <circle cx="240" cy="240" r="13" stroke="#C99700" stroke-width="1.5"/>
+
+            <!-- top node: AI-Assisted Optimization -->
+            <ellipse cx="240" cy="92" rx="78" ry="20" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+            <text x="240" y="89" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">AI-Assisted</text>
+            <text x="240" y="101" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Optimization</text>
+
+            <!-- bottom node: Advanced Manufacturing -->
+            <ellipse cx="240" cy="388" rx="84" ry="20" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+            <text x="240" y="385" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Advanced</text>
+            <text x="240" y="397" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Manufacturing</text>
+
+            <!-- left node: Power Electronics -->
+            <rect x="30" y="216" width="100" height="48" rx="6" fill="rgba(255,255,255,0.04)" stroke="#185FA5" stroke-width="1"/>
+            <text x="80" y="237" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Power</text>
+            <text x="80" y="250" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Electronics</text>
+
+            <!-- right node: Mechanical Load -->
+            <rect x="350" y="216" width="100" height="48" rx="6" fill="rgba(255,255,255,0.04)" stroke="#185FA5" stroke-width="1"/>
+            <text x="400" y="237" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Mechanical</text>
+            <text x="400" y="250" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Load</text>
+
+            <!-- watermark -->
+            <text x="240" y="450" text-anchor="middle" fill="rgba(255,255,255,0.15)" letter-spacing="4" style="font-family:'DM Serif Display', serif; font-size:15px;">AMPERE LAB</text>
+          </svg>
         </div>
       </div>
     </div>
