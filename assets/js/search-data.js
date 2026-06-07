@@ -42,6 +42,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_1/";
+            },},{id: "news-ampere-lab-is-now-live",
+          title: 'AMPERE Lab is now live!',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2/";
             },},{id: "projects-integrated-electro-hydraulic-machine-for-off-highway-vehicle-electrification",
           title: 'Integrated Electro-hydraulic Machine for Off-highway Vehicle Electrification',
           description: "A key enabler to electrify off-highway vehicles and improve their energy efficiency.",
