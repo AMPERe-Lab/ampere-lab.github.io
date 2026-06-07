@@ -53,30 +53,108 @@ nav_order: 3
   .pp-tile .pp-tile-link {
     display: inline-block; margin-top: 0.6rem; font-size: 13px; font-weight: 600; color: #185FA5;
   }
+
+  /* ── Group Leader card ── */
+  .pp-leader-card {
+    display: flex;
+    gap: 2.25rem;
+    align-items: flex-start;
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: 14px;
+    padding: 2rem;
+    margin: 1.25rem 0 2.5rem;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+  .pp-leader-card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    border-color: #C99700;
+  }
+  @media (max-width: 700px) {
+    .pp-leader-card { flex-direction: column; align-items: center; text-align: center; }
+  }
+  .pp-leader-photo {
+    width: 168px; height: 168px; flex-shrink: 0;
+    border-radius: 16px; object-fit: cover;
+    border: 3px solid #0C2340;
+  }
+  .pp-leader-card h3 {
+    font-family: 'DM Serif Display', serif; font-size: 26px; font-weight: 400;
+    color: var(--color-text-primary); margin: 0 0 0.2rem; line-height: 1.2;
+  }
+  .pp-leader-role {
+    font-size: 14.5px; font-weight: 600; letter-spacing: 0.5px;
+    color: #C99700; text-transform: uppercase; margin: 0 0 0.9rem;
+  }
+  .pp-leader-links {
+    display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1.1rem;
+  }
+  @media (max-width: 700px) { .pp-leader-links { justify-content: center; } }
+  .pp-leader-links a {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    font-size: 13px; font-weight: 600; color: #185FA5;
+    background: var(--color-background-secondary, rgba(24,95,165,0.08));
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: 999px; padding: 0.4rem 0.95rem;
+    text-decoration: none; transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .pp-leader-links a:hover { border-color: #C99700; color: #C99700; }
+  .pp-leader-links a i { font-size: 16px; }
+  .pp-leader-card p {
+    font-size: 15px; line-height: 1.65; color: var(--color-text-secondary); margin: 0;
+  }
 </style>
 
 ## Group Leader
 
-<div class="row mt-3">
-  <div class="col-sm-3 text-center">
-    <img src="/assets/img/prof_pic.png" alt="Prof. Nishanth Gadiyar" class="img-fluid rounded" style="max-width:180px;">
-  </div>
-  <div class="col-sm-9">
-    <h4>Nishanth Gadiyar</h4>
-    <p><strong>Assistant Professor, Department of Electrical Engineering</strong><br>
-    University of Notre Dame</p>
+<div class="pp-leader-card">
+  <img class="pp-leader-photo" src="/assets/img/prof_pic.png" alt="Prof. Nishanth Gadiyar">
+  <div>
+    <h3>Nishanth Gadiyar</h3>
+    <p class="pp-leader-role">Assistant Professor &middot; Department of Electrical Engineering &middot; University of Notre Dame</p>
+    <div class="pp-leader-links">
+      <a href="mailto:ngadiyar@nd.edu"><i class="ti ti-mail"></i> Email</a>
+      <a href="https://scholar.google.com/citations?user=CPd0z5gAAAAJ" target="_blank"><i class="ti ti-school"></i> Google Scholar</a>
+      <a href="https://www.linkedin.com/in/nishanth-21193" target="_blank"><i class="ti ti-brand-linkedin"></i> LinkedIn</a>
+      <a href="https://orcid.org/0000-0003-4826-7524" target="_blank"><i class="ti ti-id"></i> ORCID</a>
+      <a href="https://ngadiyar93.github.io" target="_blank"><i class="ti ti-world"></i> Personal Website</a>
+    </div>
     <p>
-      📧 <a href="mailto:ngadiyar@nd.edu">ngadiyar [at] nd [dot] edu</a><br>
-      🔗 <a href="https://scholar.google.com/citations?user=CPd0z5gAAAAJ" target="_blank">Google Scholar</a> &nbsp;|&nbsp;
-      <a href="https://www.linkedin.com/in/nishanth-21193" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
-      <a href="https://orcid.org/0000-0003-4826-7524" target="_blank">ORCID</a>
-      [Nishanth's personal webpage](https://ngadiyar93.github.io)
-    </p>
-    <p>
-      Dr. Gadiyar received his Ph.D. in Electrical Engineering from the University of Wisconsin-Madison in 2023. Prior to joining Notre Dame, he was an R&D Staff Member and held the Alvin M. Weinberg [Distinguished Staff Fellowship](https://www.ornl.gov/careers/distinguished-fellowships) at the Oak Ridge National Laboratory (2024-2026), and worked in the industry at the GE Aerospace Research Center (2023-2024), and the Mitsubishi Electric Research Laboratories (2021).
+      Dr. Gadiyar received his Ph.D. in Electrical Engineering from the University of Wisconsin-Madison in 2023. Prior to joining Notre Dame, he was an R&D Staff Member and held the Alvin M. Weinberg <a href="https://www.ornl.gov/careers/distinguished-fellowships" target="_blank">Distinguished Staff Fellowship</a> at the Oak Ridge National Laboratory (2024-2026), and worked in the industry at the GE Aerospace Research Center (2023-2024), and the Mitsubishi Electric Research Laboratories (2021).
       He is a Senior Member of the IEEE and since 2025, serves as an Associate Editor of the IEEE Transactions on Industry Applications, and the IEEE Transactions on Transportation Electrification.
     </p>
   </div>
+</div>
+
+---
+
+## Graduate Students
+
+<div class="pp-tile-grid">
+  <a class="pp-tile" href="/join/graduate-students/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>PhD position open — Fall 2026</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+  <a class="pp-tile" href="/join/graduate-students/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>PhD position open — Fall 2026</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+  <a class="pp-tile" href="/join/graduate-students/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>PhD position open — Fall 2026</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+  <a class="pp-tile" href="/join/graduate-students/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>PhD position open — Fall 2026</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
 </div>
 
 ---
@@ -105,34 +183,9 @@ nav_order: 3
 
 ---
 
-## PhD Students
+## Visiting Scholars
 
-<div class="pp-tile-grid">
-  <a class="pp-tile" href="/join/graduate-students/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>PhD position open — Fall 2026</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-  <a class="pp-tile" href="/join/graduate-students/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>PhD position open — Fall 2026</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-  <a class="pp-tile" href="/join/graduate-students/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>PhD position open — Fall 2026</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-  <a class="pp-tile" href="/join/graduate-students/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>PhD position open — Fall 2026</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-</div>
+We are always open to hosting visiting scholars for short-term and long-term research visits and collaboration. Please reach out to Prof. Gadiyar directly, or see the [Join Us](/join/visiting-scholars/) page.
 
 ---
 
@@ -158,12 +211,6 @@ nav_order: 3
     <span class="pp-tile-link">See opportunities →</span>
   </a>
 </div>
-
----
-
-## Visiting Scholars
-
-We are always open to hosting visiting scholars for short-term and long-term research visits and collaboration. Please reach out to Prof. Gadiyar directly, or see the [Join Us](/join/visiting-scholars/) page.
 
 ---
 
