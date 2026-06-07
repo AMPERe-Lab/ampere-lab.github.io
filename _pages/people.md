@@ -7,6 +7,54 @@ nav: true
 nav_order: 3
 ---
 
+<style>
+  .pp-tile-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.1rem;
+    margin: 1.25rem 0 2.5rem;
+  }
+  @media (max-width: 900px) { .pp-tile-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .pp-tile-grid { grid-template-columns: 1fr; } }
+
+  .pp-tile {
+    display: block;
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: 10px;
+    padding: 1.5rem 1.35rem;
+    text-decoration: none;
+    text-align: center;
+    transition: box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+  }
+  .pp-tile:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+    border-color: #C99700;
+  }
+  .pp-tile-avatar {
+    width: 92px; height: 92px; border-radius: 50%;
+    background: #e9edf2;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1rem;
+  }
+  .pp-tile-avatar i { font-size: 48px; color: #9aa7b6; }
+  .pp-tile.pp-tile-open .pp-tile-avatar {
+    background: #0C2340;
+  }
+  .pp-tile.pp-tile-open .pp-tile-avatar i { color: #C99700; }
+  .pp-tile h3 {
+    font-size: 17px; font-weight: 600; color: var(--color-text-primary);
+    margin: 0 0 0.3rem;
+  }
+  .pp-tile p {
+    font-size: 14px; line-height: 1.5; color: var(--color-text-secondary); margin: 0;
+  }
+  .pp-tile .pp-tile-link {
+    display: inline-block; margin-top: 0.6rem; font-size: 13px; font-weight: 600; color: #185FA5;
+  }
+</style>
+
 ## Group Leader
 
 <div class="row mt-3">
@@ -34,28 +82,107 @@ nav_order: 3
 ---
 ## Postdoctoral Researchers
 
-Positions available — see the [Join Us](/join/) page.
+<div class="pp-tile-grid">
+  <a class="pp-tile" href="/join/postdocs/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>Postdoctoral position open</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+  <a class="pp-tile" href="/join/postdocs/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>Postdoctoral position open</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+  <a class="pp-tile" href="/join/postdocs/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>Postdoctoral position open</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+</div>
 
 ---
 
 ## PhD Students
 
-We are actively recruiting PhD students starting Fall 2026. See the [Join Us](/join/) page for details.
+<div class="pp-tile-grid">
+  <a class="pp-tile" href="/join/graduate-students/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>PhD position open — Fall 2026</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+  <a class="pp-tile" href="/join/graduate-students/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>PhD position open — Fall 2026</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+  <a class="pp-tile" href="/join/graduate-students/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>PhD position open — Fall 2026</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+  <a class="pp-tile" href="/join/graduate-students/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>PhD position open — Fall 2026</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+</div>
 
 ---
 
 ## Undergraduate Researchers
 
-Undergraduate research opportunities are available for Notre Dame students. Please reach out to Prof. Gadiyar directly.
+<div class="pp-tile-grid">
+  <a class="pp-tile" href="/join/undergraduate-students/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>Undergraduate research opportunity open</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+  <a class="pp-tile" href="/join/undergraduate-students/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>Undergraduate research opportunity open</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+  <a class="pp-tile" href="/join/undergraduate-students/">
+    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
+    <h3>This could be you</h3>
+    <p>Undergraduate research opportunity open</p>
+    <span class="pp-tile-link">See opportunities →</span>
+  </a>
+</div>
 
 ---
 
 ## Visiting Scholars
 
-We are always open to hosting visiting scholars for short-term and long-term research visits and collaboration. Please reach out to Prof. Gadiyar directly.
+We are always open to hosting visiting scholars for short-term and long-term research visits and collaboration. Please reach out to Prof. Gadiyar directly, or see the [Join Us](/join/visiting-scholars/) page.
 
 ---
 
 ## Alumni
 
 *None yet*
+
+<!--
+  ── Adding a real member ──
+  When a real member joins, replace one of the placeholder tiles above with:
+
+  <a class="pp-tile pp-tile-open" href="/people/<slug>/">
+    <div class="pp-tile-avatar"><img src="/assets/img/people/<slug>.jpg" alt="<Name>" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
+    <h3><Name></h3>
+    <p><Role / research focus></p>
+    <span class="pp-tile-link">View profile →</span>
+  </a>
+
+  ...and create a profile page at _pages/people-<slug>.md (layout: ampere-page, permalink: /people/<slug>/, nav: false)
+  containing their bio, Google Scholar, email, LinkedIn, and personal website links — following the format
+  used for the Group Leader above.
+-->
