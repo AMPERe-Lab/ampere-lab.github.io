@@ -105,7 +105,7 @@ nav_order: 3
   }
 </style>
 
-## Group Leader
+## Principal Investigator
 
 <div class="pp-leader-card">
   <img class="pp-leader-photo" src="/assets/img/prof_pic.png" alt="Prof. Nishanth Gadiyar">
