@@ -85,13 +85,13 @@ nav_order: 2
 
   .rp-process-step { position: relative; }
   .rp-process-icon {
-    width: 56px; height: 56px; border-radius: 12px;
+    width: 76px; height: 76px; border-radius: 14px;
     background: rgba(255,255,255,0.07);
     border: 0.5px solid rgba(255,255,255,0.18);
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 1.1rem;
   }
-  .rp-process-icon i { font-size: 28px; color: #C99700; }
+  .rp-process-icon i { font-size: 40px; color: #C99700; }
   .rp-process-step h4 {
     font-size: 19px; font-weight: 600; color: #fff; margin-bottom: 0.5rem;
   }
@@ -116,7 +116,7 @@ nav_order: 2
     text-align: center;
   }
   .rp-app-card i {
-    font-size: 34px; color: #0C2340; margin-bottom: 0.85rem; display: inline-block;
+    font-size: 50px; color: #0C2340; margin-bottom: 0.85rem; display: inline-block;
   }
   .rp-app-card h3 {
     font-size: 17px; font-weight: 600; color: var(--color-text-primary);
