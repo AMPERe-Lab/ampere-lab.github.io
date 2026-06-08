@@ -169,10 +169,16 @@ nav_order: 2
   <div class="rp-heading">Research Themes</div>
   <div class="rp-theme-grid">
 
+   <div class="rp-theme-card">
+      <div class="rp-theme-icon"><i class="ti ti-device-desktop-analytics"></i></div>
+      <h3>Integrated Electro-Mechanical Systems</h3>
+      <p>Co-design and optimization of magnetics, power electronics, thermal systems, and mechanical loads.</p>
+    </div>
+
     <div class="rp-theme-card">
       <div class="rp-theme-icon"><i class="ti ti-bulb"></i></div>
-      <h3>Invent New Machines</h3>
-      <p>Developing unconventional electric machine topologies for higher performance and lower critical material dependence.</p>
+      <h3>Invent New Topologies</h3>
+      <p>Developing unconventional electric machine and power converter topologies for higher performance and lower critical material dependence.</p>
     </div>
 
     <div class="rp-theme-card">
@@ -183,20 +189,14 @@ nav_order: 2
 
     <div class="rp-theme-card">
       <div class="rp-theme-icon"><i class="ti ti-tool"></i></div>
-      <h3>Build the Impossible</h3>
+      <h3>Build the Future</h3>
       <p>Leveraging advanced manufacturing and novel materials to realize next-generation electro-mechanical systems.</p>
-    </div>
-
-    <div class="rp-theme-card">
-      <div class="rp-theme-icon"><i class="ti ti-device-desktop-analytics"></i></div>
-      <h3>Integrated Electro-Mechanical Systems</h3>
-      <p>Co-designing machines, power electronics, thermal systems, and mechanical loads as a unified whole.</p>
     </div>
 
     <div class="rp-theme-card">
       <div class="rp-theme-icon"><i class="ti ti-target-arrow"></i></div>
       <h3>Intelligent Operation</h3>
-      <p>Creating systems that sense, adapt, diagnose, and optimize themselves autonomously in real time.</p>
+      <p>Creating systems that sense, adapt, diagnose, and optimize themselves in real time.</p>
     </div>
 
   </div>
