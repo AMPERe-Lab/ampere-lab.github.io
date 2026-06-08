@@ -206,7 +206,7 @@ nav_order: 2
   .rp-slideshow {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 9; /* fallback until JS measures the How We Work box */
     border-radius: 14px;
     overflow: hidden;
     background: #0C2340;
@@ -247,6 +247,25 @@ nav_order: 2
     var dots = document.querySelectorAll('#rp-slideshow .rp-dot');
     var current = 0;
     if (!slides.length) return;
+
+    // Match the slideshow's height to the "How We Work" navy box height
+    var slideshow = document.getElementById('rp-slideshow');
+    var processBox = document.querySelector('.rp-process-box');
+    function syncHeight() {
+      if (!slideshow || !processBox) return;
+      var h = processBox.offsetHeight;
+      if (h > 0) {
+        slideshow.style.aspectRatio = 'auto';
+        slideshow.style.height = h + 'px';
+      }
+    }
+    syncHeight();
+    window.addEventListener('resize', syncHeight);
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(syncHeight);
+    }
+    window.addEventListener('load', syncHeight);
+
     setInterval(function () {
       slides[current].classList.remove('active');
       if (dots[current]) dots[current].classList.remove('active');
