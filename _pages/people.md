@@ -111,7 +111,7 @@ nav_order: 3
   <img class="pp-leader-photo" src="/assets/img/prof_pic.png" alt="Prof. Nishanth Gadiyar">
   <div>
     <h3>Nishanth Gadiyar</h3>
-    <p class="pp-leader-role">Assistant Professor &middot; Department of Electrical Engineering &middot; University of Notre Dame</p>
+    <p class="pp-leader-role">Incoming Assistant Professor (Starting July 2026) &middot; Department of Electrical Engineering &middot; University of Notre Dame</p>
     <div class="pp-leader-links">
       <a href="https://ngadiyar93.github.io" target="_blank"><i class="ti ti-world"></i> Personal Website</a>
     </div>
