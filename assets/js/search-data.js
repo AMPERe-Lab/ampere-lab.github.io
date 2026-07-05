@@ -47,8 +47,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-nishanth-selected-to-receive-the-2026-ieee-andrew-w-smith-outstanding-young-member-achievement-award",
-          title: 'Nishanth selected to receive the 2026 IEEE Andrew W. Smith Outstanding Young Member...',
+            },},{id: "news-gadiyar-selected-to-receive-the-2026-ieee-andrew-w-smith-outstanding-young-member-achievement-award",
+          title: 'Gadiyar selected to receive the 2026 IEEE Andrew W. Smith Outstanding Young Member...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
