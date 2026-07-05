@@ -47,6 +47,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
+            },},{id: "news-nishanth-selected-to-receive-the-2026-ieee-andrew-w-smith-outstanding-young-member-achievement-award",
+          title: 'Nishanth selected to receive the 2026 IEEE Andrew W. Smith Outstanding Young Member...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_3/";
             },},{id: "projects-integrated-electro-hydraulic-machine-for-off-highway-vehicle-electrification",
           title: 'Integrated Electro-hydraulic Machine for Off-highway Vehicle Electrification',
           description: "A key enabler to electrify off-highway vehicles and improve their energy efficiency.",
