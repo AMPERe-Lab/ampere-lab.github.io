@@ -25,4 +25,4 @@ We have **openings for multiple graduate students (MS / PhD)** starting **Fall 2
 
 **To apply:**
 - The EE graduate admissions at Notre Dame is offered by a committee. Review the instructions and formally apply to the [Notre Dame EE Graduate program](https://ee.nd.edu/graduate/). Please mention Dr. Gadiyar's name in your application.
-- Please fill this [Google form](https://forms.gle/hhWePcefS7kY8JMF8) to indicate your interest in joining our lab.
+- Please e-mail Dr. Gadiyar at ngadiyar[at]nd[dot]edu to indicate your interest in joining our lab.
