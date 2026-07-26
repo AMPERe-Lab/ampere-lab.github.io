@@ -52,7 +52,9 @@ nav_order: 6
 
 We are always looking to recruit motivated and passionate members to join our team.<br>If you are interested to join us, please click on the appropriate sections below to review application instructions specific to each position. 
 
-<p>Prospective candidates interested to join / work with the AMPERE Lab are welcome to e-mail Dr. Gadiyar at ngadiyar[at]nd[dot]edu. Please click on the appropriate sections below for position-specific instructions. Due to the volume of inquiries, we may not be able to respond to every e-mail individually — but every message is read and genuinely appreciated.</p>
+<p>Prospective candidates interested to join / work with the AMPERE Lab are welcome to e-mail Dr. Gadiyar at ngadiyar[at]nd[dot]edu. Please click on the appropriate sections below for position-specific instructions.</p>
+
+<p><strong>Note:</strong> While every email is read, due to the volume of inquiries, we may not be able to respond to every prospective graduate student e-mail individually. A lack of response is not indicative of your chances of joining my group. Please follow the position specific instructions below and <u>submit a formal application</u> to the Notre Dame EE graduate program if you want to be considered to pursue your M.S. thesis or Ph.D. research with us.</p>
 
 <p>Industry partners interested to work with AMPERE Lab please e-mail Dr. Gadiyar at ngadiyar[at]nd[dot]edu.</p>
 
