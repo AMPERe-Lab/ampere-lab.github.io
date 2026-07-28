@@ -53,7 +53,7 @@ nav_order: 6
 We are always looking for motivated and passionate members to join the team.
 If you are interested, please click on the appropriate sections below to review instructions specific to each position.
 
-<p><u><strong>A Note to Prospective Graduate Students:</strong></u> While you can e-mail Prof. Gadiyar, we may not be able to respond to every e-mail. A lack of response is NOT indicative of your chances of joining the AMPERE Lab. For full consideration, you MUST submit a formal application to the appropriate Notre Dame EE graduate program, which can be accessed here: <a href="https://ee.nd.edu/graduate/" target="_blank">https://ee.nd.edu/graduate/</a></p>
+<p><u><strong>A Note to Prospective Graduate Students:</strong></u> We may not be able to respond to every e-mail inquiry. A lack of response is NOT indicative of your chances of joining the AMPERE Lab. For full consideration, you MUST complete and submit a formal application to the appropriate Notre Dame EE graduate program. More details and the application can be found here: <a href="https://ee.nd.edu/graduate/" target="_blank">https://ee.nd.edu/graduate/</a></p>
 
 <div class="ju-tile-grid">
 
