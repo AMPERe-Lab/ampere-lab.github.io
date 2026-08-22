@@ -327,3 +327,32 @@ nav_order: 2
     <div class="rp-app-card"><i class="ti ti-rocket"></i><h3>Aerospace</h3><p>Aviation &amp; Space</p></div>
   </div>
 </div>
+
+<!-- ── Sponsors ── -->
+<style>
+  .rp-sponsors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1.5rem;
+  }
+  .rp-sponsor-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+  }
+  .rp-sponsor-logo:hover { opacity: 1; }
+</style>
+
+<div class="rp-block">
+  <div class="rp-label">Sponsors</div>
+  <div class="rp-heading">Thanks to</div>
+  <div class="rp-sponsors-grid">
+    <img class="rp-sponsor-logo" src="/assets/img/sponsors/jmag_logo.svg" alt="JMAG">
+    <img class="rp-sponsor-logo" src="/assets/img/sponsors/powersys_logo.png" alt="POWERSYS">
+  </div>
+</div>
