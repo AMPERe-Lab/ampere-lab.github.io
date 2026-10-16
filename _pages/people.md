@@ -184,7 +184,7 @@ nav_order: 3
 
 <div class="pp-tile-grid">
   <div class="pp-tile pp-tile-open">
-    <div class="pp-tile-avatar"><img src="/assets/img/people/henry-han.jpg" alt="Henry Han" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
+    <div class="pp-tile-avatar"><img src="/assets/img/people/henry-han.png" alt="Henry Han" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
     <h3>Henry Han</h3>
     <p>Electrical Engineering</p>
   </div>
