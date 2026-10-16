@@ -183,24 +183,21 @@ nav_order: 3
 ## Undergraduate Students
 
 <div class="pp-tile-grid">
-  <a class="pp-tile" href="/join/undergraduate-students/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>Undergraduate research opportunity open</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-  <a class="pp-tile" href="/join/undergraduate-students/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>Undergraduate research opportunity open</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-  <a class="pp-tile" href="/join/undergraduate-students/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>Undergraduate research opportunity open</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
+  <div class="pp-tile pp-tile-open">
+    <div class="pp-tile-avatar"><img src="/assets/img/people/henry-han.jpg" alt="Henry Han" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
+    <h3>Henry Han</h3>
+    <p>Electrical Engineering</p>
+  </div>
+  <div class="pp-tile pp-tile-open">
+    <div class="pp-tile-avatar"><img src="/assets/img/people/kenny-kirenga.jpg" alt="Kenny Kirenga" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
+    <h3>Kenny Kirenga</h3>
+    <p>Electrical Engineering</p>
+  </div>
+  <div class="pp-tile pp-tile-open">
+    <div class="pp-tile-avatar"><img src="/assets/img/people/sophie-simonetti.jpg" alt="Sophie Simonetti" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
+    <h3>Sophie Simonetti</h3>
+    <p>Aerospace and Mechanical Engineering</p>
+  </div>
 </div>
 
 <!--
