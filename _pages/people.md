@@ -105,7 +105,7 @@ nav_order: 3
   }
 </style>
 
-## Principal Investigator
+## Principal Investigator and Director
 
 <div class="pp-leader-card">
   <img class="pp-leader-photo" src="/assets/img/prof_pic.png" alt="Prof. Nishanth Gadiyar">
@@ -129,13 +129,7 @@ nav_order: 3
 <div class="pp-tile-grid">
   <a class="pp-tile" href="/join/postdocs/">
     <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>Postdoctoral position open</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-  <a class="pp-tile" href="/join/postdocs/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
+    <h3>Coming Spring 2027!</h3>
     <p>Postdoctoral position open</p>
     <span class="pp-tile-link">See opportunities →</span>
   </a>
@@ -155,25 +149,25 @@ nav_order: 3
   <a class="pp-tile" href="/join/graduate-students/">
     <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
     <h3>This could be you</h3>
-    <p>PhD position open — Fall 2026</p>
+    <p>PhD position open — Fall 2027</p>
     <span class="pp-tile-link">See opportunities →</span>
   </a>
   <a class="pp-tile" href="/join/graduate-students/">
     <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
     <h3>This could be you</h3>
-    <p>PhD position open — Fall 2026</p>
+    <p>PhD position open — Fall 2027</p>
     <span class="pp-tile-link">See opportunities →</span>
   </a>
   <a class="pp-tile" href="/join/graduate-students/">
     <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
     <h3>This could be you</h3>
-    <p>PhD position open — Fall 2026</p>
+    <p>PhD position open — Fall 2027</p>
     <span class="pp-tile-link">See opportunities →</span>
   </a>
   <a class="pp-tile" href="/join/graduate-students/">
     <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
     <h3>This could be you</h3>
-    <p>PhD position open — Fall 2026</p>
+    <p>PhD position open — Fall 2027</p>
     <span class="pp-tile-link">See opportunities →</span>
   </a>
 </div>
