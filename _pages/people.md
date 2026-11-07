@@ -183,6 +183,11 @@ nav_order: 3
 ## Undergraduate Students
 
 <div class="pp-tile-grid">
+      <div class="pp-tile pp-tile-open">
+    <div class="pp-tile-avatar"><img src="/assets/img/people/Noah-Dolan.jpg" alt="Noah Dolan" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
+    <h3>Noah Dolan</h3>
+    <p>Electrical Engineering</p>
+  </div> 
   <div class="pp-tile pp-tile-open">
     <div class="pp-tile-avatar"><img src="/assets/img/people/henry-han.png" alt="Henry Han" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
     <h3>Henry Han</h3>
@@ -193,7 +198,12 @@ nav_order: 3
     <h3>Kenny Kirenga</h3>
     <p>Electrical Engineering</p>
   </div>
-  <div class="pp-tile pp-tile-open">
+    <div class="pp-tile pp-tile-open">
+    <div class="pp-tile-avatar"><img src="/assets/img/people/Yaritza-Padilla.jpg" alt="Yaritza Padilla" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
+    <h3>Yaritza Padilla</h3>
+    <p>Electrical Engineering</p>
+  </div> 
+    <div class="pp-tile pp-tile-open">
     <div class="pp-tile-avatar"><img src="/assets/img/people/sophie-simonetti.jpg" alt="Sophie Simonetti" style="width:100%; height:100%; object-fit:cover; border-radius:50%;"></div>
     <h3>Sophie Simonetti</h3>
     <p>Aerospace and Mechanical Engineering</p>
