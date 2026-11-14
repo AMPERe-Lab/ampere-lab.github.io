@@ -20,7 +20,7 @@ nav_order: 2
   /* ── Shared section header ── */
   .rp-label {
     font-size: 17px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
-    color: #C99700; margin-bottom: 0.6rem;
+    color: var(--amp-gold); margin-bottom: 0.6rem;
   }
   .rp-heading {
     font-family: var(--font-heading); font-size: 30px; font-weight: 800; letter-spacing: -0.01em;
@@ -54,7 +54,7 @@ nav_order: 2
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 1.1rem;
   }
-  .rp-theme-icon i { font-size: 52px; color: #C99700; }
+  .rp-theme-icon i { font-size: 52px; color: var(--amp-gold); }
   .rp-theme-card h3 {
     font-size: 21px; font-weight: 600; line-height: 1.3;
     color: var(--color-text-primary); margin-bottom: 0.6rem;
@@ -69,7 +69,7 @@ nav_order: 2
     border-radius: 14px;
     padding: 2.75rem 2.5rem;
   }
-  .rp-process-box .rp-label { color: #C99700; }
+  .rp-process-box .rp-label { color: var(--amp-gold); }
   .rp-process-box .rp-heading { color: #fff; }
   .rp-process-box .rp-subhead { color: rgba(255,255,255,0.68); }
 
@@ -91,7 +91,7 @@ nav_order: 2
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 1.1rem;
   }
-  .rp-process-icon i { font-size: 40px; color: #C99700; }
+  .rp-process-icon i { font-size: 40px; color: var(--amp-gold); }
   .rp-process-step h4 {
     font-size: 19px; font-weight: 600; color: #fff; margin-bottom: 0.5rem;
   }

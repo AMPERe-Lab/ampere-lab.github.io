@@ -42,7 +42,7 @@ nav_order: 3
   .pp-tile.pp-tile-open .pp-tile-avatar {
     background: #0C2340;
   }
-  .pp-tile.pp-tile-open .pp-tile-avatar i { color: #C99700; }
+  .pp-tile.pp-tile-open .pp-tile-avatar i { color: var(--amp-gold); }
   .pp-tile h3 {
     font-size: 24px; font-weight: 600; color: var(--color-text-primary);
     margin: 0 0 0.4rem; line-height: 1.25;
@@ -84,7 +84,7 @@ nav_order: 3
   }
   .pp-leader-role {
     font-size: 16px; font-weight: 600; letter-spacing: 0.5px;
-    color: #C99700; text-transform: uppercase; margin: 0 0 0.9rem;
+    color: var(--amp-gold); text-transform: uppercase; margin: 0 0 0.9rem;
   }
   .pp-leader-links {
     display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1.1rem;
@@ -98,7 +98,7 @@ nav_order: 3
     border-radius: 999px; padding: 0.4rem 0.95rem;
     text-decoration: none; transition: border-color 0.15s ease, color 0.15s ease;
   }
-  .pp-leader-links a:hover { border-color: #C99700; color: #C99700; }
+  .pp-leader-links a:hover { border-color: #C99700; color: var(--amp-gold); }
   .pp-leader-links a i { font-size: 16px; }
   .pp-leader-card p {
     font-size: 18px; line-height: 1.7; color: var(--color-text-secondary); margin: 0;

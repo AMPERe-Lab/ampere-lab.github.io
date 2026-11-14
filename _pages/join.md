@@ -37,7 +37,7 @@ nav_order: 6
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 1rem;
   }
-  .ju-tile-icon i { font-size: 48px; color: #C99700; }
+  .ju-tile-icon i { font-size: 48px; color: var(--amp-gold); }
   .ju-tile h3 {
     font-size: 19px; font-weight: 600; color: var(--color-text-primary);
     margin: 0 0 0.35rem;

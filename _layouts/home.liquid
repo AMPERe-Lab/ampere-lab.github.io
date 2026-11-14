@@ -64,11 +64,11 @@ layout: default
     font-size: 20px;
     font-weight: 700;
     letter-spacing: -0.005em;
-    color: #8c6d1f;
+    color: var(--amp-gold);
     margin: 0 0 1.1rem;
   }
   html[data-theme='dark'] .hp-tagline {
-    color: var(--nd-gold-bright);
+    color: var(--amp-gold);
   }
   .hp-hero-desc {
     font-size: 18px;
@@ -168,6 +168,9 @@ layout: default
     font-size: 14px;
     font-weight: 600;
   }
+  .hp-hero-graphic text[fill='#FFE9A8'] {
+    fill: var(--amp-gold);
+  }
 
   /* ── Mission ── */
   .hp-mission-layout {
@@ -252,7 +255,7 @@ layout: default
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--nd-gold, #c99700);
+    color: var(--amp-gold);
     margin-bottom: 0.7rem;
   }
   .hp-section-title {
@@ -427,7 +430,7 @@ layout: default
   }
   .hp-visit-rooms i {
     font-size: 24px;
-    color: #e1b33c;
+    color: var(--amp-gold);
     flex-shrink: 0;
   }
   .hp-visit-rooms strong {
@@ -456,7 +459,7 @@ layout: default
   }
   .hp-visit-address i {
     font-size: 24px;
-    color: #e1b33c;
+    color: var(--amp-gold);
     flex-shrink: 0;
   }
   .hp-visit-link {
@@ -645,7 +648,7 @@ layout: default
 
         <div class="hp-metric-grid">
           <div class="hp-metric-card">
-            <i class="ti ti-bolt hp-metric-icon" style="color:#C99700;"></i>
+            <i class="ti ti-bolt hp-metric-icon" style="color:var(--amp-gold);"></i>
             <h3>Higher Power Density</h3>
             <p>More power in compact, lighter packages</p>
           </div>
@@ -660,7 +663,7 @@ layout: default
             <p>Minimal down-time and self-diagnosis</p>
           </div>
           <div class="hp-metric-card">
-            <i class="ti ti-coin hp-metric-icon" style="color:#C99700;"></i>
+            <i class="ti ti-coin hp-metric-icon" style="color:var(--amp-gold);"></i>
             <h3>Affordability</h3>
             <p>High-performance, yet low-cost designs</p>
           </div>
@@ -678,7 +681,7 @@ layout: default
   <section class="hp-approach">
     <div class="hp-inner hp-approach-layout">
       <div>
-        <div class="hp-section-label" style="color:#FFE9A8;">Our Approach</div>
+        <div class="hp-section-label">Our Approach</div>
         <div class="hp-section-title" style="color:#fff;">One connected problem</div>
         <p>
           Electric machines, power electronics, and control meet at the core of every system we build. Six techniques connect them: multi-physics
@@ -801,7 +804,7 @@ layout: default
   <section class="hp-visit">
     <div class="hp-inner hp-visit-layout">
       <div class="hp-visit-text">
-        <div class="hp-section-label" style="color:#FFE9A8;">Visit Us</div>
+        <div class="hp-section-label">Visit Us</div>
         <div class="hp-section-title" style="color:#fff;">AMPERE Lab</div>
         <ul class="hp-visit-rooms">
           <li>
