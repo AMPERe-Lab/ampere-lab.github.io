@@ -1,16 +1,10 @@
 ---
 layout: default
 ---
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap"
-  rel="stylesheet"
->
-
 <style>
   /* ── Break out of Bootstrap .container and al-folio max_width ── */
   .container:has(.hp-wrap) {
+    margin-top: 0 !important;
     max-width: 100% !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -24,7 +18,7 @@ layout: default
   }
 
   .hp-wrap {
-    font-family: 'DM Sans', var(--font-body, sans-serif);
+    font-family: var(--font-body);
   }
 
   /* ── Hero ── */
@@ -45,19 +39,19 @@ layout: default
     }
   }
   .hp-eyebrow {
-    font-family: 'DM Serif Display', serif;
-    font-size: 35px;
-    font-weight: 400;
-    letter-spacing: normal;
+    font-family: var(--font-heading);
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.015em;
     text-transform: none;
     color: #c99700;
     margin-bottom: 1.4rem;
     line-height: 1.25;
   }
   .hp-hero h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 50px;
-    font-weight: 400;
+    font-family: var(--font-heading);
+    font-size: 44px;
+    font-weight: 800;
     line-height: 1.18;
     color: #fff;
     margin-bottom: 1.5rem;
@@ -68,7 +62,7 @@ layout: default
   }
   .hp-hero-desc {
     font-size: 19px;
-    line-height: 1.8;
+    line-height: 1.6;
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 2.5rem;
     max-width: 520px;
@@ -115,7 +109,7 @@ layout: default
     height: auto;
   }
   .hp-diagram-node-label {
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-body);
     font-size: 14px;
     font-weight: 600;
   }
@@ -133,9 +127,10 @@ layout: default
     }
   }
   .hp-mission-quote {
-    font-family: 'DM Serif Display', serif;
-    font-size: 27px;
-    font-style: italic;
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
     line-height: 1.4;
     color: var(--color-text-primary);
     margin: 0 0 1.5rem;
@@ -144,7 +139,7 @@ layout: default
   }
   .hp-mission-text p {
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.65;
     color: var(--color-text-secondary);
     margin-bottom: 1.1rem;
   }
@@ -206,8 +201,10 @@ layout: default
     margin-bottom: 0.7rem;
   }
   .hp-section-title {
-    font-family: 'DM Serif Display', serif;
-    font-size: 35px;
+    font-family: var(--font-heading);
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
     color: var(--color-text-primary);
     margin-bottom: 1.75rem;
   }
@@ -256,8 +253,8 @@ layout: default
     color: var(--color-text-primary);
   }
   .hp-card p {
-    font-size: 20px;
-    line-height: 1.65;
+    font-size: 18px;
+    line-height: 1.6;
     color: var(--color-text-secondary);
   }
 
@@ -284,8 +281,8 @@ layout: default
     flex-shrink: 0;
   }
   .hp-news-body {
-    font-size: 20px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.6;
     color: var(--color-text-secondary);
   }
   .hp-news-body strong {
@@ -447,8 +444,9 @@ layout: default
     flex-wrap: wrap;
   }
   .hp-join-box h3 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-heading);
     font-size: 26px;
+    font-weight: 700;
     color: #fff;
     margin-bottom: 0.5rem;
   }
@@ -479,10 +477,7 @@ layout: default
     <div class="hp-inner">
       <div class="hp-hero-layout">
         <div class="hp-hero-text">
-          <h2 class="hp-eyebrow">
-            Advanced Electric Machines &amp; Power<br>
-            Electronics Research Laboratory
-          </h2>
+          <h2 class="hp-eyebrow">Advanced Electric Machines &amp; Power Electronics Research Laboratory</h2>
           <p class="hp-hero-desc">
             AMPERE Lab studies electric machines, power electronics, and control as one connected problem to advance electro-mechanical energy
             conversion systems.<br>
@@ -564,7 +559,7 @@ layout: default
             <text x="240" y="318" text-anchor="middle" fill="#ffffff" class="hp-diagram-node-label">Control</text>
 
             <!-- watermark -->
-            <text x="240" y="476" text-anchor="middle" fill="rgba(255,255,255,0.38)" letter-spacing="4" style="font-family:'DM Serif Display', serif; font-size:14px;">AMPERE LAB</text>
+            <text x="240" y="476" text-anchor="middle" fill="rgba(255,255,255,0.38)" letter-spacing="4" style="font-family:var(--font-heading); font-size:14px;">AMPERE LAB</text>
           </svg>
         </div>
       </div>
@@ -576,7 +571,7 @@ layout: default
     <div class="hp-inner">
       <div class="hp-section-label">Our Mission</div>
       <div class="hp-section-title">Building Better Electro-Mechanical Systems</div>
-      <p style="font-size:19px; line-height:1.8; color:var(--color-text-secondary); max-width:800px; margin-bottom:2.25rem;">
+      <p style="font-size:18px; line-height:1.65; color:var(--color-text-secondary); max-width:760px; margin-bottom:2.25rem;">
         Our research is at the intersection of electric machines, power electronics, and control — with a passion for integrated, unconventional
         designs that push the performance envelope.
       </p>

@@ -1,52 +1,26 @@
 <header>
-  <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
-    <div class="container-fluid" style="max-width:1280px;margin:0 auto;padding-left:2.5rem;padding-right:2.5rem;">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
-          {% endif %}
-        </a>
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% include social.liquid %}</div>
-      {% endif %}
-      <!-- Navbar Toggle -->
-      <button
-        class="navbar-toggler collapsed ml-auto"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar top-bar"></span>
-        <span class="icon-bar middle-bar"></span>
-        <span class="icon-bar bottom-bar"></span>
-      </button>
+  <!-- Nav Bar: navy bar with lab name, page links, and the Notre Dame academic mark -->
+  <nav id="navbar" class="navbar navbar-expand-lg amp-nav {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+    <!-- Phones: University wordmark strip (Notre Dame mobile web standard) -->
+    <a class="amp-nd-strip" href="https://www.nd.edu/" aria-label="University of Notre Dame">
+      <img src="{{ '/assets/img/nd/dept-nd-white@2x.png' | relative_url }}" alt="University of Notre Dame" width="301" height="50">
+    </a>
 
-      <div class="collapse navbar-collapse text-right" id="navbarNav">
-        <ul class="navbar-nav ml-auto flex-nowrap">
+    <div class="container-fluid amp-nav-inner">
+      <a class="navbar-brand amp-brand" href="{{ '/' | relative_url }}">
+        <svg viewBox="9 8 21 54" aria-hidden="true">
+          <polygon points="18,8 10,36 17,36 9,62 28,30 20,30 30,8" fill="#C99700" />
+        </svg>
+        {{- site.title -}}
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav flex-nowrap">
           {% for page in site.pages %}
             {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
           {% endfor %}
 
-          <!-- About -->
+          <!-- Home -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
               {{- about_title }}
@@ -117,18 +91,21 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+        </ul>
+
+        <ul class="navbar-nav amp-tools">
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              <button id="search-toggle" title="Search (ctrl k)" aria-label="Search" onclick="openSearchModal()">
+                <span class="nav-link"><i class="ti ti-search"></i></span>
               </button>
             </li>
           {% endif %}
           {% if site.enable_darkmode %}
-            <!-- Toogle theme mode -->
+            <!-- Toggle theme mode -->
             <li class="toggle-container">
-              <button id="light-toggle" title="Change theme">
+              <button id="light-toggle" title="Change theme" aria-label="Change theme">
                 <i class="ti ti-sun-moon" id="light-toggle-system"></i>
                 <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
                 <i class="ti ti-sun-filled" id="light-toggle-light"></i>
@@ -137,6 +114,27 @@
           {% endif %}
         </ul>
       </div>
+
+      <!-- Notre Dame academic mark (desktop and tablet) -->
+      <a class="amp-nd-mark" href="https://www.nd.edu/" aria-label="University of Notre Dame">
+        <img src="{{ '/assets/img/nd/ndmark.svg' | relative_url }}" alt="University of Notre Dame" width="200" height="47">
+      </a>
+
+      <!-- Navbar Toggle -->
+      <button
+        class="navbar-toggler collapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
     </div>
   </nav>
   {% if site.enable_progressbar %}

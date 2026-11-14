@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: ampere-page
 permalink: /teaching/
 title: Teaching
 description: Prof. Gadiyar is passionate about teaching and mentoring. This page lists courses taught at the University of Notre Dame and prior institutions.
@@ -9,7 +9,7 @@ nav_order: 7
 
 ## At the University of Notre Dame
 
-_Courses to be listed upon joining — Fall 2025._
+_Courses at Notre Dame will be listed here soon._
 
 ---
 

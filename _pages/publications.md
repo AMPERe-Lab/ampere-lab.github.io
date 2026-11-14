@@ -9,8 +9,8 @@ nav_order: 4
 
 <style>
   .pub-scholar-card p {
-    font-size: 19px;
-    line-height: 1.8;
+    font-size: 18px;
+    line-height: 1.65;
     color: var(--color-text-secondary);
     max-width: 720px;
     margin-bottom: 1.5rem;
@@ -32,7 +32,7 @@ nav_order: 4
     transform: translateY(-1px);
   }
   .pub-scholar-btn .pub-scholar-text {
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-body);
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.2px;

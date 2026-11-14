@@ -10,10 +10,10 @@ nav_order: 2
 <style>
   .rp-vision {
     margin: 0 0 3.5rem;
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 18px;
+    line-height: 1.65;
     color: var(--color-text-secondary);
-    max-width: 880px;
+    max-width: 760px;
   }
   .rp-vision p { margin-bottom: 1rem; }
 
@@ -23,11 +23,11 @@ nav_order: 2
     color: #C99700; margin-bottom: 0.6rem;
   }
   .rp-heading {
-    font-family: 'DM Serif Display', serif; font-size: 35px; font-weight: 400;
+    font-family: var(--font-heading); font-size: 30px; font-weight: 800; letter-spacing: -0.01em;
     color: var(--color-text-primary); margin-bottom: 0.85rem; line-height: 1.2;
   }
   .rp-subhead {
-    font-size: 20px; line-height: 1.7; color: var(--color-text-secondary);
+    font-size: 18px; line-height: 1.65; color: var(--color-text-secondary);
     max-width: 760px; margin-bottom: 2.5rem;
   }
   .rp-block { padding: 3.5rem 0; border-top: 1px solid var(--color-border-tertiary); }

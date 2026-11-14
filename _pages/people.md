@@ -79,7 +79,7 @@ nav_order: 3
     border: 3px solid #0C2340;
   }
   .pp-leader-card h3 {
-    font-family: 'DM Serif Display', serif; font-size: 34px; font-weight: 400;
+    font-family: var(--font-heading); font-size: 30px; font-weight: 800; letter-spacing: -0.01em;
     color: var(--color-text-primary); margin: 0 0 0.2rem; line-height: 1.2;
   }
   .pp-leader-role {

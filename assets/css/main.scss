@@ -25,12 +25,234 @@ $max-content-width: {{ site.max_width }};
 ;
 
 // ── AMPERE Lab customizations ──────────────────────────────
-// Navbar: full-width and font matching hp-hero-desc body text
-#navbar .nav-link {
-  font-size: 19px !important;
-  padding-left: 0.9rem !important;
-  padding-right: 0.9rem !important;
+
+// Design tokens: fonts, Notre Dame colors, text colors
+:root {
+  --font-heading: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --nd-navy: #0c2340;
+  --nd-gold: #c99700;
+  --nd-gold-bright: #e1b33c;
+  --color-text-primary: #1b1b19;
+  --color-text-secondary: #494e52;
+  --color-text-tertiary: #6b7177;
+  --amp-nav-height: 76px;
 }
-#navbar .navbar-brand {
-  font-size: 19px !important;
+html[data-theme="dark"] {
+  --color-text-primary: #f1f1ef;
+  --color-text-secondary: #c8cbce;
+  --color-text-tertiary: #9aa0a6;
+}
+
+// Typography: regular-weight body text, bold Archivo headings
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+// ── Navbar: navy bar, gold underline on current page, ND academic mark ──
+#navbar.amp-nav {
+  background: var(--nd-navy);
+  border-bottom: none;
+  box-shadow: none;
+  opacity: 1;
+  padding: 0;
+  font-family: var(--font-heading);
+}
+#navbar.amp-nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--nd-gold), var(--nd-gold-bright) 40%, var(--nd-navy) 95%);
+}
+#navbar .amp-nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  min-height: var(--amp-nav-height);
+  flex-wrap: nowrap;
+}
+#navbar .amp-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 2rem;
+  padding: 0;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #fff;
+  white-space: nowrap;
+}
+#navbar .amp-brand:hover {
+  color: #fff;
+  text-decoration: none;
+}
+#navbar .amp-brand svg {
+  width: 15px;
+  height: 28px;
+  flex-shrink: 0;
+}
+#navbar .navbar-nav .nav-item .nav-link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 17px;
+  font-weight: 500;
+  padding: 0.5rem 0.85rem;
+  white-space: nowrap;
+}
+#navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--nd-gold-bright);
+}
+#navbar .navbar-nav .nav-item.active > .nav-link {
+  color: var(--nd-gold-bright);
+  font-weight: 600;
+}
+#navbar .navbar-nav .nav-item.active > .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0.85rem;
+  right: 0.85rem;
+  bottom: 0;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--nd-gold-bright);
+}
+#navbar .amp-tools {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: auto;
+}
+#navbar #search-toggle,
+#navbar #light-toggle {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  padding: 0.4rem 0.5rem;
+}
+#navbar #search-toggle:hover,
+#navbar #light-toggle:hover {
+  color: var(--nd-gold-bright);
+}
+#navbar #search-toggle .nav-link {
+  color: inherit;
+  padding: 0;
+}
+#navbar .amp-nd-mark {
+  display: block;
+  flex-shrink: 0;
+  margin-left: 1.75rem;
+}
+#navbar .amp-nd-mark img {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+#navbar .navbar-toggler {
+  border: none;
+  padding: 0.5rem 0 0.5rem 0.75rem;
+}
+#navbar .navbar-toggler .icon-bar {
+  background-color: #fff;
+}
+#navbar .amp-nd-strip {
+  display: none;
+}
+body.fixed-top-nav {
+  padding-top: calc(var(--amp-nav-height) + 3px);
+}
+progress,
+.progress-container {
+  top: calc(var(--amp-nav-height) + 3px);
+}
+
+// Tablet and below: links collapse under a menu button
+@media (max-width: 991.98px) {
+  #navbar .amp-nav-inner {
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  // Keep the top row (brand, ND mark, menu button) centered in the bar when the menu opens
+  #navbar .amp-brand,
+  #navbar .amp-nd-mark,
+  #navbar .navbar-toggler {
+    display: flex;
+    align-items: center;
+    min-height: var(--amp-nav-height);
+  }
+  #navbar .navbar-toggler {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #navbar .navbar-collapse {
+    order: 5;
+    flex-basis: 100%;
+    padding: 0.25rem 0 1rem;
+  }
+  #navbar .navbar-nav .nav-item .nav-link {
+    padding: 0.55rem 0;
+  }
+  #navbar .navbar-nav .nav-item.active > .nav-link::after {
+    left: 0;
+    right: auto;
+    width: 2.5rem;
+  }
+  #navbar .amp-tools {
+    margin-left: 0;
+  }
+  #navbar .amp-nd-mark {
+    margin-left: auto;
+  }
+}
+
+// Phones: Notre Dame wordmark strip on top (University mobile standard)
+@media (max-width: 767.98px) {
+  :root {
+    --amp-nav-height: 60px;
+  }
+  #navbar .amp-nd-strip {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  #navbar .amp-nd-strip img {
+    display: block;
+    width: 301px;
+    max-width: 90vw;
+    height: auto;
+  }
+  #navbar .amp-nav-inner {
+    padding: 0 1.25rem;
+  }
+  #navbar .amp-nd-mark {
+    display: none;
+  }
+  #navbar .navbar-toggler {
+    margin-left: auto;
+  }
+  body.fixed-top-nav {
+    padding-top: calc(var(--amp-nav-height) + 50px + 3px);
+  }
+  progress,
+  .progress-container {
+    top: calc(var(--amp-nav-height) + 50px + 3px);
+  }
 }

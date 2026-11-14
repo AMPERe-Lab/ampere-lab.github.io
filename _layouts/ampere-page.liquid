@@ -6,16 +6,10 @@
 <html lang="{{ site.lang }}">
   <head>
     {% include head.liquid %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap"
-      rel="stylesheet"
-    >
     <style>
       /* ── Page shell: matches home page 1280px inner width ── */
       .ap-wrap {
-        font-family: 'DM Sans', var(--font-body, sans-serif);
+        font-family: var(--font-body);
         max-width: 1280px;
         margin-left: auto;
         margin-right: auto;
@@ -30,39 +24,56 @@
       /* ── Page title ── */
       .ap-wrap .post-title,
       .ap-wrap h1 {
-        font-family: 'DM Serif Display', serif;
-        font-size: 48px;
+        font-family: var(--font-heading);
+        font-size: 40px;
         line-height: 1.15;
+        letter-spacing: -0.015em;
         color: var(--color-text-primary);
         margin-bottom: 0.5rem;
-        font-weight: 400;
+        font-weight: 800;
       }
       .ap-wrap .post-description {
-        font-size: 20px;
-        line-height: 1.7;
+        font-size: 19px;
+        line-height: 1.6;
         color: var(--color-text-secondary);
+        max-width: 760px;
         margin-bottom: 2.5rem;
       }
 
-      /* ── Section headings ── */
+      /* ── Section headings (gold underline accent) ── */
       .ap-wrap h2 {
-        font-family: 'DM Serif Display', serif;
-        font-size: 35px;
-        font-weight: 400;
+        font-family: var(--font-heading);
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
         color: var(--color-text-primary);
         margin-top: 2.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.1rem;
+        padding-bottom: 0.5rem;
+        position: relative;
+      }
+      .ap-wrap h2::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 72px;
+        height: 3px;
+        border-radius: 2px;
+        background: linear-gradient(90deg, var(--nd-navy), var(--nd-gold) 55%, var(--nd-gold-bright));
       }
       .ap-wrap h3 {
-        font-size: 24px;
-        font-weight: 600;
+        font-family: var(--font-heading);
+        font-size: 22px;
+        font-weight: 700;
         color: var(--color-text-primary);
         margin-top: 1.75rem;
         margin-bottom: 0.75rem;
       }
       .ap-wrap h4 {
-        font-size: 21px;
-        font-weight: 600;
+        font-family: var(--font-heading);
+        font-size: 19px;
+        font-weight: 700;
         color: var(--color-text-primary);
         margin-bottom: 0.4rem;
       }
@@ -70,9 +81,16 @@
       /* ── Body text ── */
       .ap-wrap p,
       .ap-wrap li {
-        font-size: 20px;
-        line-height: 1.75;
+        font-size: 18px;
+        line-height: 1.65;
         color: var(--color-text-secondary);
+      }
+      /* Comfortable line length (~75 characters) for running text */
+      .ap-wrap article > p,
+      .ap-wrap article > ul,
+      .ap-wrap article > ol,
+      .ap-wrap article > blockquote {
+        max-width: 760px;
       }
       .ap-wrap strong {
         color: var(--color-text-primary);
