@@ -126,32 +126,30 @@ layout: default
     }
   }
 
-  /* ── Our Approach: navy band with the research diagram ── */
-  .hp-approach {
-    background: #0c2340;
-    padding: 3.25rem 3rem;
-  }
-  .hp-approach-layout {
+  /* ── Hero two-column layout: text left, research diagram card right ── */
+  .hp-hero-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 2.5rem;
     align-items: center;
   }
   @media (max-width: 900px) {
-    .hp-approach-layout {
+    .hp-hero-grid {
       grid-template-columns: 1fr;
     }
   }
-  @media (max-width: 768px) {
-    .hp-approach {
-      padding: 2.5rem 1.25rem;
-    }
+  .hp-approach-card {
+    background: #0c2340;
+    border-radius: 12px;
+    padding: 1.25rem 1.25rem 0.75rem;
   }
-  .hp-approach p {
-    font-size: 18px;
-    line-height: 1.65;
-    color: rgba(255, 255, 255, 0.78);
-    max-width: 560px;
+  .hp-approach-label {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--amp-gold);
+    margin-bottom: 0.25rem;
   }
   .hp-hero-graphic {
     display: flex;
@@ -160,7 +158,8 @@ layout: default
   }
   .hp-hero-graphic svg {
     width: 100%;
-    max-width: 520px;
+    max-width: 440px;
+    max-height: 420px;
     height: auto;
   }
   .hp-diagram-node-label {
@@ -605,20 +604,101 @@ layout: default
         >
         <figcaption>Photo: Michael Caterina / University of Notre Dame</figcaption>
       </figure>
-      <h1 class="hp-title">AMPERE Lab</h1>
-      <p class="hp-affil">
-        Department of Electrical Engineering<br>
-        University of Notre Dame
-      </p>
-      <p class="hp-tagline">Advanced Electric Machines &amp; Power Electronics Research Laboratory</p>
-      <p class="hp-hero-desc">
-        AMPERE Lab studies electric machines, power electronics, and control as one connected problem to advance electro-mechanical energy conversion
-        systems. Located at the University of Notre Dame, we are strategically positioned in the heart of America's industrial corridor.
-      </p>
-      <div class="hp-hero-ctas">
-        <a class="hp-hero-btn primary" href="{{ '/research/' | relative_url }}">Explore Research</a>
-        <a class="hp-hero-btn outline" href="{{ '/publications/' | relative_url }}">Publications</a>
-        <a class="hp-hero-btn outline" href="{{ '/join/' | relative_url }}">Join the Lab</a>
+      <div class="hp-hero-grid">
+        <div class="hp-hero-text">
+          <h1 class="hp-title">AMPERE Lab</h1>
+          <p class="hp-affil">
+            Department of Electrical Engineering<br>
+            University of Notre Dame
+          </p>
+          <p class="hp-tagline">Advanced Electric Machines &amp; Power Electronics Research Laboratory</p>
+          <p class="hp-hero-desc">
+            AMPERE Lab studies electric machines, power electronics, and control as one connected problem to advance electro-mechanical energy
+            conversion systems. Located at the University of Notre Dame, we are strategically positioned in the heart of America's industrial
+            corridor.
+          </p>
+          <div class="hp-hero-ctas">
+            <a class="hp-hero-btn primary" href="{{ '/research/' | relative_url }}">Explore Research</a>
+            <a class="hp-hero-btn outline" href="{{ '/publications/' | relative_url }}">Publications</a>
+            <a class="hp-hero-btn outline" href="{{ '/join/' | relative_url }}">Join the Lab</a>
+          </div>
+        </div>
+        <div class="hp-approach-card" aria-label="Our approach">
+          <div class="hp-approach-label">Our approach</div>
+          <div class="hp-hero-graphic">
+            <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <radialGradient id="hpCoreGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#FFE9A8"/>
+                  <stop offset="45%" stop-color="#C99700"/>
+                  <stop offset="100%" stop-color="#0C2340" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <!-- ══ outer ring of technique nodes, evenly spaced hexagon, dashed spokes to center ══ -->
+              <circle cx="240" cy="251" r="178" stroke="rgba(255,255,255,0.10)" stroke-width="1" stroke-dasharray="2 6"/>
+
+              <g stroke="rgba(255,255,255,0.28)" stroke-width="2" stroke-dasharray="3 5">
+                <line x1="240" y1="251" x2="240" y2="73"/>
+                <line x1="240" y1="251" x2="394" y2="162"/>
+                <line x1="240" y1="251" x2="394" y2="340"/>
+                <line x1="240" y1="251" x2="240" y2="429"/>
+                <line x1="240" y1="251" x2="86"  y2="340"/>
+                <line x1="240" y1="251" x2="86"  y2="162"/>
+              </g>
+
+              <!-- technique nodes — uniform size (rx=74, ry=29), evenly spaced 60° apart -->
+              <!-- Advanced Manufacturing (top) -->
+              <ellipse cx="240" cy="73" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+              <text x="240" y="69"  text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Advanced</text>
+              <text x="240" y="84"  text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Manufacturing</text>
+
+              <!-- AI-Assisted Design (upper right) -->
+              <ellipse cx="394" cy="162" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+              <text x="394" y="167" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">AI-Assisted Design</text>
+
+              <!-- Integration (lower right) -->
+              <ellipse cx="394" cy="340" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+              <text x="394" y="345" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Integration</text>
+
+              <!-- Advanced Control (bottom) -->
+              <ellipse cx="240" cy="429" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+              <text x="240" y="434" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Advanced Control</text>
+
+              <!-- Topology Optimization (lower left) -->
+              <ellipse cx="86" cy="340" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+              <text x="86" y="336" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Topology</text>
+              <text x="86" y="351" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Optimization</text>
+
+              <!-- Multi-Physics (upper left) -->
+              <ellipse cx="86" cy="162" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
+              <text x="86" y="167" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Multi-Physics</text>
+
+              <!-- ══ central Venn intersection: Electric Machines / Power Electronics / Control ══ -->
+              <g opacity="0.9">
+                <circle cx="206" cy="222" r="64" stroke="#C99700" stroke-width="1.4"/>
+                <circle cx="274" cy="222" r="64" stroke="#185FA5" stroke-width="1.4"/>
+                <circle cx="240" cy="280" r="64" stroke="#ffffff" stroke-opacity="0.55" stroke-width="1.4"/>
+              </g>
+
+              <!-- glowing core at the triple intersection -->
+              <circle cx="240" cy="248" r="34" fill="url(#hpCoreGlow)" opacity="0.95"/>
+              <circle cx="240" cy="248" r="9" fill="#FFE9A8"/>
+
+              <!-- domain labels — nudged inward, away from circle edges -->
+              <text x="190" y="206" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Electric</text>
+              <text x="190" y="221" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Machines</text>
+
+              <text x="290" y="206" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Power</text>
+              <text x="290" y="221" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Electronics</text>
+
+              <text x="240" y="318" text-anchor="middle" fill="#ffffff" class="hp-diagram-node-label">Control</text>
+
+              <!-- watermark -->
+              <text x="240" y="476" text-anchor="middle" fill="rgba(255,255,255,0.38)" letter-spacing="4" style="font-family:var(--font-heading); font-size:14px;">AMPERE LAB</text>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -673,93 +753,6 @@ layout: default
             <p>Low reliance on rare-earth elements and scarce supply chains</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Our Approach ──────────────────────────────────── -->
-  <section class="hp-approach">
-    <div class="hp-inner hp-approach-layout">
-      <div>
-        <div class="hp-section-label">Our Approach</div>
-        <div class="hp-section-title" style="color:#fff;">One connected problem</div>
-        <p>
-          Electric machines, power electronics, and control meet at the core of every system we build. Six techniques connect them: multi-physics
-          modeling, topology optimization, AI-assisted design, advanced manufacturing, advanced control, and system integration.
-        </p>
-      </div>
-      <div class="hp-hero-graphic">
-        <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <radialGradient id="hpCoreGlow" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#FFE9A8"/>
-              <stop offset="45%" stop-color="#C99700"/>
-              <stop offset="100%" stop-color="#0C2340" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-
-          <!-- ══ outer ring of technique nodes, evenly spaced hexagon, dashed spokes to center ══ -->
-          <circle cx="240" cy="251" r="178" stroke="rgba(255,255,255,0.10)" stroke-width="1" stroke-dasharray="2 6"/>
-
-          <g stroke="rgba(255,255,255,0.28)" stroke-width="2" stroke-dasharray="3 5">
-            <line x1="240" y1="251" x2="240" y2="73"/>
-            <line x1="240" y1="251" x2="394" y2="162"/>
-            <line x1="240" y1="251" x2="394" y2="340"/>
-            <line x1="240" y1="251" x2="240" y2="429"/>
-            <line x1="240" y1="251" x2="86"  y2="340"/>
-            <line x1="240" y1="251" x2="86"  y2="162"/>
-          </g>
-
-          <!-- technique nodes — uniform size (rx=74, ry=29), evenly spaced 60° apart -->
-          <!-- Advanced Manufacturing (top) -->
-          <ellipse cx="240" cy="73" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
-          <text x="240" y="69"  text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Advanced</text>
-          <text x="240" y="84"  text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Manufacturing</text>
-
-          <!-- AI-Assisted Design (upper right) -->
-          <ellipse cx="394" cy="162" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
-          <text x="394" y="167" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">AI-Assisted Design</text>
-
-          <!-- Integration (lower right) -->
-          <ellipse cx="394" cy="340" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
-          <text x="394" y="345" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Integration</text>
-
-          <!-- Advanced Control (bottom) -->
-          <ellipse cx="240" cy="429" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
-          <text x="240" y="434" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Advanced Control</text>
-
-          <!-- Topology Optimization (lower left) -->
-          <ellipse cx="86" cy="340" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
-          <text x="86" y="336" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Topology</text>
-          <text x="86" y="351" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Optimization</text>
-
-          <!-- Multi-Physics (upper left) -->
-          <ellipse cx="86" cy="162" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
-          <text x="86" y="167" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Multi-Physics</text>
-
-          <!-- ══ central Venn intersection: Electric Machines / Power Electronics / Control ══ -->
-          <g opacity="0.9">
-            <circle cx="206" cy="222" r="64" stroke="#C99700" stroke-width="1.4"/>
-            <circle cx="274" cy="222" r="64" stroke="#185FA5" stroke-width="1.4"/>
-            <circle cx="240" cy="280" r="64" stroke="#ffffff" stroke-opacity="0.55" stroke-width="1.4"/>
-          </g>
-
-          <!-- glowing core at the triple intersection -->
-          <circle cx="240" cy="248" r="34" fill="url(#hpCoreGlow)" opacity="0.95"/>
-          <circle cx="240" cy="248" r="9" fill="#FFE9A8"/>
-
-          <!-- domain labels — nudged inward, away from circle edges -->
-          <text x="190" y="206" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Electric</text>
-          <text x="190" y="221" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Machines</text>
-
-          <text x="290" y="206" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Power</text>
-          <text x="290" y="221" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Electronics</text>
-
-          <text x="240" y="318" text-anchor="middle" fill="#ffffff" class="hp-diagram-node-label">Control</text>
-
-          <!-- watermark -->
-          <text x="240" y="476" text-anchor="middle" fill="rgba(255,255,255,0.38)" letter-spacing="4" style="font-family:var(--font-heading); font-size:14px;">AMPERE LAB</text>
-        </svg>
       </div>
     </div>
   </section>
