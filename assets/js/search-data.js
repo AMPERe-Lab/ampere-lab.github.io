@@ -52,21 +52,6 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
-            },},{id: "projects-integrated-electro-hydraulic-machine-for-off-highway-vehicle-electrification",
-          title: 'Integrated Electro-hydraulic Machine for Off-highway Vehicle Electrification',
-          description: "A key enabler to electrify off-highway vehicles and improve their energy efficiency.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-novel-additively-manufactured-axial-flux-stator-with-eddy-current-limiting-features-and-high-silicon-steel",
-          title: 'Novel Additively Manufactured Axial-flux Stator with Eddy-current Limiting Features and High-silicon Steel',
-          description: "A key enabler to realize next-generation 3D printed electric machine components for high-performance machines.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-novel-multi-harmonic-electric-machines",
-          title: 'Novel Multi-harmonic Electric Machines',
-          description: "Re-thinking electric machine design and control and unlocking additional degrees of freedom to achieve step increase in power-density, torque-density, speed capability, and reliability.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
             },},{
         id: 'social-email',
         title: 'email',
