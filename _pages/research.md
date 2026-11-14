@@ -160,6 +160,7 @@ nav_order: 2
       <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
       <span class="rp-dot"></span><span class="rp-dot"></span><span class="rp-dot"></span>
     </div>
+
   </div>
 </div>
 
@@ -305,6 +306,7 @@ nav_order: 2
         <p>Technology transfer, spin-out partnerships, publications, open datasets</p>
       </div>
     </div>
+
   </div>
 </div>
 

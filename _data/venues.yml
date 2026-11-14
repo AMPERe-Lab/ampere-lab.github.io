@@ -10,10 +10,10 @@
   url: https://www.ieee-ecce.org/
   color: "#33c07d"
 
-  "IEEE-ITEC":
-  url: https://www.ieee-ecce.org/
+"IEEE-ITEC":
+  url: https://itec-conf.com/
   color: "#009f36"
 
-  "IEEE-IEMDC":
-  url: https://www.ieee-ecce.org/
+"IEEE-IEMDC":
+  url: https://www.iemdc.org/
   color: "#fbc247"

@@ -8,7 +8,10 @@
     {% include head.liquid %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    >
     <style>
       /* ── Page shell: matches home page 1280px inner width ── */
       .ap-wrap {
@@ -19,7 +22,9 @@
         padding: 3rem 3rem 4rem;
       }
       @media (max-width: 768px) {
-        .ap-wrap { padding: 2rem 1.25rem 3rem; }
+        .ap-wrap {
+          padding: 2rem 1.25rem 3rem;
+        }
       }
 
       /* ── Page title ── */
@@ -69,8 +74,13 @@
         line-height: 1.75;
         color: var(--color-text-secondary);
       }
-      .ap-wrap strong { color: var(--color-text-primary); font-weight: 600; }
-      .ap-wrap a { color: #185FA5; }
+      .ap-wrap strong {
+        color: var(--color-text-primary);
+        font-weight: 600;
+      }
+      .ap-wrap a {
+        color: #185fa5;
+      }
 
       /* ── Divider ── */
       .ap-wrap hr {
@@ -80,17 +90,36 @@
       }
 
       /* ── Publications bib entries ── */
-      .ap-wrap .publications .abbr { font-size: 13px; }
-      .ap-wrap .publications .title { font-size: 20px; font-weight: 500; }
-      .ap-wrap .publications .author { font-size: 19px; }
-      .ap-wrap .publications .periodical { font-size: 19px; }
-      .ap-wrap .publications .year { font-size: 18px; }
-      .ap-wrap .publications p { font-size: 19px; }
-      .ap-wrap .publications .btn { font-size: 14px; }
-      .ap-wrap #bib-search-input { font-size: 18px; }
+      .ap-wrap .publications .abbr {
+        font-size: 13px;
+      }
+      .ap-wrap .publications .title {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .ap-wrap .publications .author {
+        font-size: 19px;
+      }
+      .ap-wrap .publications .periodical {
+        font-size: 19px;
+      }
+      .ap-wrap .publications .year {
+        font-size: 18px;
+      }
+      .ap-wrap .publications p {
+        font-size: 19px;
+      }
+      .ap-wrap .publications .btn {
+        font-size: 14px;
+      }
+      .ap-wrap #bib-search-input {
+        font-size: 18px;
+      }
     </style>
     {% if page._styles %}
-    <style type="text/css">{{ page._styles }}</style>
+      <style type="text/css">
+        {{ page._styles }}
+      </style>
     {% endif %}
   </head>
 
@@ -100,13 +129,12 @@
     <!-- Full-width fluid container — no max_width restriction -->
     <div class="container-fluid mt-5 p-0" role="main">
       <div class="ap-wrap">
-
         <div class="post-header">
           {% if page.title %}
-          <h1 class="post-title">{{ page.title }}</h1>
+            <h1 class="post-title">{{ page.title }}</h1>
           {% endif %}
-          {% if page.description and page.description != "" %}
-          <p class="post-description">{{ page.description }}</p>
+          {% if page.description and page.description != '' %}
+            <p class="post-description">{{ page.description }}</p>
           {% endif %}
         </div>
 
@@ -124,7 +152,6 @@
         {% if site.giscus and page.giscus_comments %}
           {% include giscus.liquid %}
         {% endif %}
-
       </div>
     </div>
 

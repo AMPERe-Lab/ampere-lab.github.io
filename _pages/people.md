@@ -116,7 +116,7 @@ nav_order: 3
       <a href="https://ngadiyar93.github.io" target="_blank"><i class="ti ti-world"></i> Personal Website</a>
     </div>
     <p>
-      Dr. Gadiyar received his Ph.D. in Electrical Engineering from the University of Wisconsin-Madison in 2023. Prior to joining Notre Dame, he was an R&D Staff Member and held the Alvin M. Weinberg <a href="https://www.ornl.gov/careers/distinguished-fellowships" target="_blank">Distinguished Staff Fellowship</a> at the Oak Ridge National Laboratory (2024-2026), and worked in the industry at the GE Aerospace Research Center (2023-2024), and the Mitsubishi Electric Research Laboratories (2021).
+      Dr. Gadiyar received his Ph.D. in Electrical Engineering from the University of Wisconsin-Madison in 2023. Prior to joining Notre Dame, he was an R&D Staff Member and held the Alvin M. Weinberg <a href="https://www.ornl.gov/early-career-research/distinguished-staff-fellowships/fellowships/" target="_blank">Distinguished Staff Fellowship</a> at the Oak Ridge National Laboratory (2024-2026), and worked in the industry at the GE Aerospace Research Center (2023-2024), and the Mitsubishi Electric Research Laboratories (2021).
       He is a Senior Member of the IEEE and since 2025, serves as an Associate Editor of the IEEE Transactions on Industry Applications, and the IEEE Transactions on Transportation Electrification.
     </p>
   </div>
