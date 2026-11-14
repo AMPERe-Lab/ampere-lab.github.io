@@ -10,19 +10,19 @@ nav_order: 3
 <style>
   .pp-tile-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
     margin: 1.25rem 0 2.5rem;
   }
   @media (max-width: 900px) { .pp-tile-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 480px) { .pp-tile-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) { .pp-tile-grid { grid-template-columns: 1fr; } }
 
   .pp-tile {
     display: block;
     background: var(--color-background-primary);
     border: 0.5px solid var(--color-border-tertiary);
     border-radius: 10px;
-    padding: 1.5rem 1.35rem;
+    padding: 2rem 1.5rem;
     text-decoration: none;
     text-align: center;
     transition: box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
@@ -33,25 +33,25 @@ nav_order: 3
     border-color: #C99700;
   }
   .pp-tile-avatar {
-    width: 92px; height: 92px; border-radius: 50%;
+    width: 210px; height: 210px; max-width: 100%; aspect-ratio: 1; border-radius: 50%; overflow: hidden;
     background: #e9edf2;
     display: flex; align-items: center; justify-content: center;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.25rem;
   }
-  .pp-tile-avatar i { font-size: 48px; color: #9aa7b6; }
+  .pp-tile-avatar i { font-size: 96px; color: #9aa7b6; }
   .pp-tile.pp-tile-open .pp-tile-avatar {
     background: #0C2340;
   }
   .pp-tile.pp-tile-open .pp-tile-avatar i { color: #C99700; }
   .pp-tile h3 {
-    font-size: 17px; font-weight: 600; color: var(--color-text-primary);
-    margin: 0 0 0.3rem;
+    font-size: 24px; font-weight: 600; color: var(--color-text-primary);
+    margin: 0 0 0.4rem; line-height: 1.25;
   }
   .pp-tile p {
-    font-size: 14px; line-height: 1.5; color: var(--color-text-secondary); margin: 0;
+    font-size: 17px; line-height: 1.5; color: var(--color-text-secondary); margin: 0;
   }
   .pp-tile .pp-tile-link {
-    display: inline-block; margin-top: 0.6rem; font-size: 13px; font-weight: 600; color: #185FA5;
+    display: inline-block; margin-top: 0.75rem; font-size: 15px; font-weight: 600; color: #185FA5;
   }
 
   /* ── Group Leader card ── */
@@ -74,16 +74,16 @@ nav_order: 3
     .pp-leader-card { flex-direction: column; align-items: center; text-align: center; }
   }
   .pp-leader-photo {
-    width: 168px; height: 168px; flex-shrink: 0;
+    width: 240px; height: 240px; max-width: 100%; flex-shrink: 0;
     border-radius: 16px; object-fit: cover;
     border: 3px solid #0C2340;
   }
   .pp-leader-card h3 {
-    font-family: 'DM Serif Display', serif; font-size: 26px; font-weight: 400;
+    font-family: 'DM Serif Display', serif; font-size: 34px; font-weight: 400;
     color: var(--color-text-primary); margin: 0 0 0.2rem; line-height: 1.2;
   }
   .pp-leader-role {
-    font-size: 14.5px; font-weight: 600; letter-spacing: 0.5px;
+    font-size: 16px; font-weight: 600; letter-spacing: 0.5px;
     color: #C99700; text-transform: uppercase; margin: 0 0 0.9rem;
   }
   .pp-leader-links {
@@ -92,7 +92,7 @@ nav_order: 3
   @media (max-width: 700px) { .pp-leader-links { justify-content: center; } }
   .pp-leader-links a {
     display: inline-flex; align-items: center; gap: 0.4rem;
-    font-size: 13px; font-weight: 600; color: #185FA5;
+    font-size: 15px; font-weight: 600; color: #185FA5;
     background: var(--color-background-secondary, rgba(24,95,165,0.08));
     border: 0.5px solid var(--color-border-tertiary);
     border-radius: 999px; padding: 0.4rem 0.95rem;
@@ -101,7 +101,7 @@ nav_order: 3
   .pp-leader-links a:hover { border-color: #C99700; color: #C99700; }
   .pp-leader-links a i { font-size: 16px; }
   .pp-leader-card p {
-    font-size: 17px; line-height: 1.7; color: var(--color-text-secondary); margin: 0;
+    font-size: 18px; line-height: 1.7; color: var(--color-text-secondary); margin: 0;
   }
 </style>
 
