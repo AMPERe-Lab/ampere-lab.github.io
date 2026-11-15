@@ -52,6 +52,18 @@ layout: default
     line-height: 1.1;
     color: var(--color-text-primary);
     margin: 0 0 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+  }
+  .hp-title-mark {
+    width: 1.3em;
+    height: 1.3em;
+    flex-shrink: 0;
+    color: var(--nd-navy);
+  }
+  html[data-theme='dark'] .hp-title-mark {
+    color: #fff;
   }
   .hp-latest {
     display: flex;
@@ -275,8 +287,8 @@ layout: default
     stroke: #c99700;
     stroke-width: 1.5;
   }
-  .hp-venn .v-bolt {
-    fill: var(--amp-gold);
+  .hp-venn .v-mark {
+    color: #fff;
   }
   .hp-venn .v-pill-text {
     font-family: var(--font-heading);
@@ -804,7 +816,10 @@ layout: default
               })();
             </script>
           {% endif %}
-          <h1 class="hp-title">AMPERE Lab</h1>
+          <h1 class="hp-title">
+            <svg class="hp-title-mark" viewBox="0 0 200 200" aria-hidden="true">{% include amp_mark.liquid %}</svg>
+            AMPERE Lab
+          </h1>
           <p class="hp-affil">Department of Electrical Engineering, University of Notre Dame</p>
           <p class="hp-tagline">Advanced Electric Machines &amp; Power Electronics Research Laboratory</p>
           <p class="hp-hero-desc">
@@ -831,9 +846,9 @@ layout: default
             <circle class="v-dot" cx="245" cy="210" r="10" />
             <circle class="v-dot" cx="355" cy="210" r="10" />
             <circle class="v-dot" cx="300" cy="305" r="10" />
-            <rect class="v-pill" x="234" y="228" width="132" height="36" rx="18" />
-            <polygon class="v-bolt" points="18,8 10,36 17,36 9,62 28,30 20,30 30,8" transform="translate(247 235) scale(0.4) translate(-9 -8)" />
-            <text class="v-pill-text" x="309" y="252" text-anchor="middle">AMPERE</text>
+            <rect class="v-pill" x="228" y="228" width="144" height="36" rx="18" />
+            <g class="v-mark" transform="translate(236 234) scale(0.12)">{% include amp_mark_small.liquid %}</g>
+            <text class="v-pill-text" x="315" y="252" text-anchor="middle">AMPERE</text>
           </svg>
           <p class="hp-approach-rotator">
             <span class="sr-only">

@@ -23,6 +23,15 @@
       {% include newsletter.liquid %}
     {% endif %}
 
+    <a class="amp-footer-logo" href="{{ '/' | relative_url }}">
+      <img
+        src="{{ '/assets/img/logo/horizontal/ampere-lab-horizontal-reversed-no-tagline.svg' | relative_url }}"
+        alt="AMPERE Lab"
+        width="198"
+        height="40"
+      >
+    </a>
+
     <div class="container">
       &copy; Copyright {{ site.time | date: '%Y' }}
       {{ site.first_name }}

@@ -15,6 +15,7 @@ Every push to `main` builds and deploys the site through the **Deploy site** Git
 - **Join Us pages:** `_pages/join*.md`
 - **Homepage:** `_layouts/home.liquid`
 - **Colors, fonts, navbar, footer:** `assets/css/main.scss`
+- **Lab logo:** all versions (horizontal, stacked, icon, favicon; color, navy, white, reversed) are in `assets/img/logo/`, with usage notes in its README. The site uses `_includes/amp_mark_small.liquid` (navbar, diagram) and `_includes/amp_mark.liquid` (homepage title).
 
 ## Running locally
 
