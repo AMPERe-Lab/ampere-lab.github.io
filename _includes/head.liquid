@@ -2,10 +2,7 @@
 {% include metadata.liquid %}
 
 <!-- Bootstrap & MDB -->
-<link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' |{% elsif site.icon != blank %}
-  <link rel="icon" type="image/svg+xml" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/logo/png/favicon-32.png' | relative_url }}">
-  <link rel="apple-touch-icon" href="{{ '/assets/img/logo/png/apple-touch-icon.png' | relative_url }}">| bust_file_cache }}">
+<link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
 <link
   rel="stylesheet"
   href="{{ site.third_party_libraries.mdb.url.css }}"
