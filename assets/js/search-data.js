@@ -52,6 +52,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
+            },},{id: "news-our-first-conference-talk",
+          title: 'Our first conference talk!',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_5/";
             },},{id: "news-prof-gadiyar-receives-outstanding-associate-editor-award-from-ieee-transactions-on-industry-applications",
           title: 'Prof. Gadiyar receives Outstanding Associate Editor Award from IEEE Transactions on Industry Applications...',
           description: "",
