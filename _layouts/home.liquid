@@ -27,7 +27,7 @@ layout: default
     border-bottom: 1px solid var(--color-border-tertiary);
   }
   .hp-banner {
-    margin: 0 0 1.75rem;
+    margin: 0 0 0.75rem;
   }
   .hp-banner img {
     display: block;
@@ -54,15 +54,16 @@ layout: default
     margin: 0 0 0.6rem;
   }
   .hp-latest {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 0.6rem;
-    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
     margin: 0 0 1.1rem;
     padding: 0.35rem 0.9rem 0.35rem 0.35rem;
     border: 1px solid var(--color-border-secondary);
     border-radius: 999px;
-    font-size: 15px;
+    font-size: 17px;
     color: var(--color-text-secondary);
     text-decoration: none;
   }
@@ -77,16 +78,55 @@ layout: default
     border-radius: 999px;
     background: var(--nd-navy);
     color: #fff !important;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
+  /* The 3 newest posts take turns: each slides up and out every 5 s (paused on hover) */
+  .hp-latest-win {
+    position: relative;
+    flex: 1 1 0;
+    min-width: 0;
+    height: 1.5em;
+    overflow: hidden;
+  }
   .hp-latest-title {
+    position: absolute;
+    inset: 0;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: inherit !important;
+    opacity: 0;
+    transform: translateY(100%);
+    transition:
+      transform 0.5s ease,
+      opacity 0.5s ease;
+  }
+  .hp-latest:not(.is-js) .hp-latest-title:first-child,
+  .hp-latest-title.is-on {
+    opacity: 1;
+    transform: none;
+  }
+  .hp-latest-title.is-out {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  .hp-latest-dots {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+  .hp-latest-dots i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-border-secondary);
+    transition: background 0.3s;
+  }
+  .hp-latest-dots i.is-on {
+    background: var(--amp-gold);
   }
   .hp-affil {
     font-size: 18px;
@@ -703,18 +743,70 @@ layout: default
       </figure>
       <div class="hp-hero-grid">
         <div class="hp-hero-text">
-          {% assign latest_news = site.news | sort: 'date' | last %}
-          {% if latest_news %}
-            <a class="hp-latest" href="{{ latest_news.url | relative_url }}">
+          {% assign latest_news = site.news | sort: 'date' | reverse %}
+          {% if latest_news.size > 0 %}
+            <a class="hp-latest" id="hp-latest" href="{{ latest_news[0].url | relative_url }}">
               <span class="hp-latest-tag">Latest</span>
-              <span class="hp-latest-title">{{ latest_news.title }}</span>
+              <span class="hp-latest-win">
+                {% for item in latest_news limit: 3 %}
+                  <span class="hp-latest-title" data-url="{{ item.url | relative_url }}">{{ item.title }}</span>
+                {% endfor %}
+              </span>
+              {% if latest_news.size > 1 %}
+                <span class="hp-latest-dots" aria-hidden="true">
+                  {% for item in latest_news limit: 3 %}
+                    <i></i>
+                  {% endfor %}
+                </span>
+              {% endif %}
               <span aria-hidden="true">→</span>
             </a>
+            <script>
+              // Cycle the 3 newest posts every 5 s; pause while hovered or focused.
+              (function () {
+                var link = document.getElementById('hp-latest');
+                var titles = link.querySelectorAll('.hp-latest-title');
+                var dots = link.querySelectorAll('.hp-latest-dots i');
+                link.classList.add('is-js');
+                titles[0].classList.add('is-on');
+                if (titles.length < 2) return;
+                dots[0].classList.add('is-on');
+                var k = 0;
+                var paused = false;
+                link.addEventListener('mouseenter', function () {
+                  paused = true;
+                });
+                link.addEventListener('mouseleave', function () {
+                  paused = false;
+                });
+                link.addEventListener('focus', function () {
+                  paused = true;
+                });
+                link.addEventListener('blur', function () {
+                  paused = false;
+                });
+                setInterval(function () {
+                  if (paused || document.hidden) return;
+                  var old = titles[k];
+                  old.classList.remove('is-on');
+                  old.classList.add('is-out');
+                  dots[k].classList.remove('is-on');
+                  k = (k + 1) % titles.length;
+                  var next = titles[k];
+                  next.classList.remove('is-out');
+                  next.classList.add('is-on');
+                  dots[k].classList.add('is-on');
+                  link.href = next.getAttribute('data-url');
+                  setTimeout(function () {
+                    old.classList.remove('is-out');
+                  }, 550);
+                }, 5000);
+              })();
+            </script>
           {% endif %}
           <h1 class="hp-title">AMPERE Lab</h1>
           <p class="hp-affil">
-            Department of Electrical Engineering<br>
-            University of Notre Dame
+            Department of Electrical Engineering, University of Notre Dame
           </p>
           <p class="hp-tagline">Advanced Electric Machines &amp; Power Electronics Research Laboratory</p>
           <p class="hp-hero-desc">
