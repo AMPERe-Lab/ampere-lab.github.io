@@ -54,6 +54,24 @@ nav_order: 3
     display: inline-block; margin-top: 0.75rem; font-size: 15px; font-weight: 600; color: #185FA5;
   }
 
+  /* ── Recruiting banner (stands in for the empty postdoc and grad sections) ── */
+  .pp-recruit {
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem 1.5rem;
+    margin: 2rem 0 0.5rem; padding: 1.1rem 1.5rem;
+    background: var(--nd-navy); border-radius: var(--border-radius-lg); text-decoration: none;
+  }
+  .pp-recruit:hover { text-decoration: none; }
+  .pp-recruit .pp-recruit-text {
+    font-family: var(--font-heading); font-size: 20px; font-weight: 700; color: #fff !important;
+  }
+  .pp-recruit .pp-recruit-btn {
+    flex-shrink: 0; padding: 0.45rem 1.1rem; border-radius: 999px;
+    background: var(--nd-gold); color: var(--nd-navy) !important; font-size: 16px; font-weight: 700;
+    transition: background 0.2s ease;
+  }
+  .pp-recruit:hover .pp-recruit-btn { background: var(--nd-gold-bright); }
+  html[data-theme='dark'] .pp-recruit { background: #14305a; }
+
   /* ── Alumni: names only ── */
   .pp-alumni {
     list-style: none; padding: 0; margin: 1.25rem 0 0;
@@ -136,55 +154,13 @@ nav_order: 3
   </div>
 </div>
 
----
+<a class="pp-recruit" href="/join/">
+  <span class="pp-recruit-text">We’re recruiting PhD students and postdocs</span>
+  <span class="pp-recruit-btn">See openings →</span>
+</a>
 
-## Postdoctoral Researchers
-
-<div class="pp-tile-grid">
-  <a class="pp-tile" href="/join/postdocs/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>Coming Spring 2027!</h3>
-    <p>Postdoctoral position open</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-  <a class="pp-tile" href="/join/postdocs/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>Postdoctoral position open</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-</div>
-
----
-
-## Graduate Students
-
-<div class="pp-tile-grid">
-  <a class="pp-tile" href="/join/graduate-students/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>PhD position open — Fall 2027</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-  <a class="pp-tile" href="/join/graduate-students/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>PhD position open — Fall 2027</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-  <a class="pp-tile" href="/join/graduate-students/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>PhD position open — Fall 2027</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-  <a class="pp-tile" href="/join/graduate-students/">
-    <div class="pp-tile-avatar"><i class="ti ti-user"></i></div>
-    <h3>This could be you</h3>
-    <p>PhD position open — Fall 2027</p>
-    <span class="pp-tile-link">See opportunities →</span>
-  </a>
-</div>
+<!-- Postdoctoral Researchers and Graduate Students sections are hidden until the first members join.
+     To bring one back, add a "## Graduate Students" heading with a pp-tile-grid (see the note at the bottom). -->
 
 ---
 
@@ -223,8 +199,8 @@ nav_order: 3
 ## Alumni
 
 <ul class="pp-alumni">
-  <li><strong>Sreekar Earanti</strong><span>Oak Ridge National Laboratory</span></li>
-  <li><strong>Hansa Adusumilli</strong><span>Oak Ridge National Laboratory</span></li>
+  <li><strong>Sreekar Earanti</strong><span>B.S., University of Wisconsin–Madison</span><span>SULI Intern, Oak Ridge National Laboratory</span></li>
+  <li><strong>Hansa Adusumilli</strong><span>B.S., University of Virginia</span><span>SULI Intern, Oak Ridge National Laboratory</span></li>
 </ul>
 
 <!--
