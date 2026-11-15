@@ -139,8 +139,8 @@ layout: default
     }
   }
   .hp-approach-card {
-    background: #f6f7f9;
-    border: 1px solid rgba(12, 35, 64, 0.1);
+    background: #fff;
+    border: 1px solid rgba(12, 35, 64, 0.14);
     border-radius: 12px;
     padding: 1.25rem 1.25rem 1rem;
   }
@@ -166,26 +166,34 @@ layout: default
     margin: 0 auto;
   }
   .hp-venn .v-c {
-    stroke: #c99700;
+    stroke: #3a6ea5;
     stroke-width: 2;
   }
-  .hp-venn .v-top,
+  .hp-venn .v-top {
+    fill: rgba(58, 110, 165, 0.08);
+  }
   .hp-venn .v-left {
-    fill: rgba(201, 151, 0, 0.1);
+    fill: rgba(58, 110, 165, 0.13);
   }
   .hp-venn .v-right {
-    fill: rgba(201, 151, 0, 0.2);
+    fill: rgba(58, 110, 165, 0.19);
   }
   .hp-venn .v-label {
     font-family: var(--font-heading);
     font-size: 21px;
     font-weight: 700;
+    fill: #0c2340;
+  }
+  html[data-theme='dark'] .hp-venn .v-label {
     fill: var(--color-text-primary);
+  }
+  html[data-theme='dark'] .hp-venn .v-c {
+    stroke: #7fa3cc;
   }
   .hp-venn .v-dot {
     fill: #c99700;
-    stroke: #0c2340;
-    stroke-width: 2;
+    stroke: #fff;
+    stroke-width: 2.5;
   }
   .hp-venn .v-pill {
     fill: #0c2340;
