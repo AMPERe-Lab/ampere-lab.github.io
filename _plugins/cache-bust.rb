@@ -19,9 +19,11 @@ module Jekyll
 
       private
 
+      # directory may be one folder or a list of folders/files; all their contents feed the hash.
       def directory_files_content
-        target_path = File.join(directory, '**', '*')
-        Dir[target_path].map{|f| File.read(f) unless File.directory?(f) }.join
+        Array(directory).flat_map do |dir|
+          File.file?(dir) ? [dir] : Dir[File.join(dir, '**', '*')].sort
+        end.map { |f| File.read(f) unless File.directory?(f) }.join
       end
 
       def file_content
@@ -43,7 +45,8 @@ module Jekyll
     end
 
     def bust_css_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+      # Hash the Sass partials and the main stylesheet so the URL changes whenever styles change.
+      CacheDigester.new(file_name: file_name, directory: ['_sass', 'assets/css/main.scss']).digest!
     end
   end
 end
