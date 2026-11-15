@@ -37,8 +37,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/join/";
           },
-        },{id: "news-gadiyar-elected-general-co-chair-for-iemdc-2029",
-          title: 'Gadiyar elected General co-Chair for IEMDC 2029',
+        },{id: "news-prof-gadiyar-elected-general-co-chair-for-iemdc-2029",
+          title: 'Prof. Gadiyar elected General co-Chair for IEMDC 2029',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_1/";
@@ -47,11 +47,16 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-gadiyar-selected-to-receive-the-2026-ieee-andrew-w-smith-outstanding-young-member-achievement-award",
-          title: 'Gadiyar selected to receive the 2026 IEEE Andrew W. Smith Outstanding Young Member...',
+            },},{id: "news-prof-gadiyar-selected-to-receive-the-2026-ieee-andrew-w-smith-outstanding-young-member-achievement-award",
+          title: 'Prof. Gadiyar selected to receive the 2026 IEEE Andrew W. Smith Outstanding Young...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_3/";
+            },},{id: "news-prof-gadiyar-receives-outstanding-associate-editor-award-from-ieee-transactions-on-industry-applications",
+          title: 'Prof. Gadiyar receives Outstanding Associate Editor Award from IEEE Transactions on Industry Applications...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_4/";
             },},{
         id: 'social-email',
         title: 'email',
