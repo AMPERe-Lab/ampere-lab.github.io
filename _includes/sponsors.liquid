@@ -1,0 +1,38 @@
+{% comment %}
+  Sponsor logos, shared by the homepage and the Research page.
+  To add a sponsor: put the logo in assets/img/sponsors/ and add an <img> line below.
+{% endcomment %}
+<style>
+  .rp-sponsors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    margin-top: 1.5rem;
+  }
+  .rp-sponsor-logo {
+    height: 100px;
+    width: auto;
+    max-width: 80vw;
+    object-fit: contain;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+  }
+  .rp-sponsor-logo:hover {
+    opacity: 1;
+  }
+  @media (max-width: 768px) {
+    .rp-sponsors-grid {
+      gap: 2.5rem;
+    }
+    .rp-sponsor-logo {
+      height: 68px;
+    }
+  }
+</style>
+
+<div class="rp-sponsors-grid">
+  <img class="rp-sponsor-logo" src="{{ '/assets/img/sponsors/jmag_logo.svg' | relative_url }}" alt="JMAG">
+  <img class="rp-sponsor-logo" src="{{ '/assets/img/sponsors/powersys_logo.png' | relative_url }}" alt="POWERSYS">
+</div>
