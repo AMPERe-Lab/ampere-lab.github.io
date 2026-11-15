@@ -59,7 +59,7 @@
         font-size: 19px;
         line-height: 1.6;
         color: var(--color-text-secondary);
-        max-width: 760px;
+        max-width: none;
         margin-bottom: 2.5rem;
       }
 
@@ -108,12 +108,12 @@
         line-height: 1.65;
         color: var(--color-text-secondary);
       }
-      /* Comfortable line length (~75 characters) for running text */
+      /* Running text width: full content width (page is capped at 1280px) so it lines up with cards below */
       .ap-wrap article > p,
       .ap-wrap article > ul,
       .ap-wrap article > ol,
       .ap-wrap article > blockquote {
-        max-width: 760px;
+        max-width: none;
       }
       .ap-wrap strong {
         color: var(--color-text-primary);

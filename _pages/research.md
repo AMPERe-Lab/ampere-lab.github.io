@@ -13,7 +13,7 @@ nav_order: 2
     font-size: 18px;
     line-height: 1.65;
     color: var(--color-text-secondary);
-    max-width: 760px;
+    max-width: none;
   }
   .rp-vision p { margin-bottom: 1rem; }
 
@@ -28,7 +28,7 @@ nav_order: 2
   }
   .rp-subhead {
     font-size: 18px; line-height: 1.65; color: var(--color-text-secondary);
-    max-width: 760px; margin-bottom: 2.5rem;
+    max-width: none; margin-bottom: 2.5rem;
   }
   .rp-block { padding: 3.5rem 0; border-top: 1px solid var(--color-border-tertiary); }
 

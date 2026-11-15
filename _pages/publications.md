@@ -14,7 +14,7 @@ nav_order: 4
     font-size: 18px;
     line-height: 1.65;
     color: var(--color-text-secondary);
-    max-width: 760px;
+    max-width: none;
     margin-bottom: 1.5rem;
   }
   .pub-scholar-btn {
