@@ -21,7 +21,7 @@ nav_order: 6
     display: block;
     background: var(--color-background-primary);
     border: 0.5px solid var(--color-border-tertiary);
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 1.5rem 1.35rem;
     text-decoration: none;
     transition: box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
@@ -32,14 +32,14 @@ nav_order: 6
     border-color: #C99700;
   }
   .ju-tile-icon {
-    width: 92px; height: 92px; border-radius: 20px;
+    width: 92px; height: 92px; border-radius: 12px;
     background: #0C2340;
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 1rem;
   }
   .ju-tile-icon i { font-size: 48px; color: var(--amp-gold); }
   .ju-tile h3 {
-    font-size: 19px; font-weight: 600; color: var(--color-text-primary);
+    font-size: 19px; font-weight: 700; color: var(--color-text-primary);
     margin: 0 0 0.35rem;
   }
   .ju-tile p {

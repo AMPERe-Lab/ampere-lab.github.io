@@ -37,12 +37,25 @@ $max-content-width: {{ site.max_width }};
   --color-text-primary: #1b1b19;
   --color-text-secondary: #494e52;
   --color-text-tertiary: #6b7177;
+  --amp-link: #185fa5; // the one link color (Notre Dame blue)
+  // Card surfaces and borders, used by cards and tiles on every page
+  --color-background-primary: #fff;
+  --color-background-secondary: #f4f6f9;
+  --color-border-tertiary: rgba(12, 35, 64, 0.12);
+  --color-border-secondary: rgba(12, 35, 64, 0.2);
+  --border-radius-lg: 12px;
+  --border-radius-md: 8px;
   --amp-nav-height: 76px;
 }
 html[data-theme="dark"] {
   --color-text-primary: #f1f1ef;
   --color-text-secondary: #c8cbce;
   --color-text-tertiary: #9aa0a6;
+  --amp-link: #7fb0e0;
+  --color-background-primary: rgba(255, 255, 255, 0.03);
+  --color-background-secondary: rgba(255, 255, 255, 0.06);
+  --color-border-tertiary: rgba(255, 255, 255, 0.12);
+  --color-border-secondary: rgba(255, 255, 255, 0.2);
 }
 
 // Typography: regular-weight body text, bold Archivo headings

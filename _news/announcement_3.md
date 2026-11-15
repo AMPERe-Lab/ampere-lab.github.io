@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ampere-page
 title: Gadiyar selected to receive the 2026 IEEE Andrew W. Smith Outstanding Young Member Achievement Award
 date: 2026-07-06
 inline: false

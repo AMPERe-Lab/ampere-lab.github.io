@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ampere-page
 title: AMPERE Lab is now live!
 date: 2026-06-01
 inline: false

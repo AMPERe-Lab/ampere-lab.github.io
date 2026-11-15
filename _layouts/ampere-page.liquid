@@ -5,6 +5,16 @@
 <!doctype html>
 <html lang="{{ site.lang }}">
   <head>
+    {% if page.redirect %}
+      {% if page.redirect == true %}
+        {% assign redirect = site.baseurl | append: '/' %}
+      {% elsif page.redirect contains '://' %}
+        {% assign redirect = page.redirect %}
+      {% else %}
+        {% assign redirect = page.redirect | relative_url %}
+      {% endif %}
+      <meta http-equiv="refresh" content="3; url={{ redirect }}">
+    {% endif %}
     {% include head.liquid %}
     <style>
       /* ── Page shell: matches home page 1280px inner width ── */
@@ -13,11 +23,11 @@
         max-width: 1280px;
         margin-left: auto;
         margin-right: auto;
-        padding: 3rem 3rem 4rem;
+        padding: 0.75rem 3rem 4rem;
       }
       @media (max-width: 768px) {
         .ap-wrap {
-          padding: 2rem 1.25rem 3rem;
+          padding: 0.75rem 1.25rem 3rem;
         }
       }
 
@@ -32,6 +42,12 @@
         margin-bottom: 0.5rem;
         font-weight: 800;
       }
+      .ap-wrap .post-meta {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--color-text-tertiary);
+        margin: 0 0 1.25rem;
+      }
       .ap-wrap .post-description {
         font-size: 19px;
         line-height: 1.6;
@@ -44,7 +60,7 @@
       .ap-wrap h2 {
         font-family: var(--font-heading);
         font-size: 28px;
-        font-weight: 700;
+        font-weight: 800;
         letter-spacing: -0.01em;
         color: var(--color-text-primary);
         margin-top: 2.5rem;
@@ -150,6 +166,9 @@
         <div class="post-header">
           {% if page.title %}
             <h1 class="post-title">{{ page.title }}</h1>
+          {% endif %}
+          {% if page.collection == 'news' and page.date %}
+            <p class="post-meta">{{ page.date | date: '%B %-d, %Y' }}</p>
           {% endif %}
           {% if page.description and page.description != '' %}
             <p class="post-description">{{ page.description }}</p>

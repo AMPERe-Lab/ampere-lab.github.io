@@ -19,11 +19,11 @@ nav_order: 2
 
   /* ── Shared section header ── */
   .rp-label {
-    font-size: 17px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+    font-size: 15px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
     color: var(--amp-gold); margin-bottom: 0.6rem;
   }
   .rp-heading {
-    font-family: var(--font-heading); font-size: 30px; font-weight: 800; letter-spacing: -0.01em;
+    font-family: var(--font-heading); font-size: 28px; font-weight: 800; letter-spacing: -0.01em;
     color: var(--color-text-primary); margin-bottom: 0.85rem; line-height: 1.2;
   }
   .rp-subhead {
@@ -44,19 +44,19 @@ nav_order: 2
   .rp-theme-card {
     background: var(--color-background-primary);
     border: 0.5px solid var(--color-border-tertiary);
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 1.5rem 1.35rem;
     display: flex; flex-direction: column;
   }
   .rp-theme-icon {
-    width: 96px; height: 96px; border-radius: 16px;
+    width: 96px; height: 96px; border-radius: 12px;
     background: #0C2340;
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 1.1rem;
   }
   .rp-theme-icon i { font-size: 52px; color: var(--amp-gold); }
   .rp-theme-card h3 {
-    font-size: 21px; font-weight: 600; line-height: 1.3;
+    font-size: 19px; font-weight: 700; line-height: 1.3;
     color: var(--color-text-primary); margin-bottom: 0.6rem;
   }
   .rp-theme-card p {
@@ -66,7 +66,7 @@ nav_order: 2
   /* ── How We Work / process ── */
   .rp-process-box {
     background: #0C2340;
-    border-radius: 14px;
+    border-radius: 12px;
     padding: 2.75rem 2.5rem;
   }
   .rp-process-box .rp-label { color: var(--amp-gold); }
@@ -85,7 +85,7 @@ nav_order: 2
 
   .rp-process-step { position: relative; }
   .rp-process-icon {
-    width: 76px; height: 76px; border-radius: 14px;
+    width: 76px; height: 76px; border-radius: 12px;
     background: rgba(255,255,255,0.07);
     border: 0.5px solid rgba(255,255,255,0.18);
     display: flex; align-items: center; justify-content: center;
@@ -93,7 +93,7 @@ nav_order: 2
   }
   .rp-process-icon i { font-size: 40px; color: var(--amp-gold); }
   .rp-process-step h4 {
-    font-size: 19px; font-weight: 600; color: #fff; margin-bottom: 0.5rem;
+    font-size: 19px; font-weight: 700; color: #fff; margin-bottom: 0.5rem;
   }
   .rp-process-step p {
     font-size: 15.5px; line-height: 1.6; color: rgba(255,255,255,0.65); margin: 0;
@@ -111,7 +111,7 @@ nav_order: 2
   .rp-app-card {
     background: var(--color-background-primary);
     border: 0.5px solid var(--color-border-tertiary);
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 1.5rem 1.1rem;
     text-align: center;
   }
@@ -119,7 +119,7 @@ nav_order: 2
     font-size: 50px; color: #0C2340; margin-bottom: 0.85rem; display: inline-block;
   }
   .rp-app-card h3 {
-    font-size: 17px; font-weight: 600; color: var(--color-text-primary);
+    font-size: 19px; font-weight: 700; color: var(--color-text-primary);
     margin-bottom: 0.2rem; line-height: 1.3;
   }
   .rp-app-card p {
@@ -208,7 +208,7 @@ nav_order: 2
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9; /* fallback until JS measures the How We Work box */
-    border-radius: 14px;
+    border-radius: 12px;
     overflow: hidden;
     background: #0C2340;
   }

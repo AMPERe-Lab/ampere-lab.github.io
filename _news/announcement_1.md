@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ampere-page
 title: Gadiyar elected General co-Chair for IEMDC 2029
 date: 2026-03-25
 inline: false

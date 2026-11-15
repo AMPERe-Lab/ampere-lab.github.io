@@ -140,7 +140,7 @@ newsletter:
 collections:
   news:
     defaults:
-      layout: post
+      layout: ampere-page
     output: true
     permalink: /:collection/:title/
   projects:

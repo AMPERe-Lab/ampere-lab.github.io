@@ -10,14 +10,14 @@ nav: false
 
 We have **openings for multiple graduate students (MS / PhD)** starting **Fall 2026** and later.
 
-**We are looking for students with:**
+## We are looking for students with
 
 - A completed B.S. or M.S. in Electrical Engineering, Mechanical Engineering, or a closely related field.
 - Hands-on experience with hardware and a passion to build things.
 - Strong understanding of electric machines, power electronics, circuits, control systems, or a related area.
 - Interest in at least one of: electric machine design, power electronics, optimization, or AI/ML applied to engineering.
 
-**What you will get:**
+## What you will get
 
 - Full funding (tuition + stipend) through assistantships.
 - Access to state-of-the-art laboratory and computing resources at Notre Dame.
@@ -25,7 +25,7 @@ We have **openings for multiple graduate students (MS / PhD)** starting **Fall 2
 - Opportunities to collaborate with cross-disciplinary partners from academia, industry, and national labs.
 - A strong preparation for academic or industry careers.
 
-**To apply:**
+## How to apply
 
 - The EE graduate admissions at Notre Dame is offered by a committee. Review the instructions and formally apply to the [Notre Dame EE Graduate program](https://ee.nd.edu/graduate/). Please mention Dr. Gadiyar's name in your application.
 - Please e-mail Dr. Gadiyar at ngadiyar[at]nd[dot]edu to indicate your interest in joining our lab.

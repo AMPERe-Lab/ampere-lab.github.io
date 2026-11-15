@@ -21,7 +21,7 @@ nav_order: 3
     display: block;
     background: var(--color-background-primary);
     border: 0.5px solid var(--color-border-tertiary);
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 2rem 1.5rem;
     text-decoration: none;
     text-align: center;
@@ -44,7 +44,7 @@ nav_order: 3
   }
   .pp-tile.pp-tile-open .pp-tile-avatar i { color: var(--amp-gold); }
   .pp-tile h3 {
-    font-size: 24px; font-weight: 600; color: var(--color-text-primary);
+    font-size: 22px; font-weight: 700; color: var(--color-text-primary);
     margin: 0 0 0.4rem; line-height: 1.25;
   }
   .pp-tile p {
@@ -61,7 +61,7 @@ nav_order: 3
     align-items: flex-start;
     background: var(--color-background-primary);
     border: 0.5px solid var(--color-border-tertiary);
-    border-radius: 14px;
+    border-radius: 12px;
     padding: 2rem;
     margin: 1.25rem 0 2.5rem;
     transition: box-shadow 0.15s ease, border-color 0.15s ease;
@@ -75,7 +75,7 @@ nav_order: 3
   }
   .pp-leader-photo {
     width: 240px; height: 240px; max-width: 100%; flex-shrink: 0;
-    border-radius: 16px; object-fit: cover;
+    border-radius: 12px; object-fit: cover;
     border: 3px solid #0C2340;
   }
   .pp-leader-card h3 {
@@ -83,7 +83,7 @@ nav_order: 3
     color: var(--color-text-primary); margin: 0 0 0.2rem; line-height: 1.2;
   }
   .pp-leader-role {
-    font-size: 16px; font-weight: 600; letter-spacing: 0.5px;
+    font-size: 15px; font-weight: 600; letter-spacing: 1.5px;
     color: var(--amp-gold); text-transform: uppercase; margin: 0 0 0.9rem;
   }
   .pp-leader-links {
