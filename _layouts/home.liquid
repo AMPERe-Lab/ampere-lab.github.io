@@ -192,6 +192,9 @@ layout: default
     stroke: #c99700;
     stroke-width: 1.5;
   }
+  .hp-venn .v-bolt {
+    fill: var(--amp-gold);
+  }
   .hp-venn .v-pill-text {
     font-family: var(--font-heading);
     font-size: 16px;
@@ -698,15 +701,15 @@ layout: default
             <circle class="v-dot" cx="245" cy="210" r="10" />
             <circle class="v-dot" cx="355" cy="210" r="10" />
             <circle class="v-dot" cx="300" cy="305" r="10" />
-            <rect class="v-pill" x="242" y="228" width="116" height="36" rx="18" />
-            <text class="v-pill-text" x="300" y="252" text-anchor="middle">AMPERE</text>
+            <rect class="v-pill" x="234" y="228" width="132" height="36" rx="18" />
+            <polygon class="v-bolt" points="18,8 10,36 17,36 9,62 28,30 20,30 30,8" transform="translate(247 235) scale(0.4) translate(-9 -8)" />
+            <text class="v-pill-text" x="309" y="252" text-anchor="middle">AMPERE</text>
           </svg>
           <p class="hp-approach-rotator">
             <span class="sr-only">
-              Through multi-physics modeling, topology optimization, AI-assisted design, advanced manufacturing, advanced control, and system
-              integration.
+              Multi-physics modeling, topology optimization, AI-assisted design, advanced manufacturing, advanced control, and system integration.
             </span>
-            <span aria-hidden="true">Through <span class="hp-rot-word">multi-physics modeling</span><span class="hp-caret"></span></span>
+            <span aria-hidden="true"><span class="hp-rot-word">Multi-physics modeling</span><span class="hp-caret"></span></span>
           </p>
           <script>
             // Type and erase each technique in turn (Matt Lee-style rotating line)
@@ -714,12 +717,12 @@ layout: default
               var el = document.querySelector('.hp-rot-word');
               if (!el) return;
               var words = [
-                'multi-physics modeling',
-                'topology optimization',
+                'Multi-physics modeling',
+                'Topology optimization',
                 'AI-assisted design',
-                'advanced manufacturing',
-                'advanced control',
-                'system integration',
+                'Advanced manufacturing',
+                'Advanced control',
+                'System integration',
               ];
               var i = 0;
               if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
