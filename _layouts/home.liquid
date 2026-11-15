@@ -211,10 +211,16 @@ layout: default
     font-family: var(--font-heading);
     font-size: 18px;
     font-weight: 700;
-    color: var(--amp-gold);
+    color: #0c2340;
   }
   .hp-approach-rotator span {
     color: inherit;
+  }
+  html[data-theme='dark'] .hp-approach-rotator {
+    color: var(--color-text-primary);
+  }
+  .hp-caret.is-typing {
+    animation: none;
   }
   .hp-caret {
     display: inline-block;
@@ -222,7 +228,7 @@ layout: default
     height: 1.05em;
     margin-left: 2px;
     vertical-align: -0.15em;
-    background: var(--amp-gold);
+    background: currentColor;
     animation: hp-blink 1s steps(1) infinite;
   }
   @keyframes hp-blink {
@@ -712,9 +718,10 @@ layout: default
             <span aria-hidden="true"><span class="hp-rot-word">Multi-physics modeling</span><span class="hp-caret"></span></span>
           </p>
           <script>
-            // Type and erase each technique in turn (Matt Lee-style rotating line)
+            // Type and erase each technique one letter at a time, like an editor cursor
             (function () {
               var el = document.querySelector('.hp-rot-word');
+              var caret = document.querySelector('.hp-caret');
               if (!el) return;
               var words = [
                 'Multi-physics modeling',
@@ -725,38 +732,37 @@ layout: default
                 'System integration',
               ];
               var i = 0;
-              if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                setInterval(function () {
-                  i = (i + 1) % words.length;
-                  el.textContent = words[i];
-                }, 3000);
-                return;
-              }
               var n = words[0].length;
               var erasing = true;
+              function typing(on) {
+                if (caret) caret.classList.toggle('is-typing', on);
+              }
               function tick() {
+                typing(true);
                 if (erasing) {
                   n--;
                   el.textContent = words[i].slice(0, n);
                   if (n === 0) {
                     erasing = false;
                     i = (i + 1) % words.length;
-                    setTimeout(tick, 350);
+                    typing(false);
+                    setTimeout(tick, 500);
                   } else {
-                    setTimeout(tick, 30);
+                    setTimeout(tick, 40);
                   }
                 } else {
                   n++;
                   el.textContent = words[i].slice(0, n);
                   if (n === words[i].length) {
                     erasing = true;
-                    setTimeout(tick, 1800);
+                    typing(false);
+                    setTimeout(tick, 2200);
                   } else {
-                    setTimeout(tick, 60);
+                    setTimeout(tick, 85 + Math.random() * 50);
                   }
                 }
               }
-              setTimeout(tick, 2000);
+              setTimeout(tick, 2200);
             })();
           </script>
         </div>
