@@ -54,6 +54,20 @@ nav_order: 3
     display: inline-block; margin-top: 0.75rem; font-size: 15px; font-weight: 600; color: #185FA5;
   }
 
+  /* ── Alumni: names only ── */
+  .pp-alumni {
+    list-style: none; padding: 0; margin: 1.25rem 0 0;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+  }
+  @media (max-width: 900px) { .pp-alumni { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .pp-alumni { grid-template-columns: 1fr; } }
+  .pp-alumni li {
+    background: var(--color-background-primary); border: 1px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin: 0;
+  }
+  .pp-alumni strong { display: block; font-family: var(--font-heading); font-size: 19px; font-weight: 700; color: var(--color-text-primary); }
+  .pp-alumni span { display: block; font-size: 16px; color: var(--color-text-secondary); margin-top: 0.2rem; }
+
   /* ── Group Leader card ── */
   .pp-leader-card {
     display: flex;
@@ -203,6 +217,15 @@ nav_order: 3
     <p>Aerospace and Mechanical Engineering</p>
   </div>
 </div>
+
+---
+
+## Alumni
+
+<ul class="pp-alumni">
+  <li><strong>Sreekar Earanti</strong><span>Oak Ridge National Laboratory</span></li>
+  <li><strong>Hansa Adusumilli</strong><span>Oak Ridge National Laboratory</span></li>
+</ul>
 
 <!--
   ── Adding a real member ──

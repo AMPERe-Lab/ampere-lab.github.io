@@ -53,6 +53,41 @@ layout: default
     color: var(--color-text-primary);
     margin: 0 0 0.6rem;
   }
+  .hp-latest {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    max-width: 100%;
+    margin: 0 0 1.1rem;
+    padding: 0.35rem 0.9rem 0.35rem 0.35rem;
+    border: 1px solid var(--color-border-secondary);
+    border-radius: 999px;
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+  }
+  .hp-latest:hover {
+    border-color: var(--amp-link);
+    color: var(--amp-link);
+    text-decoration: none;
+  }
+  .hp-latest-tag {
+    flex-shrink: 0;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    background: var(--nd-navy);
+    color: #fff !important;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .hp-latest-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: inherit !important;
+  }
   .hp-affil {
     font-size: 18px;
     line-height: 1.5;
@@ -425,6 +460,22 @@ layout: default
     color: var(--color-text-primary);
     font-weight: 500;
   }
+  .hp-news-thumb {
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+  .hp-news-thumb img {
+    display: block;
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--border-radius-md);
+  }
+  @media (max-width: 560px) {
+    .hp-news-thumb {
+      display: none;
+    }
+  }
   .hp-news-more {
     display: inline-block;
     margin-top: 1.1rem;
@@ -652,6 +703,14 @@ layout: default
       </figure>
       <div class="hp-hero-grid">
         <div class="hp-hero-text">
+          {% assign latest_news = site.news | sort: 'date' | last %}
+          {% if latest_news %}
+            <a class="hp-latest" href="{{ latest_news.url | relative_url }}">
+              <span class="hp-latest-tag">Latest</span>
+              <span class="hp-latest-title">{{ latest_news.title }}</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          {% endif %}
           <h1 class="hp-title">AMPERE Lab</h1>
           <p class="hp-affil">
             Department of Electrical Engineering<br>
@@ -817,6 +876,11 @@ layout: default
                   <a href="{{ item.url | relative_url }}" style="color:#185FA5;text-decoration:none;font-weight:500;">{{ item.title }}</a>
                 {% endif %}
               </div>
+              {% if item.image %}
+                <a class="hp-news-thumb" href="{{ item.url | relative_url }}" tabindex="-1" aria-hidden="true">
+                  <img src="{{ item.image | relative_url }}" alt="" loading="lazy">
+                </a>
+              {% endif %}
             </div>
           {% endfor %}
         </div>

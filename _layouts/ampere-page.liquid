@@ -49,6 +49,14 @@
           line-height: 1.2;
         }
       }
+      .ap-wrap .ap-news-image {
+        display: block;
+        width: 100%;
+        max-height: 520px;
+        object-fit: cover;
+        border-radius: var(--border-radius-lg);
+        margin: 0 0 1.75rem;
+      }
       .ap-wrap .post-meta {
         font-size: 15px;
         font-weight: 600;
@@ -181,6 +189,14 @@
             <p class="post-description">{{ page.description }}</p>
           {% endif %}
         </div>
+
+        {% if page.collection == 'news' and page.image %}
+          <img
+            class="ap-news-image"
+            src="{{ page.image | relative_url }}"
+            alt="{{ page.image_alt | default: page.title }}"
+          >
+        {% endif %}
 
         <article>
           {{ content }}

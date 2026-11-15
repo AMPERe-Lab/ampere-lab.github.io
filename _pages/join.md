@@ -61,7 +61,7 @@ If you are interested, please click on the appropriate sections below to review 
   <a class="ju-tile" href="/join/graduate-students/">
     <div class="ju-tile-icon"><i class="ti ti-school"></i></div>
     <h3>Graduate Students</h3>
-    <p>MS / PhD openings starting Fall 2026</p>
+    <p>MS / PhD openings starting Fall 2027</p>
     <span class="ju-tile-link">Learn more →</span>
   </a>
 

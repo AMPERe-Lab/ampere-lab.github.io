@@ -130,6 +130,19 @@ nav_order: 4
   .pub-item:last-child {
     border-bottom: none;
   }
+  .ap-wrap .pub-bibtex {
+    grid-column: 1 / -1;
+    margin: 0.35rem 0 0;
+    padding: 0.85rem 1rem;
+    font-size: 13px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--color-text-primary);
+    background: var(--color-background-secondary);
+    border: 1px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-md);
+  }
   .pub-badge {
     font-family: var(--font-heading);
     font-size: 12px;
@@ -242,11 +255,12 @@ nav_order: 4
     <h2>{{ t.title }}</h2>
     <ol class="pub-list">
       {% for p in list %}
-        <li class="pub-item" data-type="{{ p.type }}">
+        <li class="pub-item" data-type="{{ p.type }}" data-authors="{{ p.authors | strip_html | escape }}" data-title="{{ p.title | strip_html | escape }}" data-venue="{{ p.venue | strip_html | escape }}" data-year="{{ p.year }}">
           <span class="pub-badge pub-badge-{{ p.type }}">{% case p.type %}{% when 'journal' %}Journal{% when 'conference' %}Conference{% when 'patent' %}Patent{% else %}Other{% endcase %}</span>
           <span class="pub-cite">{{ p.authors }}, “<span class="pub-title">{{ p.title }}</span>,” <span class="pub-venue">{{ p.venue }}</span>, {{ p.year }}.</span>
           <span class="pub-actions">
             <button type="button" class="pub-copy" aria-label="Copy citation">Copy</button>
+            <button type="button" class="pub-bib" aria-label="Show and copy BibTeX" aria-expanded="false">BibTeX</button>
             <a class="pub-find" href="https://scholar.google.com/scholar?q={{ p.title | url_encode }}" target="_blank" rel="noopener" aria-label="Find this paper on Google Scholar">Find ↗</a>
           </span>
         </li>
@@ -310,6 +324,53 @@ nav_order: 4
         };
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(text).then(done, function () {});
+        }
+      });
+    });
+
+    // BibTeX, built from the citation fields: "M. M. Nahin" -> "Nahin, M. M."
+    function bibAuthor(name) {
+      var parts = name.trim().split(/\s+/);
+      var i = 0;
+      while (i < parts.length - 1 && /^([A-Z]\.|[A-Z]\.-?[A-Z]\.|[A-Z])$/.test(parts[i])) i++;
+      var last = parts.slice(i).join(' ');
+      var first = parts.slice(0, i).join(' ');
+      return first ? last + ', ' + first : last;
+    }
+    function bibtex(li) {
+      var d = li.dataset;
+      var names = d.authors.replace(/,?\s+and\s+/g, ', ').split(/\s*,\s*/).filter(Boolean);
+      var authors = names.map(bibAuthor).join(' and ');
+      var lastName = bibAuthor(names[0] || 'paper').split(',')[0].toLowerCase().replace(/[^a-z]/g, '');
+      var word = (d.title.toLowerCase().match(/[a-z]{4,}/) || ['paper'])[0];
+      var kind = { journal: 'article', conference: 'inproceedings' }[d.type] || 'misc';
+      var venueField = { journal: 'journal', conference: 'booktitle' }[d.type] || 'howpublished';
+      var o = '{', c = '}';
+      return '@' + kind + o + lastName + d.year + word + ',\n' +
+        '  author = ' + o + authors + c + ',\n' +
+        '  title = ' + o + o + d.title + c + c + ',\n' +
+        '  ' + venueField + ' = ' + o + d.venue + c + ',\n' +
+        '  year = ' + o + d.year + c + '\n' + c;
+    }
+    document.querySelectorAll('.pub-bib').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var li = btn.closest('.pub-item');
+        var pre = li.querySelector('.pub-bibtex');
+        if (pre) {
+          pre.remove();
+          btn.setAttribute('aria-expanded', 'false');
+          return;
+        }
+        pre = document.createElement('pre');
+        pre.className = 'pub-bibtex';
+        pre.textContent = bibtex(li);
+        li.appendChild(pre);
+        btn.setAttribute('aria-expanded', 'true');
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(pre.textContent).then(function () {
+            btn.textContent = 'Copied';
+            setTimeout(function () { btn.textContent = 'BibTeX'; }, 1500);
+          }, function () {});
         }
       });
     });

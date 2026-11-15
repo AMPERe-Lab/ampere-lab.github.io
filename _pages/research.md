@@ -138,21 +138,21 @@ visit_us: true
 <!-- ── Research photo slideshow ── -->
 <div class="rp-block" style="border-top: none; padding-top: 0;">
   <div class="rp-slideshow" id="rp-slideshow">
-    <img class="rp-slide active" src="/assets/img/research-slideshow/1.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/2.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/3.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/4.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/5.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/6.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/7.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/8.png" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/9.png" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/11.png" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/12.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/13.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/14.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/15.jpg" alt="">
-    <img class="rp-slide" src="/assets/img/research-slideshow/16.jpg" alt="">
+    <img class="rp-slide active" src="/assets/img/research-slideshow/1.jpg" alt="Block diagram of an electric drive: controller, power electronic drive, and electric machine linking electrical and mechanical ports">
+    <img class="rp-slide" src="/assets/img/research-slideshow/2.jpg" alt="Cutaway of an integrated axial-flux motor and radial piston pump sharing one hydraulic flow path">
+    <img class="rp-slide" src="/assets/img/research-slideshow/3.jpg" alt="Additively manufactured stator core with red insulation coating">
+    <img class="rp-slide" src="/assets/img/research-slideshow/4.jpg" alt="Wound axial-flux stator with copper coils around a central bearing hub">
+    <img class="rp-slide" src="/assets/img/research-slideshow/5.jpg" alt="Wound stator submerged in red impregnation varnish">
+    <img class="rp-slide" src="/assets/img/research-slideshow/6.jpg" alt="Hilbert-curve laminated stator design and the printed metal stator">
+    <img class="rp-slide" src="/assets/img/research-slideshow/7.jpg" alt="Sparks from laser powder bed fusion during metal 3D printing">
+    <img class="rp-slide" src="/assets/img/research-slideshow/8.png" alt="Simulated magnetic flux in a conventional stator compared with a Hilbert stator">
+    <img class="rp-slide" src="/assets/img/research-slideshow/9.png" alt="Efficiency map comparing an additively manufactured stator with a baseline stator over speed and torque">
+    <img class="rp-slide" src="/assets/img/research-slideshow/11.png" alt="Control block diagram for a seven-phase machine with separate current regulators for each harmonic sequence">
+    <img class="rp-slide" src="/assets/img/research-slideshow/12.jpg" alt="Hand-wound concentrated-coil stator held in the lab">
+    <img class="rp-slide" src="/assets/img/research-slideshow/13.jpg" alt="Axial-flux machine prototype mounted on a test stand with torque sensor">
+    <img class="rp-slide" src="/assets/img/research-slideshow/14.jpg" alt="Toroidal inductor wound with paired wires and a thermocouple">
+    <img class="rp-slide" src="/assets/img/research-slideshow/15.jpg" alt="LCC-CCL and LCC-CL wireless charging circuits with Pareto fronts from design optimization">
+    <img class="rp-slide" src="/assets/img/research-slideshow/16.jpg" alt="Multi-phase inverter test setup with gate driver boards and phase cables">
 
     <div class="rp-slideshow-dots">
       <span class="rp-dot active"></span><span class="rp-dot"></span><span class="rp-dot"></span>

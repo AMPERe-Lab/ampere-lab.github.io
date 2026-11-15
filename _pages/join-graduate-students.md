@@ -8,7 +8,7 @@ nav: false
 
 [← Back to Join Us](/join/)
 
-We have **openings for multiple graduate students (MS / PhD)** starting **Fall 2026** and later.
+We have **openings for multiple graduate students (MS / PhD)** starting **Fall 2027** and later.
 
 ## We are looking for students with
 
