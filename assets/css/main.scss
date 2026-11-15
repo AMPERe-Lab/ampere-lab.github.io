@@ -125,7 +125,7 @@ h6 {
   color: var(--amp-gold);
   font-weight: 600;
 }
-#navbar  {
+#navbar .navbar-nav .nav-item.active > .nav-link::after {
   content: "";
   position: absolute;
   left: 0.85rem;
@@ -211,7 +211,7 @@ progress,
   #navbar .navbar-nav .nav-item .nav-link {
     padding: 0.55rem 0;
   }
-  #navbar  {
+  #navbar .navbar-nav .nav-item.active > .nav-link::after {
     left: 0;
     right: auto;
     width: 2.5rem;
