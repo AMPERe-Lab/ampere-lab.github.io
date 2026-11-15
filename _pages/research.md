@@ -5,6 +5,7 @@ title: Research
 description:
 nav: true
 nav_order: 2
+visit_us: true
 ---
 
 <style>
@@ -337,12 +338,13 @@ nav_order: 2
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 4.5rem;
     margin-top: 1.5rem;
   }
   .rp-sponsor-logo {
-    height: 60px;
+    height: 100px;
     width: auto;
+    max-width: 80vw;
     object-fit: contain;
     opacity: 0.85;
     transition: opacity 0.2s ease;

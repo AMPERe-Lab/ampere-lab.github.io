@@ -197,6 +197,10 @@
           {% include giscus.liquid %}
         {% endif %}
       </div>
+
+      {% if page.visit_us %}
+        {% include visit_us.liquid %}
+      {% endif %}
     </div>
 
     {% include footer.liquid %}
