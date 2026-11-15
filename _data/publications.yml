@@ -1,0 +1,278 @@
+# Publications shown on /publications/, grouped by topic and filterable by type.
+# Source: Google Scholar (user CPd0z5gAAAAJ), 2019 onward.
+#
+# To add a paper, copy an entry and edit it. Fields:
+#   topic:   one of the keys under "topics" below
+#   type:    journal | conference | patent | other
+#   year:    publication year (shown at the end of the citation)
+#   authors: author list as it should appear; wrap Prof. Gadiyar's name in <b></b>
+#   title:   paper title
+#   venue:   journal / conference / patent number
+# Papers are listed newest first within each topic automatically.
+
+topics:
+  - key: integrated
+    label: Integrated Systems
+    title: Integrated Electro-Mechanical Systems
+  - key: am
+    label: Additive Manufacturing
+    title: Additive Manufacturing for Electric Machines
+  - key: multiharmonic
+    label: Multi-Harmonic
+    title: Multi-Harmonic Machines & Windings
+  - key: axialflux
+    label: Axial Flux
+    title: Axial Flux & Power-Dense Machines
+  - key: ai
+    label: AI & Optimization
+    title: AI-Assisted Design & Optimization
+  - key: pe
+    label: Power Electronics & Grid
+    title: Power Electronics, Wireless Power & Grid
+
+papers:
+  # ── Integrated Electro-Mechanical Systems ──
+  - topic: integrated
+    type: journal
+    year: 2026
+    authors: M. M. Nahin, G. R. Bohach, <b>N. Gadiyar</b>, E. L. Severson, and J. D. Van de Ven
+    title: Dynamic modeling and design of a radial hydrostatic piston pump for integrated electric motor-pump
+    venue: Journal of Dynamic Systems, Measurement, and Control
+  - topic: integrated
+    type: conference
+    year: 2024
+    authors: A. A. Asgodom, T. Noguchi, <b>N. Gadiyar</b>, and E. L. Severson
+    title: A review of ring motors with integrated loads
+    venue: 2024 IEEE Energy Conversion Congress and Exposition (ECCE)
+  - topic: integrated
+    type: patent
+    year: 2024
+    authors: J. Van de Ven, G. Bohach, <b>N. Gadiyar</b>, and E. Severson
+    title: Integrated electric-to-hydraulic conversion machine
+    venue: US Patent 12,152,572
+  - topic: integrated
+    type: journal
+    year: 2024
+    authors: <b>N. Gadiyar</b>, J. Van de Ven, and E. L. Severson
+    title: Evaluation of torque-dense electric machine technology for off-highway vehicle electrification
+    venue: IEEE Transactions on Industry Applications
+  - topic: integrated
+    type: conference
+    year: 2023
+    authors: P. Purohit, A. Chatterjee, <b>N. Gadiyar</b>, P. Strampp, P. Y. Li, and E. L. Severson
+    title: Design and optimization of a fast-switching electromagnetic valve actuator for off-highway vehicle hydraulic systems
+    venue: 2023 IEEE Transportation Electrification Conference & Expo (ITEC)
+  - topic: integrated
+    type: other
+    year: 2023
+    authors: <b>N. Gadiyar</b>
+    title: An investigation of power dense axial flux electric machines to electrify off-highway vehicles
+    venue: Ph.D. dissertation, University of Wisconsin-Madison
+  - topic: integrated
+    type: conference
+    year: 2022
+    authors: <b>N. Gadiyar</b> and E. L. Severson
+    title: A review of torque-dense electric drive systems with potential to bridge the gap with hydraulics for off-highway vehicle electrification
+    venue: 2022 IEEE Transportation Electrification Conference & Expo (ITEC)
+  - topic: integrated
+    type: journal
+    year: 2022
+    authors: <b>FNU Nishanth</b>, G. Bohach, M. M. Nahin, J. Van de Ven, and E. L. Severson
+    title: Development of an integrated electro-hydraulic machine to electrify off-highway vehicles
+    venue: IEEE Transactions on Industry Applications
+  - topic: integrated
+    type: conference
+    year: 2021
+    authors: M. M. Nahin, G. R. Bohach, <b>FNU Nishanth</b>, E. L. Severson, and J. D. Van de Ven
+    title: Dynamic modeling and design of a radial hydrostatic piston pump for integrated pump-motor
+    venue: ASME/BATH Symposium on Fluid Power and Motion Control (FPMC)
+  - topic: integrated
+    type: patent
+    year: 2021
+    authors: J. Van de Ven, G. Bohach, <b>FNU Nishanth</b>, and E. Severson
+    title: Integrated electric-to-hydraulic conversion machine
+    venue: WO Patent WO2021034642A1
+  - topic: integrated
+    type: conference
+    year: 2020
+    authors: <b>N. Gadiyar</b>, G. Bohach, M. M. Nahin, J. Van de Ven, and E. L. Severson
+    title: Design of an axial flux machine with an integrated hydraulic pump for off-highway vehicle electrification
+    venue: 2020 IEEE Energy Conversion Congress and Exposition (ECCE)
+  - topic: integrated
+    type: conference
+    year: 2020
+    authors: G. Bohach, M. M. Nahin, E. Severson, and J. D. Van de Ven
+    title: Impact of dynamics on the losses at radial ball piston pump interfaces
+    venue: ASME/BATH Symposium on Fluid Power and Motion Control (FPMC)
+  - topic: integrated
+    type: conference
+    year: 2020
+    authors: <b>FNU Nishanth</b>, A. Khamitov, and E. L. Severson
+    title: Comparison of linear and rotary electric machine topologies for a hybrid hydraulic electric architecture of off-highway vehicles
+    venue: 2020 IEEE Transportation Electrification Conference & Expo (ITEC)
+  - topic: integrated
+    type: other
+    year: 2020
+    authors: <b>Nishanth</b>, J. Van de Ven, and E. L. Severson
+    title: Optimal design of axial flux electric motors to electrify off-highway vehicles
+    venue: Siemens Digital Industries Software, Engineer Innovation (magazine)
+  - topic: integrated
+    type: conference
+    year: 2019
+    authors: <b>N. Gadiyar</b>, G. Bohach, E. Severson, and J. Van de Ven
+    title: Design of a highly integrated electric-hydraulic machine for electrifying off-highway vehicles
+    venue: 2019 IEEE Energy Conversion Congress and Exposition (ECCE)
+  - topic: integrated
+    type: conference
+    year: 2019
+    authors: G. R. Bohach, <b>Nishanth</b>, E. Severson, and J. D. Van de Ven
+    title: Modeling and optimization study of a tightly integrated rotary electric motor-hydraulic pump
+    venue: ASME/BATH Symposium on Fluid Power and Motion Control (FPMC)
+
+  # ── Additive Manufacturing for Electric Machines ──
+  - topic: am
+    type: conference
+    year: 2026
+    authors: <b>N. Gadiyar</b>, A. D. Goodall, and E. L. Severson
+    title: Impact of eddy current minimizing stator teeth in additively manufactured electric machines
+    venue: IET Conference Proceedings
+  - topic: am
+    type: conference
+    year: 2025
+    authors: S.-U. Chung, P. Han, <b>N. Gadiyar</b>, E. Severson, A. Goodall, P. Gottipati, and M. Solveson
+    title: Electromagnetic modeling of lattice structures in additively manufactured electric machines
+    venue: 2025 IEEE International Electric Machines & Drives Conference (IEMDC)
+  - topic: am
+    type: journal
+    year: 2025
+    authors: D. Newman, P. Faue, <b>N. Gadiyar</b>, B. Rankouhi, F. E. Pfefferkorn, D. J. Thoma, and E. Severson
+    title: Development of solid synchronous reluctance rotors with multi-material additive manufacturing
+    venue: IEEE Transactions on Industry Applications
+  - topic: am
+    type: conference
+    year: 2023
+    authors: D. Newman, P. Faue, <b>N. Gadiyar</b>, B. Rankouhi, F. E. Pfefferkorn, D. J. Thoma, and E. Severson
+    title: Solid high-speed synchronous reluctance rotor enabled by multi-material additive manufacturing
+    venue: 2023 IEEE Energy Conversion Congress and Exposition (ECCE)
+  - topic: am
+    type: journal
+    year: 2023
+    authors: A. D. Goodall, <b>N. Gadiyar</b>, E. L. Severson, and I. Todd
+    title: Loss performance of an additively manufactured axial flux machine stator with an eddy-current limiting structure
+    venue: Materials Today Communications
+  - topic: am
+    type: journal
+    year: 2023
+    authors: <b>N. Gadiyar</b>, A. Goodall, I. Todd, and E. L. Severson
+    title: Characterization of an axial flux machine with an additively manufactured stator
+    venue: IEEE Transactions on Energy Conversion
+  - topic: am
+    type: conference
+    year: 2022
+    authors: A. Goodall, <b>F. Nishanth</b>, E. Severson, and I. Todd
+    title: Design of an additively manufactured electric machine stator with eddy current limiting geometry
+    venue: International Conference on Design for 3D Printing, Singapore
+
+  # ── Multi-Harmonic Machines & Windings ──
+  - topic: multiharmonic
+    type: conference
+    year: 2026
+    authors: <b>N. Gadiyar</b>, V. Rallabandi, and S. Mukherjee
+    title: Brushless excitation for wound-field synchronous machines using multi-harmonic windings
+    venue: 2026 IEEE Transportation Electrification Conference & Expo (ITEC)
+  - topic: multiharmonic
+    type: conference
+    year: 2025
+    authors: <b>N. Gadiyar</b> and E. Severson
+    title: Electric machine torque density enhancement using spatial harmonics
+    venue: 2025 IEEE Energy Conversion Congress and Exposition (ECCE)
+  - topic: multiharmonic
+    type: patent
+    year: 2025
+    authors: <b>N. Gadiyar</b>, V. Rallabandi, and S. Mukherjee
+    title: Multi-harmonic brushless excitation system for wound-field synchronous machines
+    venue: US Patent Application (ORNL Technology 202/505,857)
+  - topic: multiharmonic
+    type: journal
+    year: 2024
+    authors: <b>N. Gadiyar</b>, A. Khamitov, and E. L. Severson
+    title: Design of electric machine windings to independently control multiple airgap harmonics
+    venue: IEEE Transactions on Industry Applications
+  - topic: multiharmonic
+    type: conference
+    year: 2022
+    authors: <b>N. Gadiyar</b>, A. Khamitov, and E. L. Severson
+    title: Design of multiphase motor windings for control of multiple airgap fields
+    venue: 2022 IEEE Energy Conversion Congress and Exposition (ECCE)
+
+  # ── Axial Flux & Power-Dense Machines ──
+  - topic: axialflux
+    type: journal
+    year: 2023
+    authors: <b>N. Gadiyar</b>, J. Van Verdeghem, and E. L. Severson
+    title: A review of axial flux permanent magnet machine technology
+    venue: IEEE Transactions on Industry Applications
+  - topic: axialflux
+    type: conference
+    year: 2021
+    authors: <b>N. Gadiyar</b>, J. Van Verdeghem, and E. L. Severson
+    title: Recent advances in analysis and design of axial flux permanent magnet electric machines
+    venue: 2021 IEEE Energy Conversion Congress and Exposition (ECCE)
+  - topic: axialflux
+    type: conference
+    year: 2021
+    authors: <b>N. Gadiyar</b>, M. Johnson, and E. L. Severson
+    title: A review of thermal analysis and management of power dense electric machines
+    venue: 2021 IEEE International Electric Machines & Drives Conference (IEMDC)
+
+  # ── AI-Assisted Design & Optimization ──
+  - topic: ai
+    type: conference
+    year: 2026
+    authors: V. Rallabandi, P. Ribeiro, <b>N. Gadiyar</b>, and B. Ozpineci
+    title: Artificial neural networks for electric machine efficiency and flux map computation
+    venue: 2026 IEEE Transportation Electrification Conference & Expo (ITEC)
+  - topic: ai
+    type: conference
+    year: 2026
+    authors: <b>N. Gadiyar</b>, P. Ribeiro, V. Rallabandi, S. Chowdhury, and B. Ozpineci
+    title: Optimized gear selection to maximize energy savings in electric traction drives for medium and heavy duty vehicles
+    venue: 2026 IEEE Transportation Electrification Conference & Expo (ITEC)
+  - topic: ai
+    type: conference
+    year: 2022
+    authors: <b>N. Gadiyar</b> and B. Wang
+    title: Topology optimization of electric machines - A review
+    venue: 2022 IEEE Energy Conversion Congress and Exposition (ECCE)
+  - topic: ai
+    type: conference
+    year: 2022
+    authors: V. Pendyala and <b>N. Gadiyar</b>
+    title: Development of a machine learning technique to accurately estimate battery state of charge
+    venue: 2022 IEEE Industrial Electronics Society Annual On-Line Conference (ONCON)
+
+  # ── Power Electronics, Wireless Power & Grid ──
+  - topic: pe
+    type: other
+    year: 2026
+    authors: S. Lee, R. P. Wojda, C.-H. Jo, S. Inoue, P. Ribeiro, G.-J. Su, M. Mohammad, H. Barua, <b>N. Gadiyar</b>, P. Kumar, S. Cochran, S. Mukherjee, W. Vinson, V. Rallabandi, S. Chowdhury, and B. Ozpineci
+    title: Toward next-generation AI data centers - Power delivery architecture shifts, emerging technologies, and challenges
+    venue: arXiv preprint arXiv:2606.25095
+  - topic: pe
+    type: conference
+    year: 2026
+    authors: L. M. Weldehawaryat, S. Mukherjee, W. Shireen, and <b>N. Gadiyar</b>
+    title: Digital twin based condition monitoring of LCC-LCC inductive power transfer systems
+    venue: 2026 IEEE Transportation Electrification Conference & Expo (ITEC)
+  - topic: pe
+    type: conference
+    year: 2026
+    authors: L. M. Weldehawaryat, S. Mukherjee, W. Shireen, and <b>N. Gadiyar</b>
+    title: Multi-objective optimization framework for the design of wireless power transfer systems
+    venue: 2026 IEEE Texas Power and Energy Conference (TPEC)
+  - topic: pe
+    type: other
+    year: 2022
+    authors: <b>F. Nishanth</b>
+    title: Analysis of an induction machine fed by a space vector modulated VSI
+    venue: arXiv preprint arXiv:2209.05254
