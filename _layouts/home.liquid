@@ -139,9 +139,14 @@ layout: default
     }
   }
   .hp-approach-card {
-    background: #0c2340;
+    background: #f6f7f9;
+    border: 1px solid rgba(12, 35, 64, 0.1);
     border-radius: 12px;
-    padding: 1.25rem 1.25rem 0.75rem;
+    padding: 1.25rem 1.25rem 1rem;
+  }
+  html[data-theme='dark'] .hp-approach-card {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.12);
   }
   .hp-approach-label {
     font-size: 14px;
@@ -151,24 +156,81 @@ layout: default
     color: var(--amp-gold);
     margin-bottom: 0.25rem;
   }
-  .hp-hero-graphic {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .hp-hero-graphic svg {
+
+  /* Three-circle diagram: Control, Electric Machines, Power Electronics; AMPERE at the center */
+  .hp-venn {
+    display: block;
     width: 100%;
     max-width: 440px;
-    max-height: 420px;
     height: auto;
+    margin: 0 auto;
   }
-  .hp-diagram-node-label {
-    font-family: var(--font-body);
-    font-size: 14px;
-    font-weight: 600;
+  .hp-venn .v-c {
+    stroke: #c99700;
+    stroke-width: 2;
   }
-  .hp-hero-graphic text[fill='#FFE9A8'] {
+  .hp-venn .v-top,
+  .hp-venn .v-left {
+    fill: rgba(201, 151, 0, 0.1);
+  }
+  .hp-venn .v-right {
+    fill: rgba(201, 151, 0, 0.2);
+  }
+  .hp-venn .v-label {
+    font-family: var(--font-heading);
+    font-size: 21px;
+    font-weight: 700;
+    fill: var(--color-text-primary);
+  }
+  .hp-venn .v-dot {
+    fill: #c99700;
+    stroke: #0c2340;
+    stroke-width: 2;
+  }
+  .hp-venn .v-pill {
+    fill: #0c2340;
+    stroke: #c99700;
+    stroke-width: 1.5;
+  }
+  .hp-venn .v-pill-text {
+    font-family: var(--font-heading);
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2px;
     fill: var(--amp-gold);
+  }
+
+  /* Typing line that cycles through the six techniques */
+  .hp-approach-rotator {
+    min-height: 1.6em;
+    margin: 0.5rem 0 0;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--amp-gold);
+  }
+  .hp-approach-rotator span {
+    color: inherit;
+  }
+  .hp-caret {
+    display: inline-block;
+    width: 2px;
+    height: 1.05em;
+    margin-left: 2px;
+    vertical-align: -0.15em;
+    background: var(--amp-gold);
+    animation: hp-blink 1s steps(1) infinite;
+  }
+  @keyframes hp-blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hp-caret {
+      animation: none;
+    }
   }
 
   /* ── Mission ── */
@@ -625,79 +687,75 @@ layout: default
         </div>
         <div class="hp-approach-card" aria-label="Our approach">
           <div class="hp-approach-label">Our approach</div>
-          <div class="hp-hero-graphic">
-            <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <radialGradient id="hpCoreGlow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="#FFE9A8"/>
-                  <stop offset="45%" stop-color="#C99700"/>
-                  <stop offset="100%" stop-color="#0C2340" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-
-              <!-- ══ outer ring of technique nodes, evenly spaced hexagon, dashed spokes to center ══ -->
-              <circle cx="240" cy="251" r="178" stroke="rgba(255,255,255,0.10)" stroke-width="1" stroke-dasharray="2 6"/>
-
-              <g stroke="rgba(255,255,255,0.28)" stroke-width="2" stroke-dasharray="3 5">
-                <line x1="240" y1="251" x2="240" y2="73"/>
-                <line x1="240" y1="251" x2="394" y2="162"/>
-                <line x1="240" y1="251" x2="394" y2="340"/>
-                <line x1="240" y1="251" x2="240" y2="429"/>
-                <line x1="240" y1="251" x2="86"  y2="340"/>
-                <line x1="240" y1="251" x2="86"  y2="162"/>
-              </g>
-
-              <!-- technique nodes — uniform size (rx=74, ry=29), evenly spaced 60° apart -->
-              <!-- Advanced Manufacturing (top) -->
-              <ellipse cx="240" cy="73" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
-              <text x="240" y="69"  text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Advanced</text>
-              <text x="240" y="84"  text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Manufacturing</text>
-
-              <!-- AI-Assisted Design (upper right) -->
-              <ellipse cx="394" cy="162" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
-              <text x="394" y="167" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">AI-Assisted Design</text>
-
-              <!-- Integration (lower right) -->
-              <ellipse cx="394" cy="340" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
-              <text x="394" y="345" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Integration</text>
-
-              <!-- Advanced Control (bottom) -->
-              <ellipse cx="240" cy="429" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
-              <text x="240" y="434" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Advanced Control</text>
-
-              <!-- Topology Optimization (lower left) -->
-              <ellipse cx="86" cy="340" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
-              <text x="86" y="336" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Topology</text>
-              <text x="86" y="351" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Optimization</text>
-
-              <!-- Multi-Physics (upper left) -->
-              <ellipse cx="86" cy="162" rx="74" ry="29" fill="rgba(255,255,255,0.04)" stroke="#C99700" stroke-width="1"/>
-              <text x="86" y="167" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Multi-Physics</text>
-
-              <!-- ══ central Venn intersection: Electric Machines / Power Electronics / Control ══ -->
-              <g opacity="0.9">
-                <circle cx="206" cy="222" r="64" stroke="#C99700" stroke-width="1.4"/>
-                <circle cx="274" cy="222" r="64" stroke="#185FA5" stroke-width="1.4"/>
-                <circle cx="240" cy="280" r="64" stroke="#ffffff" stroke-opacity="0.55" stroke-width="1.4"/>
-              </g>
-
-              <!-- glowing core at the triple intersection -->
-              <circle cx="240" cy="248" r="34" fill="url(#hpCoreGlow)" opacity="0.95"/>
-              <circle cx="240" cy="248" r="9" fill="#FFE9A8"/>
-
-              <!-- domain labels — nudged inward, away from circle edges -->
-              <text x="190" y="206" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Electric</text>
-              <text x="190" y="221" text-anchor="middle" fill="#FFE9A8" class="hp-diagram-node-label">Machines</text>
-
-              <text x="290" y="206" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Power</text>
-              <text x="290" y="221" text-anchor="middle" fill="#bfe0ff" class="hp-diagram-node-label">Electronics</text>
-
-              <text x="240" y="318" text-anchor="middle" fill="#ffffff" class="hp-diagram-node-label">Control</text>
-
-              <!-- watermark -->
-              <text x="240" y="476" text-anchor="middle" fill="rgba(255,255,255,0.38)" letter-spacing="4" style="font-family:var(--font-heading); font-size:14px;">AMPERE LAB</text>
-            </svg>
-          </div>
+          <svg class="hp-venn" viewBox="0 0 600 430" role="img" aria-labelledby="hpVennTitle">
+            <title id="hpVennTitle">AMPERE sits at the intersection of control, electric machines, and power electronics</title>
+            <circle class="v-c v-top" cx="300" cy="145" r="128" />
+            <circle class="v-c v-left" cx="210" cy="295" r="128" />
+            <circle class="v-c v-right" cx="390" cy="295" r="128" />
+            <text class="v-label" x="300" y="82" text-anchor="middle">Control</text>
+            <text class="v-label" x="160" y="322" text-anchor="middle"><tspan x="160">Electric</tspan><tspan x="160" dy="25">Machines</tspan></text>
+            <text class="v-label" x="440" y="322" text-anchor="middle"><tspan x="440">Power</tspan><tspan x="440" dy="25">Electronics</tspan></text>
+            <circle class="v-dot" cx="245" cy="210" r="10" />
+            <circle class="v-dot" cx="355" cy="210" r="10" />
+            <circle class="v-dot" cx="300" cy="305" r="10" />
+            <rect class="v-pill" x="242" y="228" width="116" height="36" rx="18" />
+            <text class="v-pill-text" x="300" y="252" text-anchor="middle">AMPERE</text>
+          </svg>
+          <p class="hp-approach-rotator">
+            <span class="sr-only">
+              Through multi-physics modeling, topology optimization, AI-assisted design, advanced manufacturing, advanced control, and system
+              integration.
+            </span>
+            <span aria-hidden="true">Through <span class="hp-rot-word">multi-physics modeling</span><span class="hp-caret"></span></span>
+          </p>
+          <script>
+            // Type and erase each technique in turn (Matt Lee-style rotating line)
+            (function () {
+              var el = document.querySelector('.hp-rot-word');
+              if (!el) return;
+              var words = [
+                'multi-physics modeling',
+                'topology optimization',
+                'AI-assisted design',
+                'advanced manufacturing',
+                'advanced control',
+                'system integration',
+              ];
+              var i = 0;
+              if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                setInterval(function () {
+                  i = (i + 1) % words.length;
+                  el.textContent = words[i];
+                }, 3000);
+                return;
+              }
+              var n = words[0].length;
+              var erasing = true;
+              function tick() {
+                if (erasing) {
+                  n--;
+                  el.textContent = words[i].slice(0, n);
+                  if (n === 0) {
+                    erasing = false;
+                    i = (i + 1) % words.length;
+                    setTimeout(tick, 350);
+                  } else {
+                    setTimeout(tick, 30);
+                  }
+                } else {
+                  n++;
+                  el.textContent = words[i].slice(0, n);
+                  if (n === words[i].length) {
+                    erasing = true;
+                    setTimeout(tick, 1800);
+                  } else {
+                    setTimeout(tick, 60);
+                  }
+                }
+              }
+              setTimeout(tick, 2000);
+            })();
+          </script>
         </div>
       </div>
     </div>
