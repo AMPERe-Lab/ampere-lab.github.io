@@ -203,7 +203,7 @@ nav_order: 3
   <li><strong>Sreekar Earanti</strong><span>B.S., University of Wisconsin–Madison</span><span>SULI Intern, Oak Ridge National Laboratory</span></li>
   <li><strong>Mercy Koech</strong><span>Ph.D. Student, University of Texas at Dallas</span><span>Graduate Intern, Oak Ridge National Laboratory</span></li>
   <li><strong>Dhruvi Patel</strong><span>Ph.D. Student, University of Texas at Dallas</span><span>Ph.D. Fellow Intern, GE Research</span></li>
-  <li><strong>Lidya Mussie Weldehawaryat</strong><span>University of Houston</span><span>Graduate Intern, Oak Ridge National Laboratory</span></li>
+  <li><strong>Lidya Mussie Weldehawaryat</strong><span>Ph.D. Student, University of Houston</span><span>Graduate Intern, Oak Ridge National Laboratory</span></li>
 </ul>
 
 <!--
