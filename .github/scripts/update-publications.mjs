@@ -163,7 +163,7 @@ async function main() {
         const name = shortName(a.raw_author_name || a.author?.display_name || ""); // name as printed on the paper
         const isPI =
           (a.author?.id || "").endsWith(OPENALEX_AUTHOR) || (a.author?.orcid || "").endsWith(ORCID) || PI_NAME.test(a.author?.display_name || "");
-        return isPI ? `<b>${name}</b>` : name;
+        return isPI ? "<b>N. Gadiyar</b>" : name; // always the current name, whatever the paper prints
       })
     );
     added.push({ topic: guessTopic(title, venue), type: guessType(w), year: w.publication_year, authors, title, venue, doi: w.doi });

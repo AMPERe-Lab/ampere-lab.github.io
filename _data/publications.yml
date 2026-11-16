@@ -77,19 +77,19 @@ papers:
   - topic: integrated
     type: journal
     year: 2022
-    authors: <b>FNU Nishanth</b>, G. Bohach, M. M. Nahin, J. Van de Ven, and E. L. Severson
+    authors: <b>N. Gadiyar</b>, G. Bohach, M. M. Nahin, J. Van de Ven, and E. L. Severson
     title: Development of an integrated electro-hydraulic machine to electrify off-highway vehicles
     venue: IEEE Transactions on Industry Applications
   - topic: integrated
     type: conference
     year: 2021
-    authors: M. M. Nahin, G. R. Bohach, <b>FNU Nishanth</b>, E. L. Severson, and J. D. Van de Ven
+    authors: M. M. Nahin, G. R. Bohach, <b>N. Gadiyar</b>, E. L. Severson, and J. D. Van de Ven
     title: Dynamic modeling and design of a radial hydrostatic piston pump for integrated pump-motor
     venue: ASME/BATH Symposium on Fluid Power and Motion Control (FPMC)
   - topic: integrated
     type: patent
     year: 2021
-    authors: J. Van de Ven, G. Bohach, <b>FNU Nishanth</b>, and E. Severson
+    authors: J. Van de Ven, G. Bohach, <b>N. Gadiyar</b>, and E. Severson
     title: Integrated electric-to-hydraulic conversion machine
     venue: WO Patent WO2021034642A1
   - topic: integrated
@@ -107,13 +107,13 @@ papers:
   - topic: integrated
     type: conference
     year: 2020
-    authors: <b>FNU Nishanth</b>, A. Khamitov, and E. L. Severson
+    authors: <b>N. Gadiyar</b>, A. Khamitov, and E. L. Severson
     title: Comparison of linear and rotary electric machine topologies for a hybrid hydraulic electric architecture of off-highway vehicles
     venue: 2020 IEEE Transportation Electrification Conference & Expo (ITEC)
   - topic: integrated
     type: other
     year: 2020
-    authors: <b>Nishanth</b>, J. Van de Ven, and E. L. Severson
+    authors: <b>N. Gadiyar</b>, J. Van de Ven, and E. L. Severson
     title: Optimal design of axial flux electric motors to electrify off-highway vehicles
     venue: Siemens Digital Industries Software, Engineer Innovation (magazine)
   - topic: integrated
@@ -125,7 +125,7 @@ papers:
   - topic: integrated
     type: conference
     year: 2019
-    authors: G. R. Bohach, <b>Nishanth</b>, E. Severson, and J. D. Van de Ven
+    authors: G. R. Bohach, <b>N. Gadiyar</b>, E. Severson, and J. D. Van de Ven
     title: Modeling and optimization study of a tightly integrated rotary electric motor-hydraulic pump
     venue: ASME/BATH Symposium on Fluid Power and Motion Control (FPMC)
 
@@ -169,7 +169,7 @@ papers:
   - topic: am
     type: conference
     year: 2022
-    authors: A. Goodall, <b>F. Nishanth</b>, E. Severson, and I. Todd
+    authors: A. Goodall, <b>N. Gadiyar</b>, E. Severson, and I. Todd
     title: Design of an additively manufactured electric machine stator with eddy current limiting geometry
     venue: International Conference on Design for 3D Printing, Singapore
 
@@ -273,6 +273,6 @@ papers:
   - topic: pe
     type: other
     year: 2022
-    authors: <b>F. Nishanth</b>
+    authors: <b>N. Gadiyar</b>
     title: Analysis of an induction machine fed by a space vector modulated VSI
     venue: arXiv preprint arXiv:2209.05254
