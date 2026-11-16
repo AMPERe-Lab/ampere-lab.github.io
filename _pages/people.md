@@ -72,7 +72,7 @@ nav_order: 3
   .pp-recruit:hover .pp-recruit-btn { background: var(--nd-gold-bright); }
   html[data-theme='dark'] .pp-recruit { background: #14305a; }
 
-  /* ── Alumni: names only ── */
+  /* ── Alumni and former mentees: names only ── */
   .pp-alumni {
     list-style: none; padding: 0; margin: 1.25rem 0 0;
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
@@ -196,11 +196,14 @@ nav_order: 3
 
 ---
 
-## Alumni
+## Alumni and Former Mentees
 
 <ul class="pp-alumni">
-  <li><strong>Sreekar Earanti</strong><span>B.S., University of Wisconsin–Madison</span><span>SULI Intern, Oak Ridge National Laboratory</span></li>
   <li><strong>Hansa Adusumilli</strong><span>B.S., University of Virginia</span><span>SULI Intern, Oak Ridge National Laboratory</span></li>
+  <li><strong>Sreekar Earanti</strong><span>B.S., University of Wisconsin–Madison</span><span>SULI Intern, Oak Ridge National Laboratory</span></li>
+  <li><strong>Mercy Koech</strong><span>Ph.D. Student, University of Texas at Dallas</span><span>Graduate Intern, Oak Ridge National Laboratory</span></li>
+  <li><strong>Dhruvi Patel</strong><span>Ph.D. Student, University of Texas at Dallas</span><span>Ph.D. Fellow Intern, GE Research</span></li>
+  <li><strong>Lidya Mussie Weldehawaryat</strong><span>University of Houston</span><span>Graduate Intern, Oak Ridge National Laboratory</span></li>
 </ul>
 
 <!--
