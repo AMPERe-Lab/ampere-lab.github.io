@@ -17,11 +17,6 @@ nav_order: 4
     max-width: none;
     margin-bottom: 1.5rem;
   }
-  .pub-scholar-card .pub-name-note {
-    font-size: 15px;
-    color: var(--color-text-tertiary);
-    margin: 1rem 0 0;
-  }
   .pub-scholar-btn {
     display: inline-flex;
     align-items: center;
@@ -228,9 +223,6 @@ nav_order: 4
     </span>
     <i class="ti ti-external-link"></i>
   </a>
-  <p class="pub-name-note">
-    Some papers published before 2025 list Prof. Gadiyar as FNU Nishanth, the name used before a legal name change in 2025. They are listed here under N. Gadiyar.
-  </p>
 </div>
 
 {% assign pubs = site.data.publications.papers %}
