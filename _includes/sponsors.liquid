@@ -19,6 +19,13 @@
     opacity: 0.85;
     transition: opacity 0.2s ease;
   }
+  /* Wide logos get less height so they read at a similar size to the others */
+  .rp-sponsor-logo.rp-sponsor-plexim {
+    height: 80px;
+  }
+  .rp-sponsor-logo.rp-sponsor-siemens {
+    height: 44px;
+  }
   .rp-sponsor-logo:hover {
     opacity: 1;
   }
@@ -29,10 +36,18 @@
     .rp-sponsor-logo {
       height: 68px;
     }
+    .rp-sponsor-logo.rp-sponsor-plexim {
+      height: 54px;
+    }
+    .rp-sponsor-logo.rp-sponsor-siemens {
+      height: 30px;
+    }
   }
 </style>
 
 <div class="rp-sponsors-grid">
   <img class="rp-sponsor-logo" src="{{ '/assets/img/sponsors/jmag_logo.svg' | relative_url }}" alt="JMAG">
   <img class="rp-sponsor-logo" src="{{ '/assets/img/sponsors/powersys_logo.png' | relative_url }}" alt="POWERSYS">
+  <img class="rp-sponsor-logo rp-sponsor-plexim" src="{{ '/assets/img/sponsors/plexim_logo.png' | relative_url }}" alt="Plexim">
+  <img class="rp-sponsor-logo rp-sponsor-siemens" src="{{ '/assets/img/sponsors/siemens_logo.svg' | relative_url }}" alt="Siemens">
 </div>
