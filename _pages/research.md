@@ -294,7 +294,7 @@ visit_us: true
   <div class="rp-fac-grid">
     <div class="rp-fac-card">
       <div class="rp-fac-card-head">
-        <div class="rp-fac-icon"><i class="ti ti-gauge"></i></div>
+        <div class="rp-fac-icon"><i class="ti ti-activity"></i></div>
         <h3>Testing &amp; Measurement</h3>
       </div>
       <ul>
@@ -317,7 +317,7 @@ visit_us: true
     </div>
     <div class="rp-fac-card">
       <div class="rp-fac-card-head">
-        <div class="rp-fac-icon"><i class="ti ti-server"></i></div>
+        <div class="rp-fac-icon"><i class="ti ti-cpu"></i></div>
         <h3>Computing</h3>
       </div>
       <ul>
