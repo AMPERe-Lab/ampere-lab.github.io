@@ -322,7 +322,7 @@ visit_us: true
       </div>
       <ul>
         <li>Dedicated servers with multi-core processors and GPUs</li>
-        <li>Engineering software for finite element analysis (FEA) and hardware development</li>
+        <li>Specialized software for finite element analysis (FEA), power electronics simulation, and PCB design and development</li>
       </ul>
     </div>
   </div>
