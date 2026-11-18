@@ -49,6 +49,8 @@ visit_us: true
   .ju-tile .ju-tile-link {
     display: inline-block; margin-top: 0.75rem; font-size: 14px; font-weight: 600; color: #185FA5;
   }
+  .ju-facilities { margin-top: 2rem; font-size: 17px; line-height: 1.6; color: var(--color-text-secondary); }
+  .ju-facilities a { font-weight: 600; color: var(--amp-link); }
 </style>
 
 We are always looking for motivated and passionate members to join the team.
@@ -87,3 +89,5 @@ If you are interested, please click on the appropriate sections below to review 
   </a>
 
 </div>
+
+<p class="ju-facilities">Students in the lab work hands-on with our testing, prototyping, and computing facilities. <a href="/research/#facilities">See our facilities →</a></p>

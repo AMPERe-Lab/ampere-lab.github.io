@@ -135,6 +135,37 @@ visit_us: true
   </p>
 </div>
 
+<style>
+  /* ── On-this-page links ── */
+  .rp-jump {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem;
+    margin: -2rem 0 2.5rem;
+  }
+  .rp-jump-label {
+    font-size: 14px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--color-text-tertiary); margin-right: 0.25rem;
+  }
+  .rp-jump a {
+    font-size: 15px; font-weight: 600; color: var(--amp-link);
+    border: 1px solid var(--color-border-secondary); border-radius: 999px;
+    padding: 0.3rem 0.9rem; text-decoration: none;
+  }
+  .rp-jump a:hover { border-color: var(--nd-gold); color: var(--amp-gold); text-decoration: none; }
+  .rp-block[id] { scroll-margin-top: calc(var(--amp-nav-height) + 3px); }
+  @media (max-width: 767.98px) {
+    .rp-block[id] { scroll-margin-top: calc(var(--amp-nav-height) + 53px); }
+  }
+</style>
+
+<nav class="rp-jump" aria-label="On this page">
+  <span class="rp-jump-label">On this page</span>
+  <a href="#themes">Themes</a>
+  <a href="#facilities">Facilities</a>
+  <a href="#how-we-work">How We Work</a>
+  <a href="#applications">Applications</a>
+  <a href="#sponsors">Sponsors</a>
+</nav>
+
 <!-- ── Research photo slideshow ── -->
 <div class="rp-block" style="border-top: none; padding-top: 0;">
   <div class="rp-slideshow" id="rp-slideshow">
@@ -166,7 +197,7 @@ visit_us: true
 </div>
 
 <!-- ── Research Themes ── -->
-<div class="rp-block">
+<div class="rp-block" id="themes">
   <div class="rp-label">Research</div>
   <div class="rp-heading">Research Themes</div>
   <div class="rp-theme-grid">
@@ -201,6 +232,99 @@ visit_us: true
       <p>Creating systems that sense, adapt, diagnose, and optimize themselves in real time.</p>
     </div>
 
+  </div>
+</div>
+
+<style>
+  /* ── Facilities ── */
+  .rp-fac-stats {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.1rem;
+  }
+  .rp-fac-stat {
+    background: #0C2340; border-radius: 12px; padding: 1.35rem 1.5rem;
+  }
+  .rp-fac-stat strong {
+    display: block; font-family: var(--font-heading); font-size: 34px; font-weight: 800;
+    line-height: 1.1; color: var(--amp-gold); letter-spacing: -0.01em;
+  }
+  @media (max-width: 420px) { .rp-fac-stat strong { font-size: 28px; } }
+  .rp-fac-stat span { display: block; font-size: 16px; line-height: 1.45; color: rgba(255,255,255,0.78); margin-top: 0.35rem; }
+  .rp-fac-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  @media (max-width: 900px) {
+    .rp-fac-stats, .rp-fac-grid { grid-template-columns: 1fr; }
+  }
+  .rp-fac-card {
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: 12px; padding: 1.5rem 1.4rem;
+  }
+  .rp-fac-card-head { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1rem; }
+  .rp-fac-icon {
+    width: 52px; height: 52px; flex-shrink: 0; border-radius: 10px; background: #0C2340;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .rp-fac-icon i { font-size: 30px; color: var(--amp-gold); }
+  .rp-fac-card h3 { font-size: 19px; font-weight: 700; line-height: 1.3; color: var(--color-text-primary); margin: 0; }
+  .rp-fac-card ul { list-style: none; padding: 0; margin: 0; }
+  .rp-fac-card li {
+    position: relative; padding-left: 1.1rem; margin-bottom: 0.65rem;
+    font-size: 16.5px; line-height: 1.55; color: var(--color-text-secondary);
+  }
+  .rp-fac-card li:last-child { margin-bottom: 0; }
+  .rp-fac-card li::before {
+    content: ""; position: absolute; left: 0; top: 0.62em;
+    width: 6px; height: 6px; border-radius: 50%; background: var(--nd-gold);
+  }
+  .rp-fac-card a { color: var(--amp-link); }
+  html[data-theme='dark'] .rp-fac-stat { background: #14305a; }
+</style>
+
+<!-- ── Facilities ── -->
+<div class="rp-block" id="facilities">
+  <div class="rp-label">Facilities</div>
+  <div class="rp-heading">Built to Build and Test</div>
+  <p class="rp-subhead">Our lab and campus partners support every step, from simulation to megawatt-scale testing.</p>
+
+  <div class="rp-fac-stats">
+    <div class="rp-fac-stat"><strong>~1,000 sq ft</strong><span>of dedicated lab space</span></div>
+    <div class="rp-fac-stat"><strong>6+ workbenches</strong><span>each with single- and three-phase power</span></div>
+    <div class="rp-fac-stat"><strong>Up to 5 MW</strong><span>electric machine and drive testing</span></div>
+  </div>
+
+  <div class="rp-fac-grid">
+    <div class="rp-fac-card">
+      <div class="rp-fac-card-head">
+        <div class="rp-fac-icon"><i class="ti ti-gauge"></i></div>
+        <h3>Testing &amp; Measurement</h3>
+      </div>
+      <ul>
+        <li>Multi-phase power measurement</li>
+        <li>Multi-axis, non-contact dynamometer for linear and rotary machines</li>
+        <li>Magnetic materials characterization</li>
+        <li>High-power machine and drive testing up to 5 MW at <a href="https://powerpropulsion.nd.edu/facilities-and-capabilities/ignition-park-test-facility/test-cell-1/" target="_blank" rel="noopener">Notre Dame Power and Propulsion</a></li>
+      </ul>
+    </div>
+    <div class="rp-fac-card">
+      <div class="rp-fac-card-head">
+        <div class="rp-fac-icon"><i class="ti ti-tool"></i></div>
+        <h3>Prototyping</h3>
+      </div>
+      <ul>
+        <li>Machine shop, 3D printers, and laser cutters at the <a href="https://engineering.nd.edu/departments-programs/engineering-innovation-hub-at-notre-dame/" target="_blank" rel="noopener">Engineering Innovation Hub</a></li>
+        <li>In-lab soldering and electronics assembly</li>
+        <li>Partnerships with regional manufacturers</li>
+      </ul>
+    </div>
+    <div class="rp-fac-card">
+      <div class="rp-fac-card-head">
+        <div class="rp-fac-icon"><i class="ti ti-server"></i></div>
+        <h3>Computing</h3>
+      </div>
+      <ul>
+        <li>Dedicated servers with multi-core processors and GPUs</li>
+        <li>Engineering software for finite element analysis (FEA) and hardware development</li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -279,7 +403,7 @@ visit_us: true
 </script>
 
 <!-- ── How We Work / process ── -->
-<div class="rp-block">
+<div class="rp-block" id="how-we-work">
   <div class="rp-process-box">
     <div class="rp-label">How We Work</div>
     <div class="rp-heading">From Concept to Hardware</div>
@@ -312,7 +436,7 @@ visit_us: true
 </div>
 
 <!-- ── Applications spectrum ── -->
-<div class="rp-block">
+<div class="rp-block" id="applications">
   <div class="rp-label">Applications</div>
   <div class="rp-heading">Across the Power Spectrum</div>
   <p class="rp-subhead">Our technologies touch applications from milliwatts to megawatts — anywhere electro-mechanical performance matters.</p>
@@ -332,7 +456,7 @@ visit_us: true
 </div>
 
 <!-- Sponsors (logos shared with the homepage: _includes/sponsors.liquid) -->
-<div class="rp-block">
+<div class="rp-block" id="sponsors">
   <div class="rp-label">Sponsors &amp; Partners</div>
   <div class="rp-heading">Thanks to</div>
   {% include sponsors.liquid %}
