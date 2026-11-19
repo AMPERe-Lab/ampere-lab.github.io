@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="138" viewBox="0 0 120 138" role="img" aria-label="Engineering Innovation Hub">
+  <polygon points="60,0 120,34.5 120,103.5 60,138 0,103.5 0,34.5" fill="#0C2340"/>
+  <g fill="#fff" font-family="'Barlow Condensed','Roboto Condensed','Arial Narrow','Helvetica Neue',Arial,sans-serif" font-size="19" font-weight="700" text-anchor="middle">
+    <text x="60" y="56" textLength="98" lengthAdjust="spacingAndGlyphs">ENGINEERING</text>
+    <text x="60" y="78" textLength="92" lengthAdjust="spacingAndGlyphs">INNOVATION</text>
+    <text x="60" y="100">HUB</text>
+  </g>
+</svg>
