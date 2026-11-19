@@ -65,39 +65,36 @@ visit_us: true
     margin-bottom: 1.1rem; flex-grow: 1;
   }
   /* ── How We Work / process ── */
-  .rp-process-box {
-    background: #0C2340;
-    border-radius: 12px;
-    padding: 2.75rem 2.5rem;
-  }
-  .rp-process-box .rp-label { color: var(--amp-gold); }
-  .rp-process-box .rp-heading { color: #fff; }
-  .rp-process-box .rp-subhead { color: rgba(255,255,255,0.68); }
+  .rp-process-box { padding: 0; }
 
   .rp-process-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    align-items: start;
+    gap: 1rem;
+    align-items: stretch;
     position: relative;
   }
   @media (max-width: 900px) { .rp-process-row { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 540px) { .rp-process-row { grid-template-columns: 1fr; } }
 
-  .rp-process-step { position: relative; }
-  .rp-process-icon {
-    width: 76px; height: 76px; border-radius: 12px;
-    background: rgba(255,255,255,0.07);
-    border: 0.5px solid rgba(255,255,255,0.18);
-    display: flex; align-items: center; justify-content: center;
-    margin-bottom: 1.1rem;
+  .rp-process-step {
+    position: relative;
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: 12px; padding: 1.5rem 1.4rem;
   }
-  .rp-process-icon i { font-size: 40px; color: var(--amp-gold); }
+  .rp-process-icon {
+    width: 52px; height: 52px; border-radius: 10px; background: #0C2340;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .rp-process-icon i { font-size: 30px; color: var(--amp-gold); }
+  html[data-theme='dark'] .rp-process-icon { background: #14305a; }
   .rp-process-step h4 {
-    font-size: 19px; font-weight: 700; color: #fff; margin-bottom: 0.5rem;
+    font-size: 19px; font-weight: 700; color: var(--color-text-primary); margin-bottom: 0.5rem;
   }
   .rp-process-step p {
-    font-size: 15.5px; line-height: 1.6; color: rgba(255,255,255,0.65); margin: 0;
+    font-size: 16.5px; line-height: 1.55; color: var(--color-text-secondary); margin: 0;
   }
 
   /* ── Applications spectrum ── */
@@ -355,35 +352,35 @@ visit_us: true
 
   <div class="rp-ctr-grid">
     <div class="rp-ctr-card">
-      <a class="rp-ctr-logo" href="https://energy.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/ndenergy_logo.png' | relative_url }}" alt="ND Energy"></a>
+      <a class="rp-ctr-logo" href="https://energy.nd.edu/" target="_blank" rel="noopener"><img src="/assets/img/centers/ndenergy_logo.png" alt="ND Energy"></a>
       <p>Energy research and education across campus</p>
     </div>
     <div class="rp-ctr-card">
-      <a class="rp-ctr-logo" href="https://nano.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/ndnano_logo.png' | relative_url }}" alt="NDnano: Notre Dame Nanoscience and Technology"></a>
+      <a class="rp-ctr-logo" href="https://nano.nd.edu/" target="_blank" rel="noopener"><img src="/assets/img/centers/ndnano_logo.png" alt="NDnano: Notre Dame Nanoscience and Technology"></a>
       <p>Nanoscience and technology</p>
     </div>
     <div class="rp-ctr-card">
-      <a class="rp-ctr-logo rp-ctr-logo-boxed" href="https://robotics.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/robotics_nd_logo.png' | relative_url }}" alt="Robotics @ ND"></a>
+      <a class="rp-ctr-logo rp-ctr-logo-boxed" href="https://robotics.nd.edu/" target="_blank" rel="noopener"><img src="/assets/img/centers/robotics_nd_logo.png" alt="Robotics @ ND"></a>
       <p>Robotics research, including the Physical AI and Robotics (PAIR) initiative</p>
     </div>
     <div class="rp-ctr-card">
-      <a class="rp-ctr-logo" href="https://powerpropulsion.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/ndpp_logo.png' | relative_url }}" alt="Notre Dame Power and Propulsion"></a>
+      <a class="rp-ctr-logo" href="https://powerpropulsion.nd.edu/" target="_blank" rel="noopener"><img src="/assets/img/centers/ndpp_logo.png" alt="Notre Dame Power and Propulsion"></a>
       <p>High-power test facilities</p>
     </div>
     <div class="rp-ctr-card">
-      <a class="rp-ctr-logo rp-ctr-logo-boxed" href="https://engineering.nd.edu/departments-programs/engineering-innovation-hub-at-notre-dame/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/eih_logo.svg' | relative_url }}" alt="Engineering Innovation Hub"></a>
+      <a class="rp-ctr-logo rp-ctr-logo-boxed" href="https://engineering.nd.edu/departments-programs/engineering-innovation-hub-at-notre-dame/" target="_blank" rel="noopener"><img src="/assets/img/centers/eih_logo.svg" alt="Engineering Innovation Hub"></a>
       <p>Prototyping and fabrication</p>
     </div>
     <div class="rp-ctr-card">
-      <a class="rp-ctr-logo" href="https://crc.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/crc_logo.png' | relative_url }}" alt="CRC: Center for Research Computing"></a>
+      <a class="rp-ctr-logo" href="https://crc.nd.edu/" target="_blank" rel="noopener"><img src="/assets/img/centers/crc_logo.png" alt="CRC: Center for Research Computing"></a>
       <p>High-performance computing and specialized engineering software</p>
     </div>
     <div class="rp-ctr-card">
-      <a class="rp-ctr-logo" href="https://ideacenter.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/idea_center_logo.svg' | relative_url }}" alt="IDEA Center"></a>
+      <a class="rp-ctr-logo" href="https://ideacenter.nd.edu/" target="_blank" rel="noopener"><img src="/assets/img/centers/idea_center_logo.svg" alt="IDEA Center"></a>
       <p>Commercialization and technology transfer</p>
     </div>
     <div class="rp-ctr-card">
-      <a class="rp-ctr-logo rp-ctr-logo-boxed" href="https://industrylabs.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/industry_labs_logo.png' | relative_url }}" alt="iNDustry Labs at Notre Dame"></a>
+      <a class="rp-ctr-logo rp-ctr-logo-boxed" href="https://industrylabs.nd.edu/" target="_blank" rel="noopener"><img src="/assets/img/centers/industry_labs_logo.png" alt="iNDustry Labs at Notre Dame"></a>
       <p>Connections to regional manufacturers</p>
     </div>
   </div>
