@@ -161,6 +161,7 @@ visit_us: true
   <span class="rp-jump-label">On this page</span>
   <a href="#themes">Themes</a>
   <a href="#facilities">Facilities</a>
+  <a href="#centers">Centers</a>
   <a href="#how-we-work">How We Work</a>
   <a href="#applications">Applications</a>
   <a href="#sponsors">Sponsors</a>
@@ -324,6 +325,66 @@ visit_us: true
         <li>Dedicated servers with multi-core processors and GPUs</li>
         <li>Specialized software for finite element analysis (FEA), power electronics simulation, and PCB design and development</li>
       </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* ── Centers and campus partners ── */
+  .rp-ctr-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  @media (max-width: 1000px) { .rp-ctr-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .rp-ctr-grid { grid-template-columns: 1fr; } }
+  .rp-ctr-card {
+    display: flex; flex-direction: column; gap: 0.6rem;
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: 12px; padding: 1.2rem 1.25rem;
+  }
+  .rp-ctr-logo { height: 80px; display: flex; align-items: center; align-self: flex-start; }
+  .rp-ctr-logo img { display: block; width: auto; height: auto; max-height: 72px; max-width: 170px; }
+  .rp-ctr-logo-boxed img { border-radius: 6px; }
+  html[data-theme='dark'] .rp-ctr-logo:not(.rp-ctr-logo-boxed) img { background: #fff; border-radius: 6px; padding: 4px 8px; }
+  .rp-ctr-card p { font-size: 16px; line-height: 1.5; color: var(--color-text-secondary); margin: 0; }
+</style>
+
+<!-- ── Centers and campus partners ── -->
+<div class="rp-block" id="centers">
+  <div class="rp-label">Centers and Campus Partners</div>
+  <div class="rp-heading">Connected Across Notre Dame</div>
+  <p class="rp-subhead">We work with research centers and partners across campus, from energy and nanoscience to robotics, computing, and commercialization.</p>
+
+  <div class="rp-ctr-grid">
+    <div class="rp-ctr-card">
+      <a class="rp-ctr-logo" href="https://energy.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/ndenergy_logo.png' | relative_url }}" alt="ND Energy"></a>
+      <p>Energy research and education across campus</p>
+    </div>
+    <div class="rp-ctr-card">
+      <a class="rp-ctr-logo" href="https://nano.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/ndnano_logo.png' | relative_url }}" alt="NDnano: Notre Dame Nanoscience and Technology"></a>
+      <p>Nanoscience and technology</p>
+    </div>
+    <div class="rp-ctr-card">
+      <a class="rp-ctr-logo rp-ctr-logo-boxed" href="https://robotics.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/robotics_nd_logo.png' | relative_url }}" alt="Robotics @ ND"></a>
+      <p>Robotics research, including the Physical AI and Robotics (PAIR) initiative</p>
+    </div>
+    <div class="rp-ctr-card">
+      <a class="rp-ctr-logo" href="https://powerpropulsion.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/ndpp_logo.png' | relative_url }}" alt="Notre Dame Power and Propulsion"></a>
+      <p>High-power test facilities</p>
+    </div>
+    <div class="rp-ctr-card">
+      <a class="rp-ctr-logo rp-ctr-logo-boxed" href="https://engineering.nd.edu/departments-programs/engineering-innovation-hub-at-notre-dame/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/eih_logo.svg' | relative_url }}" alt="Engineering Innovation Hub"></a>
+      <p>Prototyping and fabrication</p>
+    </div>
+    <div class="rp-ctr-card">
+      <a class="rp-ctr-logo" href="https://crc.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/crc_logo.png' | relative_url }}" alt="CRC: Center for Research Computing"></a>
+      <p>High-performance computing and specialized engineering software</p>
+    </div>
+    <div class="rp-ctr-card">
+      <a class="rp-ctr-logo" href="https://ideacenter.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/idea_center_logo.svg' | relative_url }}" alt="IDEA Center"></a>
+      <p>Commercialization and technology transfer</p>
+    </div>
+    <div class="rp-ctr-card">
+      <a class="rp-ctr-logo rp-ctr-logo-boxed" href="https://industrylabs.nd.edu/" target="_blank" rel="noopener"><img src="{{ '/assets/img/centers/industry_labs_logo.png' | relative_url }}" alt="iNDustry Labs at Notre Dame"></a>
+      <p>Connections to regional manufacturers</p>
     </div>
   </div>
 </div>
